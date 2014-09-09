@@ -1,0 +1,37 @@
+/* ===========================================================================
+==== HOMEPAGE
+============================================================================== */
+
+.box {
+	background: #fff;
+	margin-bottom: 2em;
+}
+.box img {
+	width: 100%;
+}
+.details {
+	text-align: center;
+	padding: 1em 1.5em 0;
+}
+.details h1 {
+	font: $box-title;
+	margin-bottom: 0;
+}
+.author {
+	font: $author;
+	margin-bottom: 1em;
+}
+.details-footer {
+	font: $details-ftr;
+	color: #666;
+	border-top: 1px solid #ddd;
+	margin-top: 2em;
+}
+.details-footer a {
+	border-right: 1px solid #ddd;
+	padding: 8px 18px 12px 22px;
+	display: inline-block;
+}
+.details-footer span {
+	padding-left: 12px;
+}

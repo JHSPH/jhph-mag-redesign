@@ -1,0 +1,28 @@
+{
+  "name": "Johns Hopkins Public Health Magazine",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Mike Riley",
+  "contact": "mriley32@jhu.edu",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.7.4",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "css": {
+    "assets/css/main.min.css": [
+      "bower_components/normalize-css/normalize.css",
+      "bower_components/Gridlock/fs.gridlock.css",
+      "assets/css/main.css"
+    ]
+  },
+  "js": {
+    "assets/js/main.min.js": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "assets/js/main.js"
+    ]
+  }
+}

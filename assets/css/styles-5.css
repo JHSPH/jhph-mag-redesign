@@ -1,0 +1,125 @@
+.logo-home {
+	line-height: 1em;
+	letter-spacing: normal;
+	padding-top: 15px;
+}
+.logo-home span {
+	margin: -5px;
+}
+.logo-home .issue {
+	display: block;
+	font: normal 12px/1em sans-serif;
+	margin: -3px 0 0 -2px;
+}
+.animated {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/*.logo-home.animated {
+	-webkit-animation-duration: 5.2s;
+	animation-duration: 5.2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}*/
+.one {
+	-webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+.two {
+	-webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+.three {
+	-webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+.four {
+	-webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+.five {
+	-webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+.six {
+	-webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.seven {
+	-webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.eight {
+	-webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.nine {
+	-webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+.ten {
+	-webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+.eleven {
+	-webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.twelve {
+	-webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+}
+.thirteen {
+	-webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+.fourteen {
+	-webkit-animation-delay: 2.6s;
+    animation-delay: 2.6s;
+}
+.fifteen {
+	-webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+.sixteen {
+	-webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.seventeen {
+	-webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+}
+.eighteen {
+	-webkit-animation-delay: 3.4s;
+    animation-delay: 3.4s;
+}
+.nineteen {
+	-webkit-animation-delay: 3.6s;
+    animation-delay: 3.6s;
+}
+.twenty {
+	-webkit-animation-delay: 3.8s;
+    animation-delay: 3.8s;
+}
+.twenty-one {
+	-webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.twenty-two {
+	-webkit-animation-delay: 4.2s;
+    animation-delay: 4.2s;
+}
+.twenty-three {
+	-webkit-animation-delay: 4.4s;
+    animation-delay: 4.4s;
+}
+.twenty-four {
+	-webkit-animation-delay: 4.6s;
+    animation-delay: 4.6s;
+}
+.twenty-five {
+	-webkit-animation-delay: 5.6s;
+    animation-delay: 5.6s;
+}

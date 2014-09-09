@@ -1,0 +1,291 @@
+/* ===========================================================================
+==== GLOBAL ELEMENTS
+============================================================================== */
+body {
+  background: #ccc;
+  font: 100%/1.62 serif;
+  color: #222;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+/* ===========================================================================
+==== HOMEPAGE
+============================================================================== */
+.box {
+  background: #fff;
+  margin-bottom: 2em;
+}
+
+.box img {
+  width: 100%;
+}
+
+.details {
+  text-align: center;
+  padding: 1em 1.5em 0;
+}
+
+.details h1 {
+  font: 48px serif;
+  margin-bottom: 0;
+}
+
+.author {
+  font: 16px sans-serif;
+  margin-bottom: 1em;
+}
+
+.details-footer {
+  font: 16px sans-serif;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 2em;
+}
+
+.details-footer a {
+  border-right: 1px solid #ddd;
+  padding: 8px 18px 12px 22px;
+  display: inline-block;
+}
+
+.details-footer span {
+  padding-left: 12px;
+}
+
+/* ===========================================================================
+==== HEADER
+============================================================================== */
+.header {
+  width: 100%;
+  background: #000;
+  font: 20px/1.62 sans-serif;
+  color: #fff;
+  padding: 1em 0;
+  margin-bottom: 4em;
+}
+
+/* LOGO
+------------------------------------------------------------------------------ */
+.logo-home {
+  display: inline-block;
+  background: #E45536;
+  font: 700 30px/.9em sans-serif;
+  letter-spacing: .05em;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.logo-home span {
+  margin: -5px;
+}
+
+.logo-home .issue {
+  display: block;
+  font: normal 12px/1em sans-serif;
+  margin: 0 0 0 -4px;
+}
+
+/* FROM ANIMATE.CSS - http://daneden.github.io/animate.css/
+---------------------------------------------------------*/
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*---------------------------------------------------------*/
+.one {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.two {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.three {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.four {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.five {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.six {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.seven {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.eight {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.nine {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.ten {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.eleven {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.twelve {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.thirteen {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+.fourteen {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+
+.fifteen {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+.sixteen {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.seventeen {
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+
+.eighteen {
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+.nineteen {
+  -webkit-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+}
+
+.twenty {
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+
+.twenty-one {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.twenty-two {
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
+}
+
+.twenty-three {
+  -webkit-animation-delay: 4.4s;
+  animation-delay: 4.4s;
+}
+
+.twenty-four {
+  -webkit-animation-delay: 4.6s;
+  animation-delay: 4.6s;
+}
+
+.twenty-five {
+  -webkit-animation-delay: 5.6s;
+  animation-delay: 5.6s;
+}
+
+/* NAVIGATION
+------------------------------------------------------------------------------ */
+.header ul {
+  display: inline-block;
+}
+
+.header li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 2em;
+}
+
+.header li:last-child {
+  margin-right: 0;
+}
+
+.nav-search {
+  float: right;
+  display: inline-block;
+}
