@@ -1,4 +1,8 @@
 assets/images/*
 bower_components/*
 node_modules/*
+<<<<<<< HEAD
 .sass-cache
+=======
+.sass-cache
+>>>>>>> 9fc4b0f1c06dcbe9baa41472103c9c4d6edc56af
