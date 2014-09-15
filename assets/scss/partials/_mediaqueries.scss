@@ -1,0 +1,47 @@
+/* ===========================================================================
+==== MEDIA QUERIES
+============================================================================== */
+
+/* MEDIUM SCREENS (TABLETS)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 1219px) {
+	.landing-box .details h1 {
+		font: 32px serif;
+	}
+	.landing-box .details .author {
+		font: 13px sans-serif;
+	}
+	.landing-box .details .teaser {
+		font: 14px/1.5 serif;
+	}
+	.landing-box .details-footer {
+		width: 59%;
+		font: 12px sans-serif;
+		margin-bottom: 4px;
+	}
+	.landing-box .details-footer span {
+		margin-top: 4px;
+	}
+}
+
+/* SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 739px) {
+	.landing-box .details {
+		text-align: center;
+	}
+	.landing-box .teaser {
+		margin-bottom: 3em;
+	}
+	.landing-box .details-footer {
+		width: 88%;
+	}
+}
+
+/* VERY SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 499px) {
+	.gridlock .row {
+		width: 95%;
+	}
+}

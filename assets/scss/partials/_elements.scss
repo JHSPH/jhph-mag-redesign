@@ -1,8 +1,15 @@
 /* ===========================================================================
 ==== GLOBAL ELEMENTS
 ============================================================================== */
+* {
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+		 -o-transition: all 1s ease;
+			transition: all 1s ease;
+}
+
 body {
-	background: #ccc;
+	background: #ddd;
 	font: $body;
 	color: #222;
 	margin: 0;
@@ -25,3 +32,10 @@ ul, li {
 img {
 	display: block;
 }
+// img:hover, img:focus {
+// 	webkit-transform: scale(1.05);
+// 	  -moz-transform: scale(1.05);
+// 	   -ms-transform: scale(1.05);
+// 		-o-transform: scale(1.05);
+// 		   transform: scale(1.05);
+// }

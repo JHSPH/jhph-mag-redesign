@@ -6,7 +6,7 @@
 	background: #000;
 	font: $nav;
 	color: #fff;
-	padding: 1em 0;
+	padding: 1.1em 0;
 	margin-bottom: 4em;
 }
 
@@ -22,14 +22,16 @@
 	padding: 7px 12px;
 	position: absolute;
 	top: 0;
-}
-.logo-home span {
-	margin: -5px;
-}
-.logo-home .issue {
-	display: block;
-	font: normal 12px/1em sans-serif;
-	margin: 0 0 0 -4px;
+	
+	span {
+		margin: -5px;
+	}
+	
+	.issue {
+		display: block;
+		font: normal 12px/1em sans-serif;
+		margin: 0 0 0 -4px;
+	}
 }
 
 /* FROM ANIMATE.CSS - http://daneden.github.io/animate.css/
@@ -168,8 +170,9 @@
 
 /* NAVIGATION
 ------------------------------------------------------------------------------ */
+
 .header ul {
-	display: inline-block;
+	float: right;
 }
 .header li {
 	display: inline-block;
@@ -179,7 +182,94 @@
 .header li:last-child {
 	margin-right: 0;
 }
-.nav-search {
-	float: right;
+a.search {
 	display: inline-block;
+	background: #E45536;
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+	position: relative;
+	top: 3px;
+
+	img {
+		margin-top: .23em;
+		margin-left: .2em;
+	}
+}
+
+/* SEARCH
+------------------------------------------------------------------------------ */
+.search-wrapper {
+	float: right;
+	margin-left: 2em;
+	position: relative;
+	z-index: 10;
+}
+form {
+	background: #E45536;
+	border-radius: 25px;
+	padding-right: 15px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 7px;
+	overflow: hidden;
+	-webkit-transition: width .5s ease;
+	   -moz-transition: width .5s ease;
+	    -ms-transition: width .5s ease;
+	     -o-transition: width .5s ease;
+	        transition: width .5s ease;
+
+	&:hover {
+		width: 252px;
+	}
+
+	&:hover label {
+		width: 215px;
+		background: #E45536;
+		display: inline-block;
+		position: relative;
+		top: -9px;
+	}
+
+	&:hover input {
+		width: 215px;
+	}
+}
+label {
+	width: 0;
+	height: 0;
+	background: 0 0;
+	display: none;
+	transition: width 0s ease 1s;
+}
+input {
+	width: 0;
+	background: #E45536;
+	font-size: 22px;
+	color: #fff;
+	border: 0;
+	border-radius: 25px;
+	padding: 0 15px;
+	transition: width 0s ease 1s;
+}
+button {
+	background: #E45536;
+	border: none;
+	padding: 0;
+	position: relative;
+	top: -9px;
+	left: 7px;
+}
+::-webkit-input-placeholder {
+   color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+:-ms-input-placeholder {  
+   color: #fff;  
 }

@@ -1,0 +1,33 @@
+/* ===========================================================================
+==== LANDING PAGE
+============================================================================== */
+.landing-box {
+	background: #fff;
+ 	margin-bottom: 2em;
+ 	position: relative;
+
+ 	img {
+ 		display: inline-block;
+ 	}
+
+ 	.details {
+ 		text-align: left;
+
+ 		h1 {
+ 			font: $landing-box-title;
+ 		}
+ 	}
+
+	.details-footer {
+		width: 69%;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 8px;
+
+		span {
+			display: inline-block;
+			padding-left: 8px;
+			margin-top: 8px;
+	 	}
+	}
+}
