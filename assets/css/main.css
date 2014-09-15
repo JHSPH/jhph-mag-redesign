@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #ddd;
+  background: #dfdfdf;
   font: 100%/1.62 serif;
   color: #222;
   margin: 0;
@@ -154,6 +154,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -162,6 +163,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -299,14 +301,20 @@ img {
 
 /* NAVIGATION
 ------------------------------------------------------------------------------ */
+.nav {
+  position: relative;
+}
+
 .header ul {
   float: right;
+  position: relative;
+  z-index: 0;
 }
 
 .header li {
   display: inline-block;
   text-transform: uppercase;
-  margin-right: 2em;
+  margin-right: 2.25em;
 }
 
 .header li:last-child {
@@ -330,9 +338,8 @@ a.search img {
 /* SEARCH
 ------------------------------------------------------------------------------ */
 .search-wrapper {
-  float: right;
-  margin-left: 2em;
-  position: relative;
+  position: absolute;
+  right: 0;
   z-index: 10;
 }
 
@@ -345,24 +352,24 @@ form {
   position: relative;
   top: 7px;
   overflow: hidden;
-  -webkit-transition: width .5s ease;
-  -moz-transition: width .5s ease;
-  -ms-transition: width .5s ease;
-  -o-transition: width .5s ease;
-  transition: width .5s ease;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -ms-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease;
 }
 form:hover {
   width: 252px;
 }
 form:hover label {
-  width: 215px;
+  width: 213px;
   background: #E45536;
   display: inline-block;
   position: relative;
   top: -9px;
 }
 form:hover input {
-  width: 215px;
+  width: 213px;
 }
 
 label {
@@ -370,7 +377,7 @@ label {
   height: 0;
   background: 0 0;
   display: none;
-  transition: width 0s ease 1s;
+  position: relative;
 }
 
 input {
@@ -381,7 +388,8 @@ input {
   border: 0;
   border-radius: 25px;
   padding: 0 15px;
-  transition: width 0s ease 1s;
+  position: relative;
+  z-index: 30;
 }
 
 button {
@@ -391,6 +399,7 @@ button {
   position: relative;
   top: -9px;
   left: 7px;
+  z-index: 40;
 }
 
 ::-webkit-input-placeholder {
@@ -461,5 +470,3 @@ button {
     width: 95%;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

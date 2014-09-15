@@ -170,14 +170,19 @@
 
 /* NAVIGATION
 ------------------------------------------------------------------------------ */
+.nav {
+	position: relative;
+}
 
 .header ul {
 	float: right;
+	position: relative;
+	z-index: 0;
 }
 .header li {
 	display: inline-block;
 	text-transform: uppercase;
-	margin-right: 2em;
+	margin-right: 2.25em;
 }
 .header li:last-child {
 	margin-right: 0;
@@ -200,9 +205,8 @@ a.search {
 /* SEARCH
 ------------------------------------------------------------------------------ */
 .search-wrapper {
-	float: right;
-	margin-left: 2em;
-	position: relative;
+	position: absolute;
+	right: 0;
 	z-index: 10;
 }
 form {
@@ -214,18 +218,18 @@ form {
 	position: relative;
 	top: 7px;
 	overflow: hidden;
-	-webkit-transition: width .5s ease;
-	   -moz-transition: width .5s ease;
-	    -ms-transition: width .5s ease;
-	     -o-transition: width .5s ease;
-	        transition: width .5s ease;
+	-webkit-transition: width 1s ease;
+	   -moz-transition: width 1s ease;
+	    -ms-transition: width 1s ease;
+	     -o-transition: width 1s ease;
+	        transition: width 1s ease;
 
 	&:hover {
 		width: 252px;
 	}
 
 	&:hover label {
-		width: 215px;
+		width: 213px;
 		background: #E45536;
 		display: inline-block;
 		position: relative;
@@ -233,7 +237,7 @@ form {
 	}
 
 	&:hover input {
-		width: 215px;
+		width: 213px;
 	}
 }
 label {
@@ -241,7 +245,12 @@ label {
 	height: 0;
 	background: 0 0;
 	display: none;
-	transition: width 0s ease 1s;
+	position: relative;
+	// -webkit-transition: width .25s ease 3s;
+	//    -moz-transition: width .25s ease 3s;
+	//     -ms-transition: width .25s ease 3s;
+	//      -o-transition: width .25s ease 3s;
+	//         transition: width .25s ease 3s;
 }
 input {
 	width: 0;
@@ -251,7 +260,13 @@ input {
 	border: 0;
 	border-radius: 25px;
 	padding: 0 15px;
-	transition: width 0s ease 1s;
+	position: relative;
+	z-index: 30;
+	// -webkit-transition: width .25s ease 3s;
+	//    -moz-transition: width .25s ease 3s;
+	//     -ms-transition: width .25s ease 3s;
+	//      -o-transition: width .25s ease 3s;
+	//         transition: width .25s ease 3s;
 }
 button {
 	background: #E45536;
@@ -260,6 +275,7 @@ button {
 	position: relative;
 	top: -9px;
 	left: 7px;
+	z-index: 40;
 }
 ::-webkit-input-placeholder {
    color: #fff;
