@@ -14,7 +14,7 @@
 ------------------------------------------------------------------------------ */
 .logo-home {
 	display: inline-block;
-	background: #E45536;
+	background: $issue-theme;
 	font: 700 30px/.9em sans-serif;
 	letter-spacing: .05em;
 	color: #fff;
@@ -189,7 +189,7 @@
 }
 a.search {
 	display: inline-block;
-	background: #E45536;
+	background: $issue-theme;
 	height: 28px;
 	width: 28px;
 	border-radius: 50%;
@@ -210,51 +210,40 @@ a.search {
 	z-index: 10;
 }
 form {
-	background: #E45536;
+	background: #e45536;
 	border-radius: 25px;
-	padding-right: 15px;
 	width: 30px;
 	height: 30px;
-	position: relative;
+	position: absolute;
 	top: 7px;
+	right: 0;
 	overflow: hidden;
-	-webkit-transition: width 1s ease;
-	   -moz-transition: width 1s ease;
-	    -ms-transition: width 1s ease;
-	     -o-transition: width 1s ease;
-	        transition: width 1s ease;
 
 	&:hover {
 		width: 252px;
 	}
 
 	&:hover label {
-		width: 213px;
-		background: #E45536;
-		display: inline-block;
-		position: relative;
-		top: -9px;
-	}
-
-	&:hover input {
-		width: 213px;
+		background: $issue-theme;
 	}
 }
 label {
-	width: 0;
-	height: 0;
+	width: 213px;
 	background: 0 0;
-	display: none;
-	position: relative;
-	// -webkit-transition: width .25s ease 3s;
-	//    -moz-transition: width .25s ease 3s;
-	//     -ms-transition: width .25s ease 3s;
-	//      -o-transition: width .25s ease 3s;
-	//         transition: width .25s ease 3s;
+	position: absolute;
+	right: 36px;
+	top: 0;
+	text-align: right;
+
+	&:focus {
+		outline: none;
+	}
 }
 input {
-	width: 0;
-	background: #E45536;
+	float: left;
+	width: 213px;
+	height: auto;
+	background: $issue-theme;
 	font-size: 22px;
 	color: #fff;
 	border: 0;
@@ -262,20 +251,19 @@ input {
 	padding: 0 15px;
 	position: relative;
 	z-index: 30;
-	// -webkit-transition: width .25s ease 3s;
-	//    -moz-transition: width .25s ease 3s;
-	//     -ms-transition: width .25s ease 3s;
-	//      -o-transition: width .25s ease 3s;
-	//         transition: width .25s ease 3s;
+
+	&:focus {
+		outline: none;
+	}
 }
 button {
-	background: #E45536;
+	background: url(../images/search-icon.png) 2px 0px no-repeat;
+	width: 30px;
+	height: 30px;
 	border: none;
 	padding: 0;
-	position: relative;
-	top: -9px;
-	left: 7px;
-	z-index: 40;
+	position: absolute;
+	right: 0;
 }
 ::-webkit-input-placeholder {
    color: #fff;
