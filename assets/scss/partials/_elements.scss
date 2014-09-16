@@ -22,6 +22,10 @@ p {
 a {
 	color: inherit;
 	text-decoration: none;
+
+	&:hover {
+		color: $issue-theme;
+	}
 }
 ul, li {
 	margin: 0;

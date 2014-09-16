@@ -25,6 +25,10 @@
 			color: #fff;
 			text-transform: uppercase;
 			letter-spacing: .0625em;
+
+			&:hover {
+				color: $issue-theme;
+			}
 		}
 	}
 
@@ -33,9 +37,5 @@
 		font-size: 16px;
 		letter-spacing: .0415em;
 		margin-top: 1em;
-
-		a:hover {
-				color: $issue-theme;
-			}
 	}
 }
