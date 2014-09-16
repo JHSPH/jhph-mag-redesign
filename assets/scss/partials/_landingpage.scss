@@ -18,16 +18,20 @@
  		}
  	}
 
+ 	.author {
+ 		font-size: 18px;
+ 	}
+
 	.details-footer {
-		width: 69%;
+		width: 59%;
 		position: absolute;
 		bottom: 0;
-		margin-bottom: 8px;
+		margin-bottom: 4px;
 
 		span {
 			display: inline-block;
 			padding-left: 8px;
-			margin-top: 8px;
+			margin-top: 4px;
 	 	}
 	}
 }

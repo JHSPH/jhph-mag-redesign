@@ -7,7 +7,7 @@
 	font: $nav;
 	color: #fff;
 	padding: 1.1em 0;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 /* LOGO
@@ -182,7 +182,7 @@
 .header li {
 	display: inline-block;
 	text-transform: uppercase;
-	margin-right: 2.25em;
+	margin-right: 2em;
 }
 .header li:last-child {
 	margin-right: 0;
@@ -244,11 +244,11 @@ input {
 	width: 213px;
 	height: auto;
 	background: $issue-theme;
-	font-size: 22px;
+	font-size: 20px;
 	color: #fff;
 	border: 0;
 	border-radius: 25px;
-	padding: 0 15px;
+	padding: 3px 15px;
 	position: relative;
 	z-index: 30;
 
@@ -257,7 +257,7 @@ input {
 	}
 }
 button {
-	background: url(../images/search-icon.png) 2px 0px no-repeat;
+	background: url(../images/search-icon.png) 7px 7px no-repeat;
 	width: 30px;
 	height: 30px;
 	border: none;

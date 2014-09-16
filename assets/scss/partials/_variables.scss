@@ -2,10 +2,10 @@
 $issue-theme: #e45536;
 
 // FONTS
-$body: 100%/1.62 serif;
-$logo: bold 48px/5 sans-serif;
+$body: normal 400 100%/1.62 'Chronicle SSm A', 'Chronicle SSm B', serif;
+$logo: normal 700 48px/5 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 $nav: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
-$home-box-title: 48px serif;
-$landing-box-title: 40px serif;
-$author: 24px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-$details-ftr: 16px sans-serif;
+$home-box-title: normal 400 48px 'Chronicle SSm A', 'Chronicle SSm B', serif;
+$landing-box-title: normal 400 32px 'Chronicle SSm A', 'Chronicle SSm B', serif;
+$author: 24px 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+$details-ftr: normal 400 16px 'Chronicle SSm A', 'Chronicle SSm B', sans-serif;

@@ -2,25 +2,99 @@
 ==== MEDIA QUERIES
 ============================================================================== */
 
-/* MEDIUM SCREENS (TABLETS)
+/* VERY LARGE SCREENS (LARGE DISPLAYS)
 ------------------------------------------------------------------------------ */
-@media screen and (max-width: 1219px) {
+@media screen and (min-width: 1220px) {
+	.header {
+		font-size: 33px;
+		padding: .75em 0;
+
+		form {
+			top: 10px;
+		}
+
+		li {
+			margin-right: 2.25em;
+		}
+	}
 	.landing-box .details h1 {
-		font: 32px serif;
+		font-size: 40px;
 	}
-	.landing-box .details .author {
-		font: 13px sans-serif;
-	}
-	.landing-box .details .teaser {
-		font: 14px/1.5 serif;
+	.landing-box .author {
+		font-size: 24px;
 	}
 	.landing-box .details-footer {
-		width: 59%;
-		font: 12px sans-serif;
-		margin-bottom: 4px;
+		width: 69%;
+		margin-bottom: 8px;
+
+		span {
+			margin-top: 8px;
+		}
 	}
-	.landing-box .details-footer span {
-		margin-top: 4px;
+	.gridlock .footer li {
+		margin-right: 3.5em;
+
+		a {
+			font-size: 22px;
+		}
+	}
+	.gridlock .footer p {
+		font-size: 17px;
+		letter-spacing: .05em;
+		margin-top: .5em;
+	}
+}
+
+/* LARGE SCREENS (DESKTOP/LAPTOP)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 1219px) {
+	
+	.landing-box .details .teaser {
+		font-size: 14px;
+	}
+	.landing-box .details-footer {
+		font-size: 12px;
+	}
+}
+/* MEDIUM SCREENS (TABLETS)
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	.header {
+		font-size: 20px;
+		margin-bottom: 3em;
+
+		.logo-home {
+			font-size: 26px;
+		}
+
+		form {
+			width: 26px;
+			height: 26px;
+			position: absolute;
+			top: 3px;
+
+			button {
+				background-position: 9px 5px;
+			}
+		}
+
+		ul {
+			padding-left: 3em;
+		}
+	}
+	.footer .nav {
+		float: left;
+		margin-top: 1.5em;
+	}
+	.footer ul {
+		display: inline-block;
+	}
+	.gridlock .footer li {
+		margin-right: 3.7em;
+	}
+	.gridlock .footer p {
+		float: none;
+		text-align: center;
 	}
 }
 
@@ -36,6 +110,27 @@
 	.landing-box .details-footer {
 		width: 88%;
 	}
+	.footer-nav-wrapper {
+		text-align: center;
+	}
+	.footer .nav {
+		margin-top: 1.5em;
+		float: none !important;
+		display: inline-block;
+	}
+	.gridlock .footer li {
+		margin-right: 1.75em;
+
+		a {
+			font-size: 16px;
+		}
+	}
+	.gridlock .footer p {
+		float: none;
+		display: inline-block;
+		text-align: center;
+		font-size: 13px;
+	}
 }
 
 /* VERY SMALL SCREENS (PHONES)
@@ -43,5 +138,11 @@
 @media screen and (max-width: 499px) {
 	.gridlock .row {
 		width: 95%;
+	}
+	.gridlock .footer li a {
+		font-size: 12px;
+	}
+	.gridlock .footer p {
+		font-size: 17px;
 	}
 }

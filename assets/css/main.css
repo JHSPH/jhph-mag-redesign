@@ -2,15 +2,15 @@
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 * {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 body {
   background: #dfdfdf;
-  font: 100%/1.62 serif;
+  font: normal 400 100%/1.62 "Chronicle SSm A", "Chronicle SSm B", serif;
   color: #222;
   margin: 0;
 }
@@ -54,7 +54,7 @@ img {
   padding: 1em 1.5em 0;
 }
 .details h1 {
-  font: 48px serif;
+  font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
   margin-bottom: 0;
 }
 
@@ -64,7 +64,7 @@ img {
 }
 
 .details-footer {
-  font: 16px sans-serif;
+  font: normal 400 16px "Chronicle SSm A", "Chronicle SSm B", sans-serif;
   color: #666;
   border-top: 1px solid #ddd;
   margin-top: 2em;
@@ -93,18 +93,21 @@ img {
   text-align: left;
 }
 .landing-box .details h1 {
-  font: 40px serif;
+  font: normal 400 32px "Chronicle SSm A", "Chronicle SSm B", serif;
+}
+.landing-box .author {
+  font-size: 18px;
 }
 .landing-box .details-footer {
-  width: 69%;
+  width: 59%;
   position: absolute;
   bottom: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .landing-box .details-footer span {
   display: inline-block;
   padding-left: 8px;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 /* ===========================================================================
@@ -116,7 +119,7 @@ img {
   font: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
   color: #fff;
   padding: 1.1em 0;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 /* LOGO
@@ -154,7 +157,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -163,7 +165,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -314,7 +315,7 @@ img {
 .header li {
   display: inline-block;
   text-transform: uppercase;
-  margin-right: 2.25em;
+  margin-right: 2em;
 }
 
 .header li:last-child {
@@ -377,11 +378,11 @@ input {
   width: 213px;
   height: auto;
   background: #e45536;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
   border: 0;
   border-radius: 25px;
-  padding: 0 15px;
+  padding: 3px 15px;
   position: relative;
   z-index: 30;
 }
@@ -390,7 +391,7 @@ input:focus {
 }
 
 button {
-  background: url(../images/search-icon.png) 2px 0px no-repeat;
+  background: url(../images/search-icon.png) 7px 7px no-repeat;
   width: 30px;
   height: 30px;
   border: none;
@@ -418,31 +419,137 @@ button {
 }
 
 /* ===========================================================================
+==== FOOTER
+============================================================================== */
+.gridlock .footer {
+  background: #000;
+  font: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #aaa;
+  padding: 45px 0;
+}
+.gridlock .footer .nav {
+  float: right;
+}
+.gridlock .footer li {
+  float: left;
+  margin-right: 2.75em;
+}
+.gridlock .footer li:last-child {
+  margin-right: 0;
+}
+.gridlock .footer li a {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+}
+.gridlock .footer p {
+  float: right;
+  font-size: 16px;
+  letter-spacing: .0415em;
+  margin-top: 1em;
+}
+.gridlock .footer p a:hover {
+  color: #e45536;
+}
+
+/* ===========================================================================
 ==== MEDIA QUERIES
 ============================================================================== */
-/* MEDIUM SCREENS (TABLETS)
+/* VERY LARGE SCREENS (LARGE DISPLAYS)
 ------------------------------------------------------------------------------ */
-@media screen and (max-width: 1219px) {
+@media screen and (min-width: 1220px) {
+  .header {
+    font-size: 33px;
+    padding: .75em 0;
+  }
+  .header form {
+    top: 10px;
+  }
+  .header li {
+    margin-right: 2.25em;
+  }
+
   .landing-box .details h1 {
-    font: 32px serif;
+    font-size: 40px;
   }
 
-  .landing-box .details .author {
-    font: 13px sans-serif;
-  }
-
-  .landing-box .details .teaser {
-    font: 14px/1.5 serif;
+  .landing-box .author {
+    font-size: 24px;
   }
 
   .landing-box .details-footer {
-    width: 59%;
-    font: 12px sans-serif;
-    margin-bottom: 4px;
+    width: 69%;
+    margin-bottom: 8px;
+  }
+  .landing-box .details-footer span {
+    margin-top: 8px;
   }
 
-  .landing-box .details-footer span {
-    margin-top: 4px;
+  .gridlock .footer li {
+    margin-right: 3.5em;
+  }
+  .gridlock .footer li a {
+    font-size: 22px;
+  }
+
+  .gridlock .footer p {
+    font-size: 17px;
+    letter-spacing: .05em;
+    margin-top: .5em;
+  }
+}
+/* LARGE SCREENS (DESKTOP/LAPTOP)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 1219px) {
+  .landing-box .details .teaser {
+    font-size: 14px;
+  }
+
+  .landing-box .details-footer {
+    font-size: 12px;
+  }
+}
+/* MEDIUM SCREENS (TABLETS)
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 740px) and (max-width: 979px) {
+  .header {
+    font-size: 20px;
+    margin-bottom: 3em;
+  }
+  .header .logo-home {
+    font-size: 26px;
+  }
+  .header form {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 3px;
+  }
+  .header form button {
+    background-position: 9px 5px;
+  }
+  .header ul {
+    padding-left: 3em;
+  }
+
+  .footer .nav {
+    float: left;
+    margin-top: 1.5em;
+  }
+
+  .footer ul {
+    display: inline-block;
+  }
+
+  .gridlock .footer li {
+    margin-right: 3.7em;
+  }
+
+  .gridlock .footer p {
+    float: none;
+    text-align: center;
   }
 }
 /* SMALL SCREENS (PHONES)
@@ -459,6 +566,30 @@ button {
   .landing-box .details-footer {
     width: 88%;
   }
+
+  .footer-nav-wrapper {
+    text-align: center;
+  }
+
+  .footer .nav {
+    margin-top: 1.5em;
+    float: none !important;
+    display: inline-block;
+  }
+
+  .gridlock .footer li {
+    margin-right: 1.75em;
+  }
+  .gridlock .footer li a {
+    font-size: 16px;
+  }
+
+  .gridlock .footer p {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+  }
 }
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
@@ -466,4 +597,14 @@ button {
   .gridlock .row {
     width: 95%;
   }
+
+  .gridlock .footer li a {
+    font-size: 12px;
+  }
+
+  .gridlock .footer p {
+    font-size: 17px;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */
