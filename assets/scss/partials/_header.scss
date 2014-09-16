@@ -15,8 +15,8 @@
 .logo-home {
 	display: inline-block;
 	background: $issue-theme;
-	font: 700 30px/.9em sans-serif;
-	letter-spacing: .05em;
+	font: $logo;
+	letter-spacing: .0125em;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 7px 12px;
@@ -29,8 +29,9 @@
 	
 	.issue {
 		display: block;
-		font: normal 12px/1em sans-serif;
-		margin: 0 0 0 -4px;
+		font-size: 10px;
+		font-weight: 400;
+		margin: 2px 0 0 -3px;
 	}
 }
 
@@ -218,6 +219,10 @@ form {
 	top: 7px;
 	right: 0;
 	overflow: hidden;
+	-webkit-transition: width 1s ease;
+	   -moz-transition: width 1s ease;
+		 -o-transition: width 1s ease;
+			transition: width 1s ease;
 
 	&:hover {
 		width: 252px;

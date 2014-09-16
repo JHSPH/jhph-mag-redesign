@@ -13,11 +13,15 @@
 
 .details {
 	text-align: center;
-	padding: 1em 1.5em 0;
+	padding: 1.5em 1.5em 0;
 	
 	h1 {
 		font: $home-box-title;
 		margin-bottom: 0;
+	}
+
+	.teaser {
+		padding: 0 1em;
 	}
 }
 	
@@ -29,16 +33,27 @@
 .details-footer {
 	font: $details-ftr;
 	color: #666;
+	letter-spacing: .025em;
+	text-transform: uppercase;
 	border-top: 1px solid #ddd;
-	margin-top: 2em;
+	margin-top: 1.75em;
 	
 	a {
 		border-right: 1px solid #ddd;
-		padding: 8px 18px 12px 22px;
+		padding: 6px 18px 6px 22px;
 		display: inline-block;
 	}
 	
 	span {
 		padding-left: 12px;
 	}
+}
+
+/* RIGHT-COLUMN ADJUSTMENTS
+------------------------------------------------------------------------------ */
+.right-col .details h1 {
+	font-size: 40px
+}
+.right-col .author {
+	font-size: 18px;
 }

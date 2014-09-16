@@ -51,31 +51,46 @@ img {
 
 .details {
   text-align: center;
-  padding: 1em 1.5em 0;
+  padding: 1.5em 1.5em 0;
 }
 .details h1 {
   font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
   margin-bottom: 0;
 }
+.details .teaser {
+  padding: 0 1em;
+}
 
 .author {
-  font: 24px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  font: 21px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
   margin-bottom: 1em;
 }
 
 .details-footer {
-  font: normal 400 16px "Chronicle SSm A", "Chronicle SSm B", sans-serif;
+  font: 16px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
   color: #666;
+  letter-spacing: .025em;
+  text-transform: uppercase;
   border-top: 1px solid #ddd;
-  margin-top: 2em;
+  margin-top: 1.75em;
 }
 .details-footer a {
   border-right: 1px solid #ddd;
-  padding: 8px 18px 12px 22px;
+  padding: 6px 18px 6px 22px;
   display: inline-block;
 }
 .details-footer span {
   padding-left: 12px;
+}
+
+/* RIGHT-COLUMN ADJUSTMENTS
+------------------------------------------------------------------------------ */
+.right-col .details h1 {
+  font-size: 40px;
+}
+
+.right-col .author {
+  font-size: 18px;
 }
 
 /* ===========================================================================
@@ -127,8 +142,8 @@ img {
 .logo-home {
   display: inline-block;
   background: #e45536;
-  font: 700 30px/.9em sans-serif;
-  letter-spacing: .05em;
+  font: normal 700 30px/0.85 "Gotham SSm A", "Gotham SSm B", sans-serif;
+  letter-spacing: .0125em;
   color: #fff;
   text-transform: uppercase;
   padding: 7px 12px;
@@ -140,8 +155,9 @@ img {
 }
 .logo-home .issue {
   display: block;
-  font: normal 12px/1em sans-serif;
-  margin: 0 0 0 -4px;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 2px 0 0 -3px;
 }
 
 /* FROM ANIMATE.CSS - http://daneden.github.io/animate.css/
@@ -353,6 +369,10 @@ form {
   top: 7px;
   right: 0;
   overflow: hidden;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease;
 }
 form:hover {
   width: 252px;
