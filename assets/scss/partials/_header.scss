@@ -3,11 +3,10 @@
 ============================================================================== */
 .header {
 	width: 100%;
+	height: 100px;
 	background: #000;
-	font: $nav;
-	color: #fff;
-	padding: 1.1em 0;
-	margin-bottom: 2em;
+	position: absolute;
+	z-index: 10;
 }
 
 /* LOGO
@@ -171,35 +170,37 @@
 
 /* NAVIGATION
 ------------------------------------------------------------------------------ */
-.nav {
+.nav-search-wrapper {
 	position: relative;
 }
 
-.header ul {
-	float: right;
-	position: relative;
-	z-index: 0;
+.gridlock .row .nav {
+	margin-left: 4em;
 }
-.header li {
+.nav li {
 	display: inline-block;
-	text-transform: uppercase;
-	margin-right: 2em;
-}
-.header li:last-child {
-	margin-right: 0;
-}
-a.search {
-	display: inline-block;
-	background: $issue-theme;
-	height: 28px;
-	width: 28px;
-	border-radius: 50%;
-	position: relative;
-	top: 3px;
+	padding: 1.75em;
 
-	img {
-		margin-top: .23em;
-		margin-left: .2em;
+	&:hover, &:focus {
+		background: #20202e;
+		border-bottom: 2px solid $issue-theme;
+
+		span {
+			display: block;
+		}
+	}
+
+	a {
+		font: $nav;
+		color: #fff;
+		text-transform: uppercase;
+		transition-duration: 0s;
+	}
+
+	span {
+		display: none;
+		position: absolute;
+		z-index: 20;
 	}
 }
 
@@ -208,7 +209,8 @@ a.search {
 .search-wrapper {
 	position: absolute;
 	right: 0;
-	z-index: 10;
+	top: 1.75em;
+	z-index: 20;
 }
 form {
 	background: #e45536;
