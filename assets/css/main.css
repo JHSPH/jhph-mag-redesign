@@ -143,6 +143,7 @@ img {
   width: 100%;
   height: 100px;
   background: #000;
+  font: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
   position: absolute;
   z-index: 10;
 }
@@ -333,52 +334,53 @@ img {
 }
 
 .gridlock .row .nav {
-  margin-left: 4em;
+  margin-left: 3em;
 }
 
-.nav a {
+.header .nav a {
   float: left;
-  font: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
   color: #fff;
+  line-height: 1;
   text-transform: uppercase;
-  padding: 1.125em 1em 1.675em;
+  padding: 1.375em 1em 1.675em;
   position: relative;
   top: 0;
+  display: block;
   -webkit-transition: padding .2s ease, top .2s ease;
   -moz-transition: padding .2s ease, top .2s ease;
   -ms-transition: padding .2s ease, top .2s ease;
   -o-transition: padding .2s ease, top .2s ease;
   transition: padding .2s ease, top .2s ease;
 }
-.nav a:hover, .nav a:focus {
+.header .nav a:hover, .header .nav a:focus {
   background: #20202e;
   color: #e45536;
   border-bottom: 2px solid #e45536;
   top: -23px;
-  padding-bottom: 2.45em;
+  padding-bottom: 2.8em;
 }
-.nav a:hover span, .nav a:focus span {
+.header .nav a:hover span, .header .nav a:focus span {
   display: inline-block;
   filter: alpha(opacity=100);
   opacity: 1;
   margin-top: -1em;
 }
-.nav a.agenda span {
+.header .nav a.agenda span {
   margin-left: 1px;
 }
-.nav a.briefings span {
+.header .nav a.briefings span {
   margin-left: -5px;
 }
-.nav a.forum span {
+.header .nav a.forum span {
   margin-left: -6px;
 }
-.nav a.features span {
+.header .nav a.features span {
   margin-left: 22px;
 }
-.nav a.departments span {
+.header .nav a.departments span {
   margin-left: 36px;
 }
-.nav a span {
+.header .nav a span {
   font: 16px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
   line-height: .9;
   letter-spacing: .0625em;
@@ -397,7 +399,7 @@ img {
 .search-wrapper {
   position: absolute;
   right: 0;
-  top: 2em;
+  top: 1.125em;
   z-index: 20;
 }
 
@@ -516,20 +518,115 @@ button {
 }
 
 /* ===========================================================================
+==== RESPONSIVE-NAV
+============================================================================== */
+/*! responsive-nav.js 1.0.32 by @viljamis */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.js .nav-collapse-0.opened {
+  max-height: 180px !important;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #fff;
+  float: right;
+  height: 25px;
+  padding-right: 25px;
+  margin-top: 30px;
+  margin-right: 1.5em;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  background: url("../images/menu-icon.gif") no-repeat;
+}
+
+@media screen and (min-width: 740px) {
+  .js .nav-collapse {
+    position: relative;
+  }
+
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+/* ===========================================================================
 ==== MEDIA QUERIES
 ============================================================================== */
 /* VERY LARGE SCREENS (LARGE DISPLAYS)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 1220px) {
-  .header {
-    font-size: 33px;
-    padding: .75em 0;
+  .header .nav a {
+    font-size: 34px;
+    padding: 1em 1.125em 1.34em;
   }
-  .header form {
-    top: 10px;
+  .header .nav a:hover, .header .nav a:focus {
+    padding-bottom: 2.25em;
   }
-  .header li {
-    margin-right: 2.25em;
+  .header .nav a.agenda span {
+    margin-left: 7px;
+  }
+  .header .nav a.briefings span {
+    margin-left: 3px;
+  }
+  .header .nav a.forum span {
+    margin-left: -1px;
+  }
+  .header .nav a.features span {
+    margin-left: 31px;
+  }
+  .header .nav a.departments span {
+    margin-left: 49px;
+  }
+
+  .search-wrapper {
+    top: 1em;
+  }
+
+  form:hover {
+    width: 270px;
+  }
+
+  form label, form input {
+    width: 235px;
   }
 
   .landing-box .details h1 {
@@ -575,24 +672,57 @@ button {
 /* MEDIUM SCREENS (TABLETS)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
+  .gridlock .row .nav {
+    margin-left: 5em;
+  }
+
   .header {
-    font-size: 20px;
-    margin-bottom: 3em;
+    height: 80px;
   }
   .header .logo-home {
-    font-size: 26px;
+    font-size: 24px;
+    letter-spacing: .0625em;
   }
-  .header form {
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 3px;
+  .header .nav a {
+    font-size: 22px;
+    padding: 1.25em 1em 2.125em;
   }
-  .header form button {
-    background-position: 9px 5px;
+  .header .nav a:hover, .header .nav a:focus {
+    top: -14px;
+    padding-bottom: 3em;
   }
-  .header ul {
-    padding-left: 3em;
+  .header .nav a:hover span, .header .nav a:focus span {
+    margin-top: -.75em;
+  }
+  .header .nav a.agenda span {
+    margin-left: -4px;
+  }
+  .header .nav a.briefings span {
+    margin-left: -9px;
+  }
+  .header .nav a.forum span {
+    margin-left: -8px;
+  }
+  .header .nav a.features span {
+    margin-left: 14px;
+  }
+  .header .nav a.departments span {
+    margin-left: 26px;
+  }
+  .header .nav a span {
+    font-size: 15px;
+  }
+
+  .search-wrapper {
+    top: .65em;
+  }
+
+  form:hover {
+    width: 270px;
+  }
+
+  form label, form input {
+    width: 235px;
   }
 
   .footer .nav {
@@ -616,6 +746,54 @@ button {
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
+  .gridlock .row .nav {
+    margin-left: 4.5em;
+  }
+
+  .header {
+    height: 72px;
+  }
+  .header .logo-home {
+    font-size: 22px;
+    letter-spacing: .09em;
+  }
+  .header .nav ul {
+    float: left;
+  }
+  .header .nav a {
+    font-size: 22px;
+    padding: .25em 0;
+  }
+  .header .nav a:hover, .header .nav a:focus {
+    background: inherit;
+    color: #ccc;
+    border: none;
+    top: 0;
+    padding: .25em 0;
+  }
+  .header .nav a:hover span, .header .nav a:focus span {
+    display: none;
+  }
+
+  .nav-collapse li {
+    float: left;
+    background: #e45536;
+    border-bottom: 1px solid black;
+    padding-left: .5em;
+  }
+
+  .search-wrapper {
+    top: .65em;
+  }
+
+  form:hover {
+    width: 270px;
+  }
+
+  form label, form input {
+    width: 235px;
+  }
+
   .landing-box .details {
     text-align: center;
   }
@@ -657,6 +835,14 @@ button {
 @media screen and (max-width: 499px) {
   .gridlock .row {
     width: 95%;
+  }
+
+  .gridlock .row .nav {
+    margin-left: 4.25em;
+  }
+
+  .nav-collapse li {
+    width: 90%;
   }
 
   .gridlock .footer li a {

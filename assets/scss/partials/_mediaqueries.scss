@@ -6,16 +6,43 @@
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 1220px) {
 	.header {
-		font-size: 33px;
-		padding: .75em 0;
+		.nav a {
+			font-size: 34px;
+			padding: 1em 1.125em 1.34em;
 
-		form {
-			top: 10px;
-		}
+			&:hover, &:focus {
+				padding-bottom: 2.25em;
+			}
 
-		li {
-			margin-right: 2.25em;
+			&.agenda span {
+				margin-left: 7px;
+			}
+
+			&.briefings span {
+				margin-left: 3px;
+			}
+
+			&.forum span {
+				margin-left: -1px;
+			}
+
+			&.features span {
+				margin-left: 31px;
+			}
+
+			&.departments span {
+				margin-left: 49px;
+			}
 		}
+	}
+	.search-wrapper {
+		top: 1em;
+	}
+	form:hover {
+		width: 270px;
+	}
+	form label, form input {
+		width: 235px;
 	}
 	.landing-box .details h1 {
 		font-size: 40px;
@@ -59,28 +86,63 @@
 /* MEDIUM SCREENS (TABLETS)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
+	.gridlock .row .nav {
+		margin-left: 5em;
+	}
 	.header {
-		font-size: 20px;
-		margin-bottom: 3em;
+		height: 80px;
 
 		.logo-home {
-			font-size: 26px;
+			font-size: 24px;
+			letter-spacing: .0625em;
 		}
 
-		form {
-			width: 26px;
-			height: 26px;
-			position: absolute;
-			top: 3px;
+		.nav a {
+			font-size: 22px;
+			padding: 1.25em 1em 2.125em;
 
-			button {
-				background-position: 9px 5px;
+			&:hover, &:focus {
+				top: -14px;
+				padding-bottom: 3em;
+
+				span {
+					margin-top: -.75em;
+				}
+			}
+
+			&.agenda span {
+				margin-left: -4px;
+			}
+
+			&.briefings span {
+				margin-left: -9px;
+			}
+
+			&.forum span {
+				margin-left: -8px;
+			}
+
+			&.features span {
+				margin-left: 14px;
+			}
+
+			&.departments span {
+				margin-left: 26px;
+			}
+
+			span {
+				font-size: 15px;
 			}
 		}
-
-		ul {
-			padding-left: 3em;
-		}
+	}
+	.search-wrapper {
+		top: .65em;
+	}
+	form:hover {
+		width: 270px;
+	}
+	form label, form input {
+		width: 235px;
 	}
 	.footer .nav {
 		float: left;
@@ -101,6 +163,53 @@
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
+	.gridlock .row .nav {
+		margin-left: 4.5em;
+	}
+	.header {
+		height: 72px;
+
+		.logo-home {
+			font-size: 22px;
+			letter-spacing: .09em;
+		}
+		.nav ul {
+			float: left;
+		}
+		
+
+		.nav a {
+			font-size: 22px;
+			padding: .25em 0;
+
+			&:hover, &:focus {
+				background: inherit;
+				color: #ccc;
+				border: none;
+				top: 0;
+				padding: .25em 0;
+
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+	.nav-collapse li {
+		float: left;
+		background: $issue-theme;
+		border-bottom: 1px solid black;
+		padding-left: .5em;
+	}
+	.search-wrapper {
+		top: .65em;
+	}
+	form:hover {
+		width: 270px;
+	}
+	form label, form input {
+		width: 235px;
+	}
 	.landing-box .details {
 		text-align: center;
 	}
@@ -138,6 +247,12 @@
 @media screen and (max-width: 499px) {
 	.gridlock .row {
 		width: 95%;
+	}
+	.gridlock .row .nav {
+		margin-left: 4.25em;
+	}
+	.nav-collapse li {
+		width: 90%;
 	}
 	.gridlock .footer li a {
 		font-size: 12px;
