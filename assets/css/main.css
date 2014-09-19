@@ -835,11 +835,7 @@ button {
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
   .gridlock .row {
-    width: 95%;
-  }
-
-  .gridlock .row .nav {
-    margin-left: 4.25em;
+    width: 81%;
   }
 
   .nav-collapse li {
