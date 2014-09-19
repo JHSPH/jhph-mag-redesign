@@ -803,6 +803,10 @@ button {
     padding-top: 8em;
   }
 
+  .details h1 {
+    font-size: 28px;
+  }
+
   .landing-box .details {
     text-align: center;
   }
