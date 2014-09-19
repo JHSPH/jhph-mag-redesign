@@ -673,7 +673,7 @@ button {
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
   .gridlock .row .nav {
-    margin-left: 5em;
+    margin-left: 5.5em;
   }
 
   .header {
@@ -747,7 +747,7 @@ button {
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
   .gridlock .row .nav {
-    margin-left: 4.5em;
+    margin-left: 5em;
   }
 
   .header {
@@ -777,6 +777,7 @@ button {
 
   .nav-collapse li {
     float: left;
+    width: 96%;
     background: #e45536;
     border-bottom: 1px solid black;
     padding-left: .5em;

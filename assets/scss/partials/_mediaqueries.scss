@@ -87,7 +87,7 @@
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
 	.gridlock .row .nav {
-		margin-left: 5em;
+		margin-left: 5.5em;
 	}
 	.header {
 		height: 80px;
@@ -164,7 +164,7 @@
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
 	.gridlock .row .nav {
-		margin-left: 4.5em;
+		margin-left: 5em;
 	}
 	.header {
 		height: 72px;
@@ -197,6 +197,7 @@
 	}
 	.nav-collapse li {
 		float: left;
+		width: 96%;
 		background: $issue-theme;
 		border-bottom: 1px solid black;
 		padding-left: .5em;
