@@ -725,6 +725,10 @@ button {
     width: 235px;
   }
 
+  .main {
+    padding-top: 8em;
+  }
+
   .footer .nav {
     float: left;
     margin-top: 1.5em;
@@ -793,6 +797,10 @@ button {
 
   form label, form input {
     width: 235px;
+  }
+
+  .main {
+    padding-top: 8em;
   }
 
   .landing-box .details {
