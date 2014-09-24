@@ -13,14 +13,14 @@
 
 .details {
 	text-align: center;
-	padding: 1.5em 1.5em 0;
+	padding: 1.5em 1em 0;
 
 	a {
 		transition-duration: .125s;
 	}
 	
 	h1 {
-		font: $home-box-title;
+		font: $large-title;
 		margin-bottom: 0;
 	}
 
@@ -60,5 +60,8 @@
 	font-size: 40px
 }
 .right-col .author {
+	font-size: 18px;
+}
+.right-col .teaser {
 	font-size: 18px;
 }

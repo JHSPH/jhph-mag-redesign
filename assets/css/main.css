@@ -2,21 +2,33 @@
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 * {
-  -webkit-transition: color .5s ease;
-  -moz-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease;
+  -webkit-transition: color .25s ease;
+  -moz-transition: color .25s ease;
+  -o-transition: color .25s ease;
+  transition: color .25s ease;
 }
 
 body {
   background: #dfdfdf;
-  font: normal 400 100%/1.62 "Chronicle SSm A", "Chronicle SSm B", serif;
+  font: normal 400 125%/1.62 "Chronicle SSm A", "Chronicle SSm B", serif;
   color: #222;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+}
+
+h1 {
+  font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
+}
+
+h2 {
+  font: bold 36px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font: 28px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -46,104 +58,13 @@ img {
 }
 
 /* ===========================================================================
-==== HOMEPAGE
-============================================================================== */
-.home-box {
-  background: #fff;
-  margin-bottom: 2em;
-}
-.home-box img {
-  width: 100%;
-}
-
-.details {
-  text-align: center;
-  padding: 1.5em 1.5em 0;
-}
-.details a {
-  transition-duration: .125s;
-}
-.details h1 {
-  font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
-  margin-bottom: 0;
-}
-.details .teaser {
-  padding: 0 1em;
-}
-
-.author {
-  font: 21px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-  margin-bottom: 1em;
-}
-
-.details-footer {
-  font: 15px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-  color: #666;
-  letter-spacing: .025em;
-  text-transform: uppercase;
-  border-top: 1px solid #ddd;
-  margin-top: 1.75em;
-}
-.details-footer a {
-  border-right: 1px solid #ddd;
-  padding: 6px 18px 6px 22px;
-  display: inline-block;
-  transition-duration: 1s;
-}
-.details-footer span {
-  padding-left: 12px;
-}
-
-/* RIGHT-COLUMN ADJUSTMENTS
------------------------------------------------------------------------------- */
-.right-col .details h1 {
-  font-size: 40px;
-}
-
-.right-col .author {
-  font-size: 18px;
-}
-
-/* ===========================================================================
-==== LANDING PAGE
-============================================================================== */
-.landing-box {
-  background: #fff;
-  margin-bottom: 2em;
-  position: relative;
-}
-.landing-box img {
-  display: inline-block;
-}
-.landing-box .details {
-  text-align: left;
-}
-.landing-box .details h1 {
-  font: normal 400 32px "Chronicle SSm A", "Chronicle SSm B", serif;
-}
-.landing-box .author {
-  font-size: 18px;
-}
-.landing-box .details-footer {
-  width: 59%;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 4px;
-}
-.landing-box .details-footer span {
-  display: inline-block;
-  padding-left: 8px;
-  margin-top: 4px;
-}
-
-/* ===========================================================================
 ==== HEADER
 ============================================================================== */
 .header {
   width: 100%;
   height: 100px;
   background: #000;
-  font: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
+  font: 28px "HeroicCondensedLight", Helvetica, Arial, sans-serif;
   position: absolute;
   z-index: 10;
 }
@@ -482,11 +403,290 @@ button {
 }
 
 /* ===========================================================================
+==== HOMEPAGE
+============================================================================== */
+.home-box {
+  background: #fff;
+  margin-bottom: 2em;
+}
+.home-box img {
+  width: 100%;
+}
+
+.details {
+  text-align: center;
+  padding: 1.5em 1em 0;
+}
+.details a {
+  transition-duration: .125s;
+}
+.details h1 {
+  font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
+  margin-bottom: 0;
+}
+.details .teaser {
+  padding: 0 1em;
+}
+
+.author {
+  font: 21px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  margin-bottom: 1em;
+}
+
+.details-footer {
+  font: 15px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  color: #666;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  border-top: 1px solid #ddd;
+  margin-top: 1.75em;
+}
+.details-footer a {
+  border-right: 1px solid #ddd;
+  padding: 6px 18px 6px 22px;
+  display: inline-block;
+  transition-duration: 1s;
+}
+.details-footer span {
+  padding-left: 12px;
+}
+
+/* RIGHT-COLUMN ADJUSTMENTS
+------------------------------------------------------------------------------ */
+.right-col .details h1 {
+  font-size: 40px;
+}
+
+.right-col .author {
+  font-size: 18px;
+}
+
+.right-col .teaser {
+  font-size: 18px;
+}
+
+/* ===========================================================================
+==== LANDING PAGE
+============================================================================== */
+.landing-box {
+  background: #fff;
+  margin-bottom: 2em;
+  position: relative;
+}
+.landing-box img {
+  display: inline-block;
+}
+.landing-box .details {
+  text-align: left;
+}
+.landing-box .details h1 {
+  font: normal 400 32px "Chronicle SSm A", "Chronicle SSm B", serif;
+}
+.landing-box .author {
+  font-size: 18px;
+}
+.landing-box .details-footer {
+  width: 59%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 4px;
+}
+.landing-box .details-footer span {
+  display: inline-block;
+  padding-left: 8px;
+  margin-top: 4px;
+}
+
+/* ===========================================================================
+==== ARTICLE
+============================================================================== */
+.feature-img {
+  background: url(http://lorempixel.com/1200/600/nature) center top/cover no-repeat #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 90px;
+  height: 600px;
+  width: 100%;
+  z-index: -10;
+}
+
+.article {
+  background: #fff;
+  padding: 40px 70px;
+  margin-top: 20em;
+  margin-bottom: 4em;
+}
+.article h1, .article .intro, .article .credits {
+  text-align: center;
+}
+.article h1 {
+  font-size: 52px;
+  margin-bottom: .125em;
+}
+.article h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.article h3 {
+  letter-spacing: .025em;
+  color: #8d8d8d;
+  margin: 0 0 .25em;
+}
+.article a {
+  color: #e45536;
+  padding: 0;
+  border-bottom: 1px dotted #e45536;
+  -webkit-transition: padding .25s ease;
+  -moz-transition: padding .25s ease;
+  -ms-transition: padding .25s ease;
+  -o-transition: padding .25s ease;
+  transition: padding .25s ease;
+}
+.article a:hover {
+  padding-bottom: .125em;
+}
+.article p {
+  margin: 0 0 1.5em 0;
+}
+.article p:first-child {
+  margin-top: 2em;
+}
+.article p:last-child {
+  margin-bottom: 2em;
+}
+.article p:nth-child(4):first-letter {
+  float: left;
+  font-family: HeroicCondensedRegular,Helvetica,Arial,sans-serif;
+  font-size: 72px;
+  line-height: 51px;
+  padding-top: 4px;
+  padding-right: 5px;
+  font-weight: bold;
+}
+.article .intro {
+  font-size: 18px;
+  font-style: italic;
+  color: #888;
+  margin: 0 0 1em;
+}
+.article .credits {
+  font: 21px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: .025em;
+  margin: 0 0 3em;
+}
+.article .photo-inline {
+  width: 100%;
+  position: relative;
+  margin: 2em 0;
+}
+.article .photo-inline img {
+  text-align: center;
+  width: 100%;
+}
+.article .photo-inline .photo-credit {
+  background: #fff;
+  font: 8px "Gotham SSm A","Gotham SSm B",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: .0625em;
+  padding: 3px 6px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+}
+.article .photo-caption {
+  font-size: 12px;
+  letter-spacing: .025em;
+  font-style: italic;
+  color: #888;
+  margin-top: -3em;
+}
+.article blockquote {
+  font: bold 36px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #da572d;
+  padding: .5em 0;
+  border-top: 1px dotted #da572d;
+  border-bottom: 1px dotted #da572d;
+  margin: 1.5em 0;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  right: 1em;
+  bottom: -3em;
+  width: 60px;
+  font-family: 'HeroicCondensedRegular', Helvetica, Arial,sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #bbb;
+  text-transform: uppercase;
+  margin-bottom: 4em;
+}
+.back-to-top img {
+  opacity: 0.4;
+  filter: Alpha(opacity=40);
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -ms-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+.back-to-top img:hover {
+  opacity: 1;
+  filter: Alpha(opacity=100);
+}
+
+.social-bar {
+  display: none;
+  position: fixed;
+  left: .5em;
+  bottom: 33%;
+  width: 60px;
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.social-bar li {
+  background: url(../images/social-sprite.png) center top no-repeat;
+  background-position-y: 17px;
+  display: block;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.social-bar li.twitter {
+  background-position-y: -26px;
+}
+.social-bar li.gplus {
+  background-position-y: -67px;
+}
+.social-bar li.linkedin {
+  background-position-y: -112px;
+}
+.social-bar li.email {
+  background-position-y: -153px;
+}
+.social-bar li.comment {
+  background-position-y: -205px;
+}
+.social-bar a {
+  width: 60px;
+  height: 60px;
+}
+
+/* ===========================================================================
 ==== FOOTER
 ============================================================================== */
 .gridlock .footer {
   background: #000;
-  font: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
+  font: 28px "HeroicCondensedLight", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #aaa;
   padding: 45px 0;
