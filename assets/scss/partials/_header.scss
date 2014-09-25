@@ -242,6 +242,12 @@
 			z-index: 20;
 			padding-top: 26px;
 		}
+
+		&.active {
+			background: #20202e;
+			color: $issue-theme;
+			padding-bottom: 1.2em;
+		}
 	}
 }
 

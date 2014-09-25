@@ -160,16 +160,14 @@
 .social-bar {
 	display: none;
 	position: fixed;
-	left: .5em;
-	bottom: 33%;
+	right: .5em;
+	bottom: 40%;
 	width: 60px;
 	background: #f4f4f4;
-	border-top: 1px solid #ccc;
-	border-right: 1px solid #ccc;
 
 	li {
 		background: url(../images/social-sprite.png) center top no-repeat;
-		background-position-y: 17px;
+		background-position: 17px 17px;
 		display: block;
 		height: 60px;
 		border-bottom: 1px solid #ccc;
@@ -177,20 +175,51 @@
 		overflow: hidden;
 		white-space: nowrap;
 
+		&.fb:hover {
+			background-color: #3A5998;
+			background-position-x: -28px;
+		}
+
 		&.twitter {
 			background-position-y: -26px;
+
+			&:hover {
+				background-color: #55ACEE;
+				background-position-x: -28px;
+			}
 		}
 		&.gplus {
 			background-position-y: -67px;
+
+			&:hover {
+				background-color: #D50A15;
+				background-position-x: -28px;
+			}
 		}
 		&.linkedin {
 			background-position-y: -112px;
+
+			&:hover {
+				background-color: #2175A2;
+				background-position-x: -28px;
+			}
 		}
 		&.email {
 			background-position-y: -153px;
+
+			&:hover {
+				background-color: #2CB21E;
+				background-position-x: -28px;
+			}
 		}
 		&.comment {
 			background-position-y: -205px;
+			border-bottom: none;
+
+			&:hover {
+				background-color: #E45536;
+				background-position-x: -28px;
+			}
 		}
 	}
 

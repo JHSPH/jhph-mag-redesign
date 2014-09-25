@@ -314,6 +314,11 @@ img {
   z-index: 20;
   padding-top: 26px;
 }
+.header .nav a.active {
+  background: #20202e;
+  color: #e45536;
+  padding-bottom: 1.2em;
+}
 
 /* SEARCH
 ------------------------------------------------------------------------------ */
@@ -644,16 +649,14 @@ button {
 .social-bar {
   display: none;
   position: fixed;
-  left: .5em;
-  bottom: 33%;
+  right: .5em;
+  bottom: 40%;
   width: 60px;
   background: #f4f4f4;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
 }
 .social-bar li {
   background: url(../images/social-sprite.png) center top no-repeat;
-  background-position-y: 17px;
+  background-position: 17px 17px;
   display: block;
   height: 60px;
   border-bottom: 1px solid #ccc;
@@ -661,20 +664,45 @@ button {
   overflow: hidden;
   white-space: nowrap;
 }
+.social-bar li.fb:hover {
+  background-color: #3A5998;
+  background-position-x: -28px;
+}
 .social-bar li.twitter {
   background-position-y: -26px;
+}
+.social-bar li.twitter:hover {
+  background-color: #55ACEE;
+  background-position-x: -28px;
 }
 .social-bar li.gplus {
   background-position-y: -67px;
 }
+.social-bar li.gplus:hover {
+  background-color: #D50A15;
+  background-position-x: -28px;
+}
 .social-bar li.linkedin {
   background-position-y: -112px;
+}
+.social-bar li.linkedin:hover {
+  background-color: #2175A2;
+  background-position-x: -28px;
 }
 .social-bar li.email {
   background-position-y: -153px;
 }
+.social-bar li.email:hover {
+  background-color: #2CB21E;
+  background-position-x: -28px;
+}
 .social-bar li.comment {
   background-position-y: -205px;
+  border-bottom: none;
+}
+.social-bar li.comment:hover {
+  background-color: #E45536;
+  background-position-x: -28px;
 }
 .social-bar a {
   width: 60px;
