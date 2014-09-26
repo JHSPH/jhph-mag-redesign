@@ -2,18 +2,17 @@
 ==== ARTICLE
 ============================================================================== */
 .feature-img {
-	background: url(http://lorempixel.com/1200/600/nature) center top/cover no-repeat #fff;
+	background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat #fff;
 	display: block;
 	position: absolute;
 	left: 0;
-	top: 90px;
+	top: 95px;
 	height: 600px;
 	width: 100%;
 	z-index: -10;
 }
 .article {
 	background: #fff;
-	// box-shadow: 0 0 10px #888888;
 	padding: 40px 70px;
 	margin-top: 20em;
 	margin-bottom: 4em;
@@ -39,17 +38,17 @@
 	}
 
 	a {
-		color: $issue-theme;
-		padding: 0;
-		border-bottom: 1px dotted $issue-theme;
-		-webkit-transition: padding .25s ease;
-		   -moz-transition: padding .25s ease;
-		    -ms-transition: padding .25s ease;
-		     -o-transition: padding .25s ease;
-		        transition: padding .25s ease;
+		color: #e45536;
+		border-bottom: 1px dotted #e45536;
+		-webkit-transition: background .33s ease, color .33s ease;
+		   -moz-transition: background .33s ease, color .33s ease;
+			-ms-transition: background .33s ease, color .33s ease;
+			 -o-transition: background .33s ease, color .33s ease;
+				transition: background .33s ease, color .33s ease;
 
 		&:hover {
-			padding-bottom: .125em;
+			background: #e45536;
+			color: white;
 		}
 	}
 
@@ -71,6 +70,25 @@
 		padding-top: 4px;
 		padding-right: 5px;
 		font-weight: bold;
+	}
+	
+	ul {
+		padding-left: 2em;
+		margin-bottom: 1.5em;
+	}
+	
+	ul li:before {
+		content: '\00BB';
+		color: #e45536;
+		font-size: 16px;
+		position: relative;
+		top: -3px;
+		margin-right: .25em;
+	}
+
+	ol {
+		padding-left: 3.25em;
+		margin-bottom: 1.5em;
 	}
 
 	.intro {
@@ -117,6 +135,7 @@
 		font-style: italic;
 		color: #888;
 		margin-top: -3em;
+		margin-bottom: 3em;
 	}
 
 	blockquote {
@@ -163,14 +182,14 @@
 	right: .5em;
 	bottom: 40%;
 	width: 60px;
-	background: #f4f4f4;
+	background: rgba(244, 244, 244, .5);
 
 	li {
 		background: url(../images/social-sprite.png) center top no-repeat;
 		background-position: 17px 17px;
 		display: block;
 		height: 60px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #dfdfdf;
 		text-indent: 100%;
 		overflow: hidden;
 		white-space: nowrap;

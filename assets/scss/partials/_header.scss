@@ -194,7 +194,7 @@
 		     -o-transition: padding .2s ease, top .2s ease;
 				transition: padding .2s ease, top .2s ease;
 
-		&:hover, &:focus {
+		&:hover, &:focus, &.active:hover, &.active:focus {
 			background: #20202e;
 			color: $issue-theme;
 			border-bottom: 2px solid $issue-theme;
