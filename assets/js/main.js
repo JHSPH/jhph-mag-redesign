@@ -499,3 +499,20 @@
 }(document, window, 0));
 
 var nav = responsiveNav(".nav-collapse");
+
+
+// BACK TO TOP BUTTON & SOCIAL BAR
+
+$(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y < 800) {
+              $('.back-to-top, .social-bar').fadeOut();
+          } else {
+              $('.back-to-top, .social-bar').fadeIn();
+          }
+      });
+      $("#to-top").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#top").offset().top
+          }, 1000);
+      });

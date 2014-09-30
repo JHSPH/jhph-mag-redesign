@@ -155,7 +155,7 @@
 	bottom: -3em;
 	width: 60px;
 	font-family: 'HeroicCondensedRegular', Helvetica, Arial,sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	text-align: center;
 	color: #bbb;
 	text-transform: uppercase;
@@ -196,48 +196,48 @@
 
 		&.fb:hover {
 			background-color: #3A5998;
-			background-position-x: -28px;
+			background-position: -28px 17px;
 		}
 
 		&.twitter {
-			background-position-y: -26px;
+			background-position: 17px -26px;
 
 			&:hover {
 				background-color: #55ACEE;
-				background-position-x: -28px;
+				background-position: -28px -26px;
 			}
 		}
 		&.gplus {
-			background-position-y: -67px;
+			background-position: 17px -67px;
 
 			&:hover {
 				background-color: #D50A15;
-				background-position-x: -28px;
+				background-position: -28px -67px;
 			}
 		}
 		&.linkedin {
-			background-position-y: -112px;
+			background-position: 17px -112px;
 
 			&:hover {
 				background-color: #2175A2;
-				background-position-x: -28px;
+				background-position: -28px -112px;
 			}
 		}
 		&.email {
-			background-position-y: -153px;
+			background-position: 17px -153px;
 
 			&:hover {
 				background-color: #2CB21E;
-				background-position-x: -28px;
+				background-position: -28px -153px;
 			}
 		}
 		&.comment {
-			background-position-y: -205px;
+			background-position: 17px -205px;
 			border-bottom: none;
 
 			&:hover {
 				background-color: #E45536;
-				background-position-x: -28px;
+				background-position: -28px -205px;
 			}
 		}
 	}

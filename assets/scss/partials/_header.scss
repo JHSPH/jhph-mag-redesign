@@ -10,9 +10,14 @@
 	z-index: 10;
 }
 
+.header > .row > div {
+	position: relative;
+}
+
 /* LOGO
 ------------------------------------------------------------------------------ */
 .logo-home {
+	width: 173px;
 	display: inline-block;
 	background: $issue-theme;
 	font: $logo;
@@ -22,6 +27,7 @@
 	padding: 7px 12px;
 	position: absolute;
 	top: 0;
+	left: 0;
 	
 	span {
 		margin: -5px;

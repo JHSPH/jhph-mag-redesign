@@ -69,9 +69,14 @@ img {
   z-index: 10;
 }
 
+.header > .row > div {
+  position: relative;
+}
+
 /* LOGO
 ------------------------------------------------------------------------------ */
 .logo-home {
+  width: 173px;
   display: inline-block;
   background: #e45536;
   font: normal 700 30px/0.85 "Gotham SSm A", "Gotham SSm B", sans-serif;
@@ -81,6 +86,7 @@ img {
   padding: 7px 12px;
   position: absolute;
   top: 0;
+  left: 0;
 }
 .logo-home span {
   margin: -5px;
@@ -643,7 +649,7 @@ button {
   bottom: -3em;
   width: 60px;
   font-family: 'HeroicCondensedRegular', Helvetica, Arial,sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   color: #bbb;
   text-transform: uppercase;
@@ -683,43 +689,43 @@ button {
 }
 .social-bar li.fb:hover {
   background-color: #3A5998;
-  background-position-x: -28px;
+  background-position: -28px 17px;
 }
 .social-bar li.twitter {
-  background-position-y: -26px;
+  background-position: 17px -26px;
 }
 .social-bar li.twitter:hover {
   background-color: #55ACEE;
-  background-position-x: -28px;
+  background-position: -28px -26px;
 }
 .social-bar li.gplus {
-  background-position-y: -67px;
+  background-position: 17px -67px;
 }
 .social-bar li.gplus:hover {
   background-color: #D50A15;
-  background-position-x: -28px;
+  background-position: -28px -67px;
 }
 .social-bar li.linkedin {
-  background-position-y: -112px;
+  background-position: 17px -112px;
 }
 .social-bar li.linkedin:hover {
   background-color: #2175A2;
-  background-position-x: -28px;
+  background-position: -28px -112px;
 }
 .social-bar li.email {
-  background-position-y: -153px;
+  background-position: 17px -153px;
 }
 .social-bar li.email:hover {
   background-color: #2CB21E;
-  background-position-x: -28px;
+  background-position: -28px -153px;
 }
 .social-bar li.comment {
-  background-position-y: -205px;
+  background-position: 17px -205px;
   border-bottom: none;
 }
 .social-bar li.comment:hover {
   background-color: #E45536;
-  background-position-x: -28px;
+  background-position: -28px -205px;
 }
 .social-bar a {
   width: 60px;
