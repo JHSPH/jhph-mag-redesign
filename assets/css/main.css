@@ -509,7 +509,7 @@ button {
 }
 
 /* ===========================================================================
-==== ARTICLE
+==== ARTICLE / AGENDA
 ============================================================================== */
 .feature-img {
   background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat #fff;
@@ -522,29 +522,29 @@ button {
   z-index: -10;
 }
 
-.article {
+.article, .agenda-block {
   background: #fff;
   padding: 40px 70px;
   margin-top: 20em;
   margin-bottom: 4em;
 }
-.article h1, .article .intro, .article .credits {
+.article h1, .article .intro, .article .credits, .agenda-block h1, .agenda-block .intro, .agenda-block .credits {
   text-align: center;
 }
-.article h1 {
-  font-size: 52px;
+.article h1, .agenda-block h1 {
+  font-size: 66px;
   margin-bottom: .125em;
 }
-.article h2 {
+.article h2, .agenda-block h2 {
   text-transform: uppercase;
   margin: 0;
 }
-.article h3 {
+.article h3, .agenda-block h3 {
   letter-spacing: .025em;
   color: #8d8d8d;
   margin: 0 0 .25em;
 }
-.article a {
+.article a, .agenda-block a {
   color: #e45536;
   border-bottom: 1px dotted #e45536;
   -webkit-transition: background .33s ease, color .33s ease;
@@ -553,20 +553,20 @@ button {
   -o-transition: background .33s ease, color .33s ease;
   transition: background .33s ease, color .33s ease;
 }
-.article a:hover {
+.article a:hover, .agenda-block a:hover {
   background: #e45536;
   color: white;
 }
-.article p {
+.article p, .agenda-block p {
   margin: 0 0 1.5em 0;
 }
-.article p:first-child {
+.article p:first-child, .agenda-block p:first-child {
   margin-top: 2em;
 }
-.article p:last-child {
+.article p:last-child, .agenda-block p:last-child {
   margin-bottom: 2em;
 }
-.article p:nth-child(4):first-letter {
+.article .drop-cap, .agenda-block .drop-cap {
   float: left;
   font-family: HeroicCondensedRegular,Helvetica,Arial,sans-serif;
   font-size: 72px;
@@ -575,11 +575,11 @@ button {
   padding-right: 5px;
   font-weight: bold;
 }
-.article ul {
+.article ul, .agenda-block ul {
   padding-left: 2em;
   margin-bottom: 1.5em;
 }
-.article ul li:before {
+.article ul li:before, .agenda-block ul li:before {
   content: '\00BB';
   color: #e45536;
   font-size: 16px;
@@ -587,32 +587,32 @@ button {
   top: -3px;
   margin-right: .25em;
 }
-.article ol {
+.article ol, .agenda-block ol {
   padding-left: 3.25em;
   margin-bottom: 1.5em;
 }
-.article .intro {
+.article .intro, .agenda-block .intro {
   font-size: 18px;
   font-style: italic;
   color: #888;
   margin: 0 0 1em;
 }
-.article .credits {
+.article .credits, .agenda-block .credits {
   font: 21px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
   font-size: 24px;
   letter-spacing: .025em;
   margin: 0 0 3em;
 }
-.article .photo-inline {
+.article .photo-inline, .agenda-block .photo-inline {
   width: 100%;
   position: relative;
   margin: 2em 0;
 }
-.article .photo-inline img {
+.article .photo-inline img, .agenda-block .photo-inline img {
   text-align: center;
   width: 100%;
 }
-.article .photo-inline .photo-credit {
+.article .photo-inline .photo-credit, .agenda-block .photo-inline .photo-credit {
   background: #fff;
   font: 8px "Gotham SSm A","Gotham SSm B",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
@@ -624,7 +624,7 @@ button {
   right: 0;
   opacity: 0.7;
 }
-.article .photo-caption {
+.article .photo-caption, .agenda-block .photo-caption {
   font-size: 12px;
   letter-spacing: .025em;
   font-style: italic;
@@ -632,7 +632,7 @@ button {
   margin-top: -3em;
   margin-bottom: 3em;
 }
-.article blockquote {
+.article blockquote, .agenda-block blockquote {
   font: bold 36px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #da572d;
@@ -640,6 +640,64 @@ button {
   border-top: 1px dotted #da572d;
   border-bottom: 1px dotted #da572d;
   margin: 1.5em 0;
+}
+
+.agenda-block {
+  line-height: 1.45;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.agenda-block:first-child {
+  margin-top: -3em;
+}
+
+.trending h2 {
+  font: 18px "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  color: #666;
+  text-align: center;
+  padding: .25em 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.trending-col {
+  margin-top: 1em;
+}
+.trending-col h3 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  height: 40px;
+  padding-left: 45px;
+  margin-bottom: .5em;
+}
+.trending-col .seen, .trending-col .heard, .trending-col .read {
+  background: url(../images/trending-media-sprite.png) no-repeat top left;
+}
+.trending-col .trending-copy {
+  height: 600px;
+  border-right: 1px solid #dfdfdf;
+  margin-bottom: 90px;
+}
+.trending-col .trending-copy:last-child {
+  border-right: none;
+}
+.trending-col blockquote {
+  font: 26px/1.25 "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  background: #73b9ff;
+  padding: 0;
+  margin: 0 0 .5em;
+}
+.trending-col .photo-inline {
+  margin: 0 0 1em;
+}
+
+.research-col {
+  margin-bottom: 90px;
 }
 
 .back-to-top {
