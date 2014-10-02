@@ -2,31 +2,291 @@
 ==== MEDIA QUERIES
 ============================================================================== */
 
-/* MEDIUM SCREENS (TABLETS)
+/* VERY LARGE SCREENS (LARGE DISPLAYS)
 ------------------------------------------------------------------------------ */
-@media screen and (max-width: 1219px) {
+@media screen and (min-width: 1220px) {
+	.header {
+		.nav a {
+			font-size: 34px;
+			padding: 1em 1.125em 1.34em;
+
+			&:hover, &:focus, &.active:hover, &.active:focus {
+				padding-bottom: 2.25em;
+			}
+
+			&.agenda span {
+				margin-left: 7px;
+			}
+
+			&.briefings span {
+				margin-left: 3px;
+			}
+
+			&.forum span {
+				margin-left: -1px;
+			}
+
+			&.features span {
+				margin-left: 31px;
+			}
+
+			&.departments span {
+				margin-left: 49px;
+			}
+
+			&.active {
+				padding-bottom: 0.95em;
+			}
+		}
+	}
+	.search-wrapper {
+		top: 1em;
+	}
+	form:hover {
+		width: 270px;
+	}
+	form label, form input {
+		width: 235px;
+	}
 	.landing-box .details h1 {
-		font: 32px serif;
+		font-size: 40px;
 	}
-	.landing-box .details .author {
-		font: 13px sans-serif;
-	}
-	.landing-box .details .teaser {
-		font: 14px/1.5 serif;
+	.landing-box .author {
+		font-size: 24px;
 	}
 	.landing-box .details-footer {
-		width: 59%;
-		font: 12px sans-serif;
-		margin-bottom: 4px;
+		width: 69%;
+		margin-bottom: 8px;
+
+		span {
+			margin-top: 8px;
+		}
 	}
-	.landing-box .details-footer span {
-		margin-top: 4px;
+	.article, .agenda-block {
+		padding: 40px 100px;
+		
+		h1 {
+			font-size: 64px;
+		}
+		h3 {
+			font-size: 32px;
+		}
+		p, ul, ol {
+			font-size: 22px;
+		}
+		ul li:before {
+			margin-right: .5em;
+		}
+		blockquote {
+			font-size: 42px;
+		}
+		.credits {
+			font-size: 28px;
+		}
+		.photo-caption {
+			font-size: 14px;
+			margin-top: -2.5em;
+		}
+	}
+	.gridlock .footer li {
+		margin-right: 3.5em;
+
+		a {
+			font-size: 22px;
+		}
+	}
+	.gridlock .footer p {
+		font-size: 17px;
+		letter-spacing: .05em;
+		margin-top: .5em;
+	}
+}
+
+/* LARGE SCREENS (DESKTOP/LAPTOP)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 1219px) {
+	
+	.landing-box .details .teaser {
+		font-size: 14px;
+	}
+	.landing-box .details-footer {
+		font-size: 12px;
+	}
+}
+/* MEDIUM SCREENS (TABLETS)
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	.gridlock .row .nav {
+		margin-left: 5.5em;
+	}
+	.header {
+		height: 80px;
+
+		.logo-home {
+			font-size: 24px;
+			letter-spacing: .0625em;
+		}
+
+		.nav a {
+			font-size: 22px;
+			padding: 1.25em 1em 2.125em;
+
+			&:hover, &:focus, &.active:hover, &.active:focus {
+				top: -14px;
+				padding-bottom: 3em;
+
+				span {
+					margin-top: -.75em;
+				}
+			}
+
+			&.agenda span {
+				margin-left: -4px;
+			}
+
+			&.briefings span {
+				margin-left: -9px;
+			}
+
+			&.forum span {
+				margin-left: -8px;
+			}
+
+			&.features span {
+				margin-left: 14px;
+			}
+
+			&.departments span {
+				margin-left: 26px;
+			}
+
+			span {
+				font-size: 15px;
+			}
+
+			&.active {
+				padding-bottom: 1.4em;
+			}
+		}
+	}
+	.search-wrapper {
+		top: .65em;
+	}
+	form:hover {
+		width: 270px;
+	}
+	form label, form input {
+		width: 235px;
+	}
+	.main {
+		padding-top: 8em;
+	}
+	.feature-img {
+		top: 78px;
+	}
+	.article {
+		padding: 40px;
+
+		h1 {
+			font-size: 42px;
+		}
+
+		.credits {
+			margin-bottom: 2em;
+		}
+
+		.photo-caption {
+			font-size: 13px;
+			margin-top: -2.75em;
+		}
+	}
+	.trending-col .trending-copy {
+		height: 800px;
+	}
+	.footer .nav {
+		float: left;
+		margin-top: 1.5em;
+	}
+	.footer ul {
+		display: inline-block;
+	}
+	.gridlock .footer li {
+		margin-right: 3.7em;
+	}
+	.gridlock .footer p {
+		float: none;
+		text-align: center;
 	}
 }
 
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
+	.gridlock .row {
+		width: 100%;
+
+		.nav {
+			margin-left: 5em;
+		}
+	}
+	.header {
+		height: 72px;
+
+		.logo-home {
+			font-size: 22px;
+			letter-spacing: .09em;
+		}
+		.nav ul {
+			float: left;
+		}
+		.nav a {
+			font-size: 22px;
+			padding: .25em 0;
+
+			&:hover, &:focus, &.active:hover, &.active:focus {
+				background: inherit;
+				color: #ccc;
+				border: none;
+				top: 0;
+				padding: .25em 0;
+
+				span {
+					display: none;
+				}
+			}
+
+			&.active {
+				background: inherit;
+				color: inherit;
+				padding-bottom: .25em;
+			}
+		}
+	}
+	.nav-collapse li {
+		float: left;
+		width: 96%;
+		background: $issue-theme;
+		border-bottom: 1px solid black;
+		padding-left: .5em;
+	}
+	.search-wrapper {
+		top: .65em;
+	}
+	form:hover {
+		width: 270px;
+	}
+	form label, form input {
+		width: 235px;
+	}
+	.main {
+		padding-top: 8em;
+	}
+	.feature-img {
+		top: 70px;
+	}
+	.details h1 {
+		font-size: 28px;
+	}
 	.landing-box .details {
 		text-align: center;
 	}
@@ -36,12 +296,110 @@
 	.landing-box .details-footer {
 		width: 88%;
 	}
+	.footer-nav-wrapper {
+		text-align: center;
+	}
+	.article, .agenda-block {
+		padding: 40px;
+
+		h1 {
+			font-size: 38px;
+		}
+
+		.intro {
+			font-size: 18px;
+		}
+
+		.credits {
+			font-size: 21px;
+			margin-bottom: 1.5em;
+		}
+
+		blockquote {
+			font-size: 27px;
+		}
+
+	}
+	.agenda-block .photo-inline {
+		margin-top: 0;
+	}
+	.trending-col .trending-copy {
+		height: inherit;
+		border-right: none;
+		padding-right: 0;
+		margin-bottom: 2em;
+	}
+	.trending-col:last-child .trending-copy {
+		margin-bottom: 3em;
+	}
+	.footer .nav {
+		margin-top: 1.5em;
+		float: none !important;
+		display: inline-block;
+	}
+	.gridlock .footer li {
+		margin-right: 1.75em;
+
+		a {
+			font-size: 16px;
+		}
+	}
+	.gridlock .footer p {
+		float: none;
+		display: inline-block;
+		text-align: center;
+		font-size: 13px;
+	}
 }
 
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
 	.gridlock .row {
-		width: 95%;
+		width: 100%;
+	}
+	.nav-collapse li {
+		width: 81%;
+	}
+	.feature-img {
+		height: 400px;
+	}
+	.article {
+		margin-top: 15.5em;
+		
+		p, ul, ol {
+			font-size: 18px;
+		}
+		ul {
+			padding-left: .75em;
+		}
+		ol {
+			padding-left: 1.75em;
+		}
+		blockquote {
+			font-size: 30px;
+		}
+	}
+	.social-bar {
+		width: 50px;
+
+		a {
+			width: 50px;
+			height: 60px;
+		}
+
+		li {
+			background-position-x: 12px;
+
+			&.fb:hover, &.twitter:hover, &.gplus:hover, &.linkedin:hover, &.email:hover, &.comment:hover {
+				background-position-x: -32px;
+			}
+		}
+	}
+	.gridlock .footer li a {
+		font-size: 12px;
+	}
+	.gridlock .footer p {
+		font-size: 17px;
 	}
 }

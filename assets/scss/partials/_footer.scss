@@ -1,0 +1,41 @@
+/* ===========================================================================
+==== FOOTER
+============================================================================== */
+.gridlock .footer {
+	background: #000;
+	font: $nav;
+	font-size: 14px;
+	color: #aaa;
+	padding: 45px 0;
+
+	.nav {
+		float: right
+	}
+
+	li {
+		float: left;
+		margin-right: 2.75em;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			font-size: 18px;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: .0625em;
+
+			&:hover {
+				color: $issue-theme;
+			}
+		}
+	}
+
+	p {
+		float: right;
+		font-size: 16px;
+		letter-spacing: .0415em;
+		margin-top: 1em;
+	}
+}

@@ -2,10 +2,16 @@
 $issue-theme: #e45536;
 
 // FONTS
-$body: 100%/1.62 serif;
-$logo: bold 48px/5 sans-serif;
-$nav: 28px/1.62 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
-$home-box-title: 48px serif;
-$landing-box-title: 40px serif;
-$author: 24px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-$details-ftr: 16px sans-serif;
+$body: normal 400 125%/1.62 'Chronicle SSm A', 'Chronicle SSm B', serif;
+$logo: normal 700 30px/.85 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+$nav: 28px 'HeroicCondensedLight', Helvetica, Arial, sans-serif;
+$nav-descrip: 16px 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+$large-title: normal 400 48px 'Chronicle SSm A', 'Chronicle SSm B', serif;
+$small-title: normal 400 32px 'Chronicle SSm A', 'Chronicle SSm B', serif;
+$sub-heading: bold 36px 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+$sub-sub-heading: 28px 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+$author: 21px 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+$details-ftr: 15px 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+$photo-credit: 10px 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+$agenda-sub-heading: 18px 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+$trending-col-blockquote: 26px/1.25 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
