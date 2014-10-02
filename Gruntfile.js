@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'assets/css/main.css': 'assets/scss/main.scss'       // 'destination': 'source'
+					'assets/css/main.css': 'assets/scss/main.scss',       // 'destination': 'source'
+					'assets/css/interior.css': 'assets/scss/interior.scss'
 				}
 			}
 		},
@@ -21,8 +22,17 @@ module.exports = function(grunt) {
 			options: {
 				banner: '<%= meta.banner %>'
 			},
-			combine: {
-				files: '<%= pkg.css %>'
+			dist: {
+				files: {
+					'assets/css/main.min.css': [
+						'bower_components/normalize-css/normalize.css',
+						'bower_components/Gridlock/fs.gridlock.css',
+						'assets/css/main.css'
+					],
+					'assets/css/interior.min.css': [
+						'assets/css/interior.css'
+					]
+				}
 			}
 		},
 		// Uglify

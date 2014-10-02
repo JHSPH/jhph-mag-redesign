@@ -88,6 +88,9 @@
 			margin-top: -2.5em;
 		}
 	}
+	.research-col p {
+		font-size: 28px;
+	}
 	.gridlock .footer li {
 		margin-right: 3.5em;
 
@@ -105,12 +108,8 @@
 /* LARGE SCREENS (DESKTOP/LAPTOP)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 1219px) {
-	
-	.landing-box .details .teaser {
-		font-size: 14px;
-	}
 	.landing-box .details-footer {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 /* MEDIUM SCREENS (TABLETS)
@@ -123,6 +122,7 @@
 		height: 80px;
 
 		.logo-home {
+			width: 145px;
 			font-size: 24px;
 			letter-spacing: .0625em;
 		}
@@ -178,11 +178,28 @@
 	form label, form input {
 		width: 235px;
 	}
+	.landing-box .details {
+		padding: .5em;
+
+		.author {
+			margin-bottom: .5em;
+		}
+
+		.teaser {
+			font-size: 16px;
+		}
+	}
 	.main {
 		padding-top: 8em;
 	}
 	.feature-img {
 		top: 78px;
+	}
+	.right-col .details h1 {
+		font-size: 48px;
+	}
+	.right-col .author, .right-col .teaser {
+		font-size: 21px;
 	}
 	.article {
 		padding: 40px;
@@ -226,13 +243,14 @@
 		width: 100%;
 
 		.nav {
-			margin-left: 5em;
+			margin-left: 6.5em;
 		}
 	}
 	.header {
 		height: 72px;
 
 		.logo-home {
+			width: 141px;
 			font-size: 22px;
 			letter-spacing: .09em;
 		}
@@ -273,10 +291,10 @@
 		top: .65em;
 	}
 	form:hover {
-		width: 270px;
+		width: 225px;
 	}
 	form label, form input {
-		width: 235px;
+		width: 190px;
 	}
 	.main {
 		padding-top: 8em;
@@ -288,10 +306,16 @@
 		font-size: 28px;
 	}
 	.landing-box .details {
-		text-align: center;
-	}
-	.landing-box .teaser {
-		margin-bottom: 3em;
+		padding: .25em;
+
+		.author {
+			margin-bottom: .5em;
+		}
+
+		.teaser {
+			font-size: 16px;
+			padding: 0 0 2em;
+		}
 	}
 	.landing-box .details-footer {
 		width: 88%;
@@ -352,11 +376,42 @@
 	}
 }
 
+/* BETWEEN SMALL AND VERY SMALL SCREENS
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 500px) and (max-width: 712px) {
+	.landing-box img {
+		padding: .33em 0 .33em .33em;
+	}
+}
+
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
 	.gridlock .row {
 		width: 100%;
+
+		.nav {
+			margin-left: 5.5em;
+		}
+
+		.landing-box {
+		text-align: center;
+
+			img {
+				float: none;
+				margin-top: 1em;
+			}
+
+			.details {
+				float: none;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.details-footer {
+				width: 96%;
+			}
+		}
 	}
 	.nav-collapse li {
 		width: 81%;

@@ -111,7 +111,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -120,7 +119,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -388,7 +386,7 @@ input:focus {
 }
 
 button {
-  background: url(../images/search-icon.png) 7px 7px no-repeat;
+  background: url(http://www.jhsph.edu/sebin/h/w/search-icon.png) 7px 7px no-repeat;
   width: 30px;
   height: 30px;
   border: none;
@@ -495,8 +493,13 @@ button {
 .landing-box .details h1 {
   font: normal 400 32px "Chronicle SSm A", "Chronicle SSm B", serif;
 }
+.landing-box .details .teaser {
+  line-height: 1.33;
+  padding: 0;
+}
 .landing-box .author {
   font-size: 18px;
+  margin-bottom: .75em;
 }
 .landing-box .details-footer {
   width: 59%;
@@ -508,340 +511,6 @@ button {
   display: inline-block;
   padding-left: 8px;
   margin-top: 4px;
-}
-
-/* ===========================================================================
-==== ARTICLE / AGENDA
-============================================================================== */
-.feature-img {
-  background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat white;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 95px;
-  height: 600px;
-  width: 100%;
-  z-index: -10;
-}
-
-.article, .agenda-block {
-  background: #fff;
-  padding: 40px 70px;
-  margin-top: 20em;
-  margin-bottom: 4em;
-}
-.article h1, .article .intro, .article .credits, .agenda-block h1, .agenda-block .intro, .agenda-block .credits {
-  text-align: center;
-}
-.article h1, .agenda-block h1 {
-  font-size: 66px;
-  margin-bottom: .125em;
-}
-.article h2, .agenda-block h2 {
-  text-transform: uppercase;
-  margin: 0;
-}
-.article h3, .agenda-block h3 {
-  letter-spacing: .025em;
-  color: #8d8d8d;
-  margin: 0 0 .25em;
-}
-.article a, .agenda-block a {
-  color: #e45536;
-  border-bottom: 1px dotted #e45536;
-  -webkit-transition: background .33s ease, color .33s ease;
-  -moz-transition: background .33s ease, color .33s ease;
-  -ms-transition: background .33s ease, color .33s ease;
-  -o-transition: background .33s ease, color .33s ease;
-  transition: background .33s ease, color .33s ease;
-}
-.article a:hover, .agenda-block a:hover {
-  background: #e45536;
-  color: white;
-}
-.article p, .agenda-block p {
-  margin: 0 0 1.5em 0;
-}
-.article p:first-child, .agenda-block p:first-child {
-  margin-top: 2em;
-}
-.article p:last-child, .agenda-block p:last-child {
-  margin-bottom: 2em;
-}
-.article .drop-cap, .agenda-block .drop-cap {
-  float: left;
-  font-family: HeroicCondensedRegular,Helvetica,Arial,sans-serif;
-  font-size: 72px;
-  line-height: 51px;
-  padding-top: 4px;
-  padding-right: 5px;
-  font-weight: bold;
-}
-.article ul, .agenda-block ul {
-  padding-left: 2em;
-  margin-bottom: 1.5em;
-}
-.article ul li:before, .agenda-block ul li:before {
-  content: '\00BB';
-  color: #e45536;
-  font-size: 16px;
-  position: relative;
-  top: -3px;
-  margin-right: .25em;
-}
-.article ol, .agenda-block ol {
-  padding-left: 3.25em;
-  margin-bottom: 1.5em;
-}
-.article .intro, .agenda-block .intro {
-  font-size: 20px;
-  font-style: italic;
-  color: #888;
-  margin: 0 0 1em;
-}
-.article .credits, .agenda-block .credits {
-  font: 21px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  letter-spacing: .025em;
-  margin: 0 0 2em;
-}
-.article .photo-inline, .agenda-block .photo-inline {
-  width: 100%;
-  position: relative;
-  margin: 2em 0;
-}
-.article .photo-inline img, .agenda-block .photo-inline img {
-  text-align: center;
-  width: 100%;
-}
-.article .photo-inline .photo-credit, .agenda-block .photo-inline .photo-credit {
-  background: #fff;
-  font: 8px "Gotham SSm A","Gotham SSm B",Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  color: #000;
-  letter-spacing: .0625em;
-  padding: 3px 6px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  opacity: 0.7;
-}
-.article .photo-caption, .agenda-block .photo-caption {
-  font-size: 12px;
-  letter-spacing: .025em;
-  font-style: italic;
-  color: #888;
-  margin-top: -3em;
-  margin-bottom: 3em;
-}
-.article blockquote, .agenda-block blockquote {
-  font: bold 36px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #da572d;
-  padding: .5em 0;
-  border-top: 1px dotted #da572d;
-  border-bottom: 1px dotted #da572d;
-  margin: 1.5em 0;
-}
-
-.agenda-block {
-  line-height: 1.45;
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-.agenda-block:first-child {
-  margin-top: -3em;
-}
-.agenda-block p:first-child {
-  margin-top: 0;
-}
-
-.trending h1 {
-  margin-bottom: .5em;
-}
-
-.trending h2 {
-  font: 18px "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  color: #666;
-  text-align: center;
-  padding: .25em 0;
-  border-top: 1px solid #dfdfdf;
-  border-bottom: 1px solid #dfdfdf;
-}
-
-.trending-col {
-  margin-top: 1em;
-}
-.trending-col h3 {
-  font-size: 32px;
-  line-height: 1.3;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-  height: 40px;
-  padding-left: 45px;
-  margin-bottom: .5em;
-}
-.trending-col .seen, .trending-col .heard, .trending-col .read {
-  background: url(../images/trending-media-sprite.png) no-repeat top left;
-}
-.trending-col .trending-copy {
-  height: 600px;
-  border-right: 1px solid #dfdfdf;
-  padding-right: 1em;
-  margin-bottom: 5em;
-}
-.trending-col:last-child .trending-copy {
-  border-right: none;
-  padding-right: 0;
-}
-.trending-col blockquote {
-  font: 26px/1.25 "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
-  color: white;
-  text-transform: uppercase;
-  background: #73b9ff;
-  padding: 0 .125em;
-  border: none;
-  margin: 0 0 .5em;
-}
-.trending-col .photo-inline {
-  margin: 0 0 1em;
-}
-
-.research-col {
-  text-align: center;
-  padding: 0 1em;
-  margin-top: 1em;
-  margin-bottom: 5em;
-}
-.research-col img {
-  display: inline-block;
-  border-radius: 50%;
-  margin-bottom: .25em;
-}
-.research-col h3 {
-  line-height: 1;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-  margin-bottom: 0;
-}
-.research-col h4 {
-  font: 18px/1 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: #8d8d8d;
-  margin-top: 0;
-}
-.research-col p {
-  font: 24px 'HeroicCondensedLight', Helvetica, Arial, sans-serif;
-  margin: 1em 0;
-}
-.research-col hr {
-  width: 225px;
-  border: none;
-  border-bottom: 1px dotted #e45536;
-  margin: 0 auto;
-}
-
-.events-watch p {
-  margin: 1.25em 0;
-}
-.events-watch .inits {
-  font: 18px/1 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
-  color: #fff;
-  letter-spacing: .0625em;
-  background: #000;
-  padding: .125em .25em;
-}
-
-.back-to-top {
-  display: none;
-  position: fixed;
-  right: 1em;
-  bottom: -3em;
-  width: 60px;
-  font-family: 'HeroicCondensedRegular', Helvetica, Arial,sans-serif;
-  font-size: 17px;
-  text-align: center;
-  color: #bbb;
-  text-transform: uppercase;
-  margin-bottom: 4em;
-}
-.back-to-top img {
-  opacity: 0.4;
-  filter: Alpha(opacity=40);
-  -webkit-transition: opacity .5s ease;
-  -moz-transition: opacity .5s ease;
-  -ms-transition: opacity .5s ease;
-  -o-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-}
-.back-to-top img:hover {
-  opacity: 1;
-  filter: Alpha(opacity=100);
-}
-
-.social-bar {
-  display: none;
-  position: fixed;
-  right: .5em;
-  bottom: 40%;
-  width: 60px;
-  background: rgba(244, 244, 244, 0.5);
-}
-.social-bar li {
-  background: url(../images/social-sprite.png) center top no-repeat;
-  background-position: 17px 17px;
-  display: block;
-  height: 60px;
-  border-bottom: 1px solid #dfdfdf;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.social-bar li.fb:hover {
-  background-color: #3A5998;
-  background-position: -28px 17px;
-}
-.social-bar li.twitter {
-  background-position: 17px -26px;
-}
-.social-bar li.twitter:hover {
-  background-color: #55ACEE;
-  background-position: -28px -26px;
-}
-.social-bar li.gplus {
-  background-position: 17px -67px;
-}
-.social-bar li.gplus:hover {
-  background-color: #D50A15;
-  background-position: -28px -67px;
-}
-.social-bar li.linkedin {
-  background-position: 17px -112px;
-}
-.social-bar li.linkedin:hover {
-  background-color: #2175A2;
-  background-position: -28px -112px;
-}
-.social-bar li.email {
-  background-position: 17px -153px;
-}
-.social-bar li.email:hover {
-  background-color: #2CB21E;
-  background-position: -28px -153px;
-}
-.social-bar li.comment {
-  background-position: 17px -205px;
-  border-bottom: none;
-}
-.social-bar li.comment:hover {
-  background-color: #E45536;
-  background-position: -28px -205px;
-}
-.social-bar a {
-  width: 60px;
-  height: 60px;
 }
 
 /* ===========================================================================
@@ -935,7 +604,7 @@ button {
   text-indent: -9999px;
   overflow: hidden;
   display: block;
-  background: url("../images/menu-icon.gif") no-repeat;
+  background: url("http://www.jhsph.edu/sebin/y/j/menu-icon.gif") no-repeat;
 }
 
 @media screen and (min-width: 740px) {
@@ -1037,6 +706,10 @@ button {
     margin-top: -2.5em;
   }
 
+  .research-col p {
+    font-size: 28px;
+  }
+
   .gridlock .footer li {
     margin-right: 3.5em;
   }
@@ -1053,12 +726,8 @@ button {
 /* LARGE SCREENS (DESKTOP/LAPTOP)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 1219px) {
-  .landing-box .details .teaser {
-    font-size: 14px;
-  }
-
   .landing-box .details-footer {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 /* MEDIUM SCREENS (TABLETS)
@@ -1072,6 +741,7 @@ button {
     height: 80px;
   }
   .header .logo-home {
+    width: 145px;
     font-size: 24px;
     letter-spacing: .0625em;
   }
@@ -1120,12 +790,30 @@ button {
     width: 235px;
   }
 
+  .landing-box .details {
+    padding: .5em;
+  }
+  .landing-box .details .author {
+    margin-bottom: .5em;
+  }
+  .landing-box .details .teaser {
+    font-size: 16px;
+  }
+
   .main {
     padding-top: 8em;
   }
 
   .feature-img {
     top: 78px;
+  }
+
+  .right-col .details h1 {
+    font-size: 48px;
+  }
+
+  .right-col .author, .right-col .teaser {
+    font-size: 21px;
   }
 
   .article {
@@ -1171,13 +859,14 @@ button {
     width: 100%;
   }
   .gridlock .row .nav {
-    margin-left: 5em;
+    margin-left: 6.5em;
   }
 
   .header {
     height: 72px;
   }
   .header .logo-home {
+    width: 141px;
     font-size: 22px;
     letter-spacing: .09em;
   }
@@ -1217,11 +906,11 @@ button {
   }
 
   form:hover {
-    width: 270px;
+    width: 225px;
   }
 
   form label, form input {
-    width: 235px;
+    width: 190px;
   }
 
   .main {
@@ -1237,11 +926,14 @@ button {
   }
 
   .landing-box .details {
-    text-align: center;
+    padding: .25em;
   }
-
-  .landing-box .teaser {
-    margin-bottom: 3em;
+  .landing-box .details .author {
+    margin-bottom: .5em;
+  }
+  .landing-box .details .teaser {
+    font-size: 16px;
+    padding: 0 0 2em;
   }
 
   .landing-box .details-footer {
@@ -1304,11 +996,36 @@ button {
     font-size: 13px;
   }
 }
+/* BETWEEN SMALL AND VERY SMALL SCREENS
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 500px) and (max-width: 712px) {
+  .landing-box img {
+    padding: .33em 0 .33em .33em;
+  }
+}
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
   .gridlock .row {
     width: 100%;
+  }
+  .gridlock .row .nav {
+    margin-left: 5.5em;
+  }
+  .gridlock .row .landing-box {
+    text-align: center;
+  }
+  .gridlock .row .landing-box img {
+    float: none;
+    margin-top: 1em;
+  }
+  .gridlock .row .landing-box .details {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .gridlock .row .landing-box .details-footer {
+    width: 96%;
   }
 
   .nav-collapse li {
@@ -1357,3 +1074,5 @@ button {
     font-size: 17px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

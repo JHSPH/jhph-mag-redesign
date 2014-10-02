@@ -189,14 +189,11 @@
 	.seen, .heard, .read {
 		background: url(../images/trending-media-sprite.png) no-repeat top left;
 	}
-	.seen {
-		// background-position: 
-	}
 	.heard {
-		// background-position: 
+		background-position: 0px;
 	}
 	.read {
-		// background-position: 
+		background-position: 0px -90px; 
 	}
 	.trending-copy {
 		height: 600px;
@@ -313,7 +310,7 @@
 	background: rgba(244, 244, 244, .5);
 
 	li {
-		background: url(../images/social-sprite.png) center top no-repeat;
+		background: url("http://www.jhsph.edu/sebin/p/i/social-sprite.png") center top no-repeat;
 		background-position: 17px 17px;
 		display: block;
 		height: 60px;

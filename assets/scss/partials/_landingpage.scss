@@ -16,10 +16,16 @@
  		h1 {
  			font: $small-title;
  		}
+
+ 		.teaser {
+ 			line-height: 1.33;
+			padding: 0;
+		}
  	}
 
  	.author {
  		font-size: 18px;
+ 		margin-bottom: .75em;
  	}
 
 	.details-footer {
