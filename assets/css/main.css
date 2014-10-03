@@ -111,7 +111,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -120,7 +119,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -1085,3 +1083,5 @@ button {
     font-size: 17px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
