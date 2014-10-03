@@ -8,6 +8,11 @@
 
  	img {
  		display: inline-block;
+
+ 		&:hover {
+			opacity: .75;
+			filter: Alpha(opacity=75);
+		}
  	}
 
  	.details {

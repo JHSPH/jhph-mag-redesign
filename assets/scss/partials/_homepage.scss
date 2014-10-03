@@ -8,6 +8,11 @@
 	
 	img {
 		width: 100%;
+
+		&:hover {
+			opacity: .75;
+			filter: Alpha(opacity=75);
+		}
 	}
 }
 
