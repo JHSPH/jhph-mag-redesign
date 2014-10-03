@@ -316,7 +316,7 @@ input {
 		outline: none;
 	}
 }
-button {
+input[type="submit"] {
 	background: url(http://www.jhsph.edu/sebin/h/w/search-icon.png) 7px 7px no-repeat;
 	width: 30px;
 	height: 30px;
