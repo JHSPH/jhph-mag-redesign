@@ -71,9 +71,6 @@
 		h3 {
 			font-size: 32px;
 		}
-		p, ul, ol {
-			font-size: 22px;
-		}
 		ul li:before {
 			margin-right: .5em;
 		}
@@ -87,6 +84,9 @@
 			font-size: 14px;
 			margin-top: -2.5em;
 		}
+	}
+	.trending-col .trending-copy {
+		height: 700px;
 	}
 	.research-col p {
 		font-size: 28px;
@@ -218,7 +218,7 @@
 		}
 	}
 	.trending-col .trending-copy {
-		height: 800px;
+		height: 1050px;
 	}
 	.footer .nav {
 		float: left;
@@ -327,7 +327,7 @@
 		padding: 40px;
 
 		h1 {
-			font-size: 38px;
+			font-size: 40px;
 		}
 
 		.intro {

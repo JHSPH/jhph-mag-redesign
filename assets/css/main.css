@@ -111,6 +111,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -119,6 +120,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -689,9 +691,6 @@ button {
   .article h3, .agenda-block h3 {
     font-size: 32px;
   }
-  .article p, .article ul, .article ol, .agenda-block p, .agenda-block ul, .agenda-block ol {
-    font-size: 22px;
-  }
   .article ul li:before, .agenda-block ul li:before {
     margin-right: .5em;
   }
@@ -704,6 +703,10 @@ button {
   .article .photo-caption, .agenda-block .photo-caption {
     font-size: 14px;
     margin-top: -2.5em;
+  }
+
+  .trending-col .trending-copy {
+    height: 700px;
   }
 
   .research-col p {
@@ -831,7 +834,7 @@ button {
   }
 
   .trending-col .trending-copy {
-    height: 800px;
+    height: 1050px;
   }
 
   .footer .nav {
@@ -948,7 +951,7 @@ button {
     padding: 40px;
   }
   .article h1, .agenda-block h1 {
-    font-size: 38px;
+    font-size: 40px;
   }
   .article .intro, .agenda-block .intro {
     font-size: 18px;
@@ -1074,5 +1077,3 @@ button {
     font-size: 17px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

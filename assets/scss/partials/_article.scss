@@ -22,7 +22,7 @@
 	}
 
 	h1 {
-		font-size: 66px;
+		font-size: 53px;
 		margin-bottom: .125em;
 	}
 
@@ -40,11 +40,11 @@
 	a {
 		color: #e45536;
 		border-bottom: 1px dotted #e45536;
-		-webkit-transition: background .33s ease, color .33s ease;
-		   -moz-transition: background .33s ease, color .33s ease;
-			-ms-transition: background .33s ease, color .33s ease;
-			 -o-transition: background .33s ease, color .33s ease;
-				transition: background .33s ease, color .33s ease;
+		-webkit-transition: background .25s ease, color .25s ease;
+		   -moz-transition: background .25s ease, color .25s ease;
+			-ms-transition: background .25s ease, color .25s ease;
+			 -o-transition: background .25s ease, color .25s ease;
+				transition: background .25s ease, color .25s ease;
 
 		&:hover {
 			background: #e45536;
@@ -148,13 +148,19 @@
 		margin: 1.5em 0;
 	}
 }
+.agenda-page {
+	margin-top: 3em;
+}
 .agenda-block {
-	line-height: 1.45;
 	margin-top: 0;
 	margin-bottom: 1em;
 
 	&:first-child {
 		margin-top: -3em;
+	}
+
+	.photo-inline {
+		margin: 1em 0 2em;
 	}
 
 	p:first-child {
@@ -196,7 +202,7 @@
 		background-position: 0px -90px; 
 	}
 	.trending-copy {
-		height: 600px;
+		height: 666px;
 		border-right: 1px solid #dfdfdf;
 		padding-right: 1em;
 		margin-bottom: 5em;
