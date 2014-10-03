@@ -228,11 +228,11 @@
 		}
 
 		&.features span {
-			margin-left: 22px;
+			margin-left: 11px;
 		}
 
 		&.departments span {
-			margin-left: 36px;
+			margin-left: 31px;
 		}
 
 		span {
@@ -324,6 +324,7 @@ input[type="submit"] {
 	padding: 0;
 	position: absolute;
 	right: 0;
+	text-indent: -99999px;
 }
 ::-webkit-input-placeholder {
    color: #fff;

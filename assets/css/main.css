@@ -302,10 +302,10 @@ img {
   margin-left: -6px;
 }
 .header .nav a.features span {
-  margin-left: 22px;
+  margin-left: 11px;
 }
 .header .nav a.departments span {
-  margin-left: 36px;
+  margin-left: 31px;
 }
 .header .nav a span {
   font: 16px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
@@ -393,6 +393,7 @@ input[type="submit"] {
   padding: 0;
   position: absolute;
   right: 0;
+  text-indent: -99999px;
 }
 
 ::-webkit-input-placeholder {
@@ -654,7 +655,7 @@ input[type="submit"] {
     margin-left: 31px;
   }
   .header .nav a.departments span {
-    margin-left: 49px;
+    margin-left: 44px;
   }
   .header .nav a.active {
     padding-bottom: 0.95em;
@@ -775,10 +776,10 @@ input[type="submit"] {
     margin-left: -8px;
   }
   .header .nav a.features span {
-    margin-left: 14px;
+    margin-left: 6px;
   }
   .header .nav a.departments span {
-    margin-left: 26px;
+    margin-left: 22px;
   }
   .header .nav a span {
     font-size: 15px;
