@@ -2,7 +2,7 @@
 ==== ARTICLE / AGENDA
 ============================================================================== */
 .feature-img {
-  background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat #fff;
+  background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat white;
   display: block;
   position: absolute;
   left: 0;
@@ -132,10 +132,6 @@
   margin: 1.5em 0;
 }
 
-.agenda-page {
-  margin-top: 3em;
-}
-
 .agenda-block {
   margin-top: 0;
   margin-bottom: 1em;
@@ -257,7 +253,7 @@
 .back-to-top {
   display: none;
   position: fixed;
-  right: 1em;
+  right: .5em;
   bottom: -3em;
   width: 60px;
   font-family: 'HeroicCondensedRegular', Helvetica, Arial,sans-serif;
@@ -343,5 +339,3 @@
   width: 60px;
   height: 60px;
 }
-
-/*# sourceMappingURL=interior.css.map */

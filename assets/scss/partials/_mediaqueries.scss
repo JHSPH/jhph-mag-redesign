@@ -27,7 +27,7 @@
 			}
 
 			&.features span {
-				margin-left: 31px;
+				margin-left: 21px;
 			}
 
 			&.departments span {
@@ -116,7 +116,7 @@
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
 	.gridlock .row .nav {
-		margin-left: 5.5em;
+		padding-left: 1.25em;
 	}
 	.header {
 		height: 80px;
@@ -220,7 +220,7 @@
 	.trending-col .trending-copy {
 		height: 1050px;
 	}
-	.footer .nav {
+	.footer .footer-nav {
 		float: left;
 		margin-top: 1.5em;
 	}
@@ -228,7 +228,7 @@
 		display: inline-block;
 	}
 	.gridlock .footer li {
-		margin-right: 3.7em;
+		margin-right: 3.6em;
 	}
 	.gridlock .footer p {
 		float: none;
@@ -320,9 +320,6 @@
 	.landing-box .details-footer {
 		width: 88%;
 	}
-	.footer-nav-wrapper {
-		text-align: center;
-	}
 	.article, .agenda-block {
 		padding: 40px;
 
@@ -356,7 +353,10 @@
 	.trending-col:last-child .trending-copy {
 		margin-bottom: 3em;
 	}
-	.footer .nav {
+	.footer-nav-wrapper {
+		text-align: center;
+	}
+	.footer .footer-nav {
 		margin-top: 1.5em;
 		float: none !important;
 		display: inline-block;
