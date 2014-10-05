@@ -56,6 +56,15 @@
 .article p:last-child, .agenda-block p:last-child {
   margin-bottom: 2em;
 }
+.article .section-name, .agenda-block .section-name {
+  width: 140px;
+  font: 24px/1.25 "HeroicCondensedLight", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  margin: 0 auto;
+}
 .article .drop-cap, .agenda-block .drop-cap {
   float: left;
   font-family: HeroicCondensedRegular,Helvetica,Arial,sans-serif;
