@@ -506,7 +506,7 @@ input[type="submit"] {
 }
 .landing-box .details .teaser {
   line-height: 1.33;
-  padding: 0;
+  padding: 0 0 2em;
 }
 .landing-box .author {
   font-size: 18px;
@@ -810,7 +810,6 @@ input[type="submit"] {
   }
   .landing-box .details .teaser {
     font-size: 16px;
-    padding: 0 0 2em;
   }
 
   .landing-box img {
@@ -950,7 +949,6 @@ input[type="submit"] {
   }
   .landing-box .details .teaser {
     font-size: 16px;
-    padding: 0 0 2em;
   }
 
   .landing-box img {
