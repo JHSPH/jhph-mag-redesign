@@ -1,8 +1,23 @@
+.timeline-wrapper {
+	padding: 60px 100px;
+	background: #333;
+	width: 1000px;
+	margin: 1.5em auto;
+	margin-left: -100px;
+}
+.timeline-wrapper h1 {
+	font: 40px/1 'HeroicCondensedHeavy', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	padding: .5em 0;
+	border-top: 1px dotted #fff;
+	border-bottom: 1px dotted #fff;
+	margin-bottom: 1em;
+}
 #timeline {
 	width: 800px;
 	height: 500px;
 	overflow: hidden;
-	margin: 1.5em auto;
 	position: relative;
 }
 	#dates {
@@ -56,10 +71,10 @@
 			}
 			#issues li img {
 				float: left;
-				margin: 10px 30px 10px 50px;
-				background: transparent;
-				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+				margin: 0 30px 10px 50px;
+				/*background: transparent;
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";   
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);    
 				zoom: 1;
 				-webkit-transition: all 2s ease-in-out;
 				-moz-transition: all 2s ease-in-out;
@@ -70,12 +85,15 @@
 				-moz-transform: scale(0.7,0.7);
 			    -o-transform: scale(0.7,0.7);
 			    -ms-transform: scale(0.7,0.7);
-			    transform: scale(0.7,0.7);
+			    transform: scale(0.7,0.7);*/
 			}
 			#issues li h1 {
 				font: 40px/1 'HeroicCondensedHeavy', Helvetica, Arial, sans-serif;
+				text-align: left;
 				color: #468c00;
-				margin: 20px 0;
+				padding: 0;
+				border: none;
+				margin-bottom: .5em;
 			}
 			#issues li p {
 				font: 20px 'Chronicle SSm A', 'Chronicle SSm B', serif;
