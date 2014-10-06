@@ -181,6 +181,10 @@
 	.landing-box .details {
 		padding: .5em;
 
+		img {
+			padding: .33em 0 .33em .33em;
+		}
+
 		.author {
 			margin-bottom: .5em;
 		}
@@ -316,9 +320,6 @@
 			font-size: 16px;
 			padding: 0 0 2em;
 		}
-	}
-	.landing-box img {
-		padding: .33em 0 .33em .33em;
 	}
 	.landing-box .details-footer {
 		width: 88%;
