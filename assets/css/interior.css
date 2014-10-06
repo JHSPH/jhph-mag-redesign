@@ -348,3 +348,30 @@
   width: 60px;
   height: 60px;
 }
+
+/* ===========================================================================
+==== CALLOUTS
+============================================================================== */
+table.infographic-2-col {
+  background: #dfdfdf;
+  border: 1px solid #333;
+}
+table.infographic-2-col tr {
+  border-bottom: 1px dotted #aaa;
+}
+table.infographic-2-col tr:first-child {
+  border-bottom: none;
+}
+table.infographic-2-col th {
+  font: bold 36px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: #333;
+  padding: 25px 0;
+}
+table.infographic-2-col td {
+  padding: 50px;
+}
+table.infographic-2-col td:nth-child(even) {
+  padding-left: 0;
+}

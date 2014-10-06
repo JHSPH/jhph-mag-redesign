@@ -1,0 +1,31 @@
+/* ===========================================================================
+==== CALLOUTS
+============================================================================== */
+table.infographic-2-col {
+	background: #dfdfdf;
+	border: 1px solid #333;
+
+	tr {
+		border-bottom: 1px dotted #aaa;
+
+		&:first-child {
+			border-bottom: none;
+		}
+	}
+
+	th {
+		font: $sub-heading;
+		text-transform: uppercase;
+		color: #fff;
+		background: #333;
+		padding: 25px 0;
+	}
+
+	td {
+		padding: 50px;
+	}
+
+	td:nth-child(even) {
+		padding-left: 0;
+	}
+}
