@@ -948,6 +948,10 @@ input[type="submit"] {
     padding: 0 0 2em;
   }
 
+  .landing-box img {
+    padding: .33em 0 .33em .33em;
+  }
+
   .landing-box .details-footer {
     width: 88%;
   }
@@ -1006,13 +1010,6 @@ input[type="submit"] {
     display: inline-block;
     text-align: center;
     font-size: 13px;
-  }
-}
-/* BETWEEN SMALL AND VERY SMALL SCREENS
------------------------------------------------------------------------------- */
-@media screen and (min-width: 500px) and (max-width: 712px) {
-  .landing-box img {
-    padding: .33em 0 .33em .33em;
   }
 }
 /* VERY SMALL SCREENS (PHONES)
