@@ -12,11 +12,11 @@
 	padding: .5em 0;
 	border-top: 1px dotted #fff;
 	border-bottom: 1px dotted #fff;
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 #timeline {
 	width: 800px;
-	height: 500px;
+	height: 335px;
 	overflow: hidden;
 	position: relative;
 }
@@ -26,7 +26,8 @@
 		overflow: hidden;
 		padding: 0;
 		margin: 0;
-		background: url('../images/timelinr/dot.gif') left 45px repeat-x;
+		margin-left: 52px !important;
+		background: url('../images/timelinr/dot.gif') left 4px repeat-x;
 	}
 		#dates li {
 			list-style: none;
@@ -35,27 +36,46 @@
 			height: 50px;
 			font-size: 24px;
 			text-align: center;
-			background: url('../images/timelinr/biggerdot.png') center bottom no-repeat;
+			padding-top: 20px;
+			background: url('../images/timelinr/biggerdot.png') center top no-repeat;
+			position: relative;
 		}
 			#dates li:before {
 				content: none;
 			}
 			#dates a {
+				font: 24px/1 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
 				color: #fff;
 				border: none;
 			}
+				#dates a:hover {
+					background-color: #468c00;
+					padding: 2px 5px;
+				}
 			#dates .selected {
-		        font-size: 38px;
+		        background-color: #468c00;
+				padding: 2px 5px;
 			}
+				#dates .selected:before {
+					content: '';
+					width: 0; 
+					height: 0; 
+					border-left: 7px solid transparent;
+					border-right: 7px solid transparent;
+					border-bottom: 7px solid #468c00;
+					position: absolute;
+					top: 15px;
+					left: 43px;
+				}
 	
 	#issues {
 		width: 800px;
-		height: 350px;
+		height: 250px;
 		overflow: hidden;
 	}	
 		#issues li {
 			width: 800px;
-			height: 350px;
+			height: 250px;
 			list-style: none;
 			float: left;
 		}
@@ -71,21 +91,7 @@
 			}
 			#issues li img {
 				float: left;
-				margin: 0 30px 10px 50px;
-				/*background: transparent;
-				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";   
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);    
-				zoom: 1;
-				-webkit-transition: all 2s ease-in-out;
-				-moz-transition: all 2s ease-in-out;
-				-o-transition: all 2s ease-in-out;
-				-ms-transition: all 2s ease-in-out; 
-				transition: all 2s ease-in-out;
-				-webkit-transform: scale(0.7,0.7);
-				-moz-transform: scale(0.7,0.7);
-			    -o-transform: scale(0.7,0.7);
-			    -ms-transform: scale(0.7,0.7);
-			    transform: scale(0.7,0.7);*/
+				margin: 0 30px 0 50px;
 			}
 			#issues li h1 {
 				font: 40px/1 'HeroicCondensedHeavy', Helvetica, Arial, sans-serif;
@@ -122,17 +128,18 @@
 		position: absolute;
 		top: 0;
 		font-size: 70px;
-		top: 170px;
-		width: 22px;
-		height: 38px;
+		top: 100px;
+		width: 10px;
+		height: 32px;
 		background-position: 0 0;
 		background-repeat: no-repeat;
 		text-indent: -9999px;
 		overflow: hidden;
+		border: none;
 	}
 		#next:hover,
 		#prev:hover {
-			background-position: 0 -76px;
+			background-position: 0 -32px;
 		}
 		#next {
 			right: 0;
@@ -142,6 +149,14 @@
 			left: 0;
 			background-image: url('../images/timelinr/prev.png');
 		}
+			a#next,
+			a#prev {
+				transition: none;
+			}
+			a#next:hover,
+			a#prev:hover {
+				background-color: inherit;
+			}
 			#next.disabled,
 			#prev.disabled {
 				opacity: 0.2;

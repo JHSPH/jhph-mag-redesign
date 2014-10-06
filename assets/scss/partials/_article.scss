@@ -12,7 +12,7 @@
 	z-index: -10;
 }
 .article, .agenda-block {
-	background: #fff;
+	background-color: #fff;
 	padding: 40px 70px;
 	margin-top: 20em;
 	margin-bottom: 4em;
@@ -47,7 +47,7 @@
 				transition: background .25s ease, color .25s ease;
 
 		&:hover {
-			background: #e45536;
+			background-color: #e45536;
 			color: white;
 		}
 	}
@@ -68,7 +68,7 @@
 		text-align: center;
 		text-transform: uppercase;
 		color: #fff;
-		background: #000;
+		background-color: #000;
 		margin: 0 auto;
 	}
 	.drop-cap {
@@ -125,7 +125,7 @@
 		}
 
 		.photo-credit {
-			background: #fff;
+			background-color: #fff;
 			font: 8px "Gotham SSm A","Gotham SSm B",Helvetica,Arial,sans-serif;
 			text-transform: uppercase;
 			color: #000;
@@ -222,7 +222,7 @@
 		font: $trending-col-blockquote;
 		color: white;
 		text-transform: uppercase;
-		background: #73b9ff;
+		background-color: #73b9ff;
 		padding: 0 .125em;
 		border: none;
 		margin: 0 0 .5em;
@@ -281,7 +281,7 @@
 		font: 18px/1 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
 		color: #fff;
 		letter-spacing: .0625em;
-		background: #000;
+		background-color: #000;
 		padding: .125em .25em;
 	}
 }
@@ -319,7 +319,7 @@
 	right: .5em;
 	bottom: 40%;
 	width: 60px;
-	background: rgba(244, 244, 244, .5);
+	background-color: rgba(244, 244, 244, .5);
 
 	li {
 		background: url("http://www.jhsph.edu/sebin/p/i/social-sprite.png") center top no-repeat;
