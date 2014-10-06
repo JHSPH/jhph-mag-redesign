@@ -805,14 +805,15 @@ input[type="submit"] {
   .landing-box .details {
     padding: .5em;
   }
-  .landing-box .details img {
-    padding: .33em 0 .33em .33em;
-  }
   .landing-box .details .author {
     margin-bottom: .5em;
   }
   .landing-box .details .teaser {
     font-size: 16px;
+  }
+
+  .landing-box img {
+    padding: .33em 0 .33em .33em;
   }
 
   .main {
