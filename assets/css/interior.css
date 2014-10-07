@@ -2,7 +2,7 @@
 ==== ARTICLE / AGENDA
 ============================================================================== */
 .feature-img {
-  background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat white;
+  background: url(https://placeimg.com/1200/600/animals) center top/cover no-repeat #fff;
   display: block;
   position: absolute;
   left: 0;
@@ -182,7 +182,7 @@
   margin-bottom: .5em;
 }
 .trending-col .seen, .trending-col .heard, .trending-col .read {
-  background: url(../images/trending-media-sprite.png) no-repeat top left;
+  background: url(http://www.jhsph.edu/sebin/d/m/trending-media-sprite.png) no-repeat top left;
 }
 .trending-col .heard {
   background-position: 0px;
@@ -223,6 +223,7 @@
   display: inline-block;
   border-radius: 50%;
   margin-bottom: .25em;
+  background-color: #b9dcff;
 }
 .research-col h3 {
   line-height: 1;
@@ -352,26 +353,87 @@
 /* ===========================================================================
 ==== CALLOUTS
 ============================================================================== */
-table.infographic-2-col {
-  background: #dfdfdf;
+table.callout-2-col {
   border: 1px solid #333;
 }
-table.infographic-2-col tr {
+table.callout-2-col tr {
   border-bottom: 1px dotted #aaa;
 }
-table.infographic-2-col tr:first-child {
+table.callout-2-col tr:first-child {
   border-bottom: none;
 }
-table.infographic-2-col th {
+table.callout-2-col th {
   font: bold 36px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #fff;
   background: #333;
   padding: 25px 0;
 }
-table.infographic-2-col td {
+table.callout-2-col td {
   padding: 50px;
 }
-table.infographic-2-col td:nth-child(even) {
+table.callout-2-col td:nth-child(even) {
   padding-left: 0;
 }
+
+.gridlock .row .row.callout-2-col-img {
+  width: 100%;
+  margin: 0;
+}
+.gridlock .row .row.callout-2-col-img img {
+  margin-right: 1em !important;
+}
+.gridlock .row .row.callout-2-col-img p {
+  padding: 1em;
+  margin: 0 !important;
+}
+
+.callout-2-col-icon-no-hdr {
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 20px;
+  border: 1px solid #000;
+  margin-bottom: 2em;
+}
+.callout-2-col-icon-no-hdr img {
+  max-width: 80px !important;
+  margin-bottom: 1em;
+}
+.callout-2-col-icon-no-hdr p {
+  margin: 0 !important;
+}
+
+.callout-3-col-stat {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.callout-3-col-stat h1 {
+  font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: #000;
+  padding: .5em 0;
+}
+.callout-3-col-stat .text-wrap {
+  margin: 1em;
+  overflow: auto;
+}
+.callout-3-col-stat .col {
+  height: 235px;
+  padding: 0 1em;
+  border-right: 1px dotted #000;
+  margin-bottom: 1em;
+}
+.callout-3-col-stat .col:last-child {
+  border: none;
+}
+.callout-3-col-stat .col .stat {
+  font: 70px/1 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+}
+.callout-3-col-stat .col p {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=interior.css.map */
