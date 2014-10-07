@@ -1,3 +1,6 @@
+/* ===========================================================================
+==== JQUERY TIMELINR
+============================================================================== */
 .timeline-wrapper {
 	padding: 60px 100px;
 	background: #333;
@@ -27,7 +30,7 @@
 		padding: 0;
 		margin: 0;
 		margin-left: 52px !important;
-		background: url('../images/timelinr/dot.gif') left 4px repeat-x;
+		background: url('http://www.jhsph.edu/sebin/g/y/dot.gif') left 4px repeat-x;
 	}
 		#dates li {
 			list-style: none;
@@ -37,7 +40,7 @@
 			font-size: 24px;
 			text-align: center;
 			padding-top: 20px;
-			background: url('../images/timelinr/biggerdot.png') center top no-repeat;
+			background: url('http://www.jhsph.edu/sebin/r/r/biggerdot.png') center top no-repeat;
 			position: relative;
 		}
 			#dates li:before {
@@ -143,11 +146,11 @@
 		}
 		#next {
 			right: 0;
-			background-image: url('../images/timelinr/next.png');
+			background-image: url('http://www.jhsph.edu/sebin/d/k/next.png');
 		}
 		#prev {
 			left: 0;
-			background-image: url('../images/timelinr/prev.png');
+			background-image: url('http://www.jhsph.edu/sebin/n/k/prev.png');
 		}
 			a#next,
 			a#prev {
@@ -161,3 +164,85 @@
 			#prev.disabled {
 				opacity: 0.2;
 			}
+
+/* ===========================================================================
+==== MEDIA QUERIES
+============================================================================== */
+
+
+/* VERY LARGE SCREENS (LARGE DISPLAYS)
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 1220px) {
+	.timeline-wrapper {
+		padding: 60px 125px;
+		width: 1225px;
+		margin-left: -125px;
+	}
+	#timeline, #issues li {
+		width: 975px;
+	}
+	#dates {
+		width: 975px !important;
+		padding-left: 110px;
+	}
+}
+
+/* MEDIUM SCREENS (TABLETS)
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	.timeline-wrapper {
+		padding: 60px 70px;
+		width: 122%;
+		margin-left: -70px;
+	}
+	#timeline, #issues li {
+		width: 625px;
+	}
+	#issues li img {
+		margin: 0 30px 0 15px;
+	}
+	#issues li p {
+		font-size: 17px;
+	}
+	#dates {
+		margin-left: 41px !important;
+	}
+	#dates li {
+		width: 82px;
+	}
+	#dates .selected:before {
+		left: 34px;
+	}
+}
+
+/* SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 739px) {
+	.timeline-wrapper {
+		padding: 40px;
+		width: 100%;
+		margin-left: 0;
+	}
+	#issues {
+		width: 644px !important;
+		padding: 0;
+	}
+	#timeline, #issues li {
+		width: 644px;
+	}
+	#issues li p {
+		font-size: 18px;
+	}
+	#dates {
+		margin-left: 0 !important;
+	}
+	#dates li {
+		width: 92px;
+	}
+}
+
+
+
+
+
+
