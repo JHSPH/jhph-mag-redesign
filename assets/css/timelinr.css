@@ -67,7 +67,7 @@
 					border-right: 7px solid transparent;
 					border-bottom: 7px solid #468c00;
 					position: absolute;
-					top: 15px;
+					top: 16px;
 					left: 43px;
 				}
 	
@@ -202,7 +202,7 @@
 		margin: 0 30px 0 15px;
 	}
 	#issues li p {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	#dates {
 		margin-left: 41px !important;
@@ -231,7 +231,7 @@
 		width: 644px;
 	}
 	#issues li p {
-		font-size: 18px;
+		font-size: 15px;
 	}
 	#dates {
 		margin-left: 0 !important;
