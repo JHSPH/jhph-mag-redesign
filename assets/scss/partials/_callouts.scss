@@ -78,13 +78,18 @@ table.callout-2-col {
 		overflow: auto;
 	}
 	.col {
-		height: 235px;
-		padding: .5em 1em;
+		height: 260px;
+		padding: 0.5em 1em .5em 0;
 		border-right: 1px dotted #000;
 		margin-bottom: 2em;
 
 		&:last-child {
 			border: none;
+		}
+
+		img {
+			display: inline-block;
+			margin-bottom: .5em;
 		}
 
 		.stat {
@@ -123,6 +128,11 @@ table.callout-2-col {
 
 		&:last-child {
 			border: none;
+		}
+
+		img {
+			display: inline-block;
+			margin-bottom: .5em;
 		}
 
 		.stat {

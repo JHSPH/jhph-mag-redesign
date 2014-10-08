@@ -48,14 +48,14 @@
 	margin-top: 1.75em;
 	
 	a {
-		border-right: 1px solid #ddd;
-		padding: 6px 18px 6px 22px;
+		margin-right: 10px;
 		display: inline-block;
-		transition-duration: 1s;
 	}
 	
 	span {
-		padding-left: 12px;
+		display: inline-block;
+		border-left: 1px solid #ddd;
+		padding: 6px 0 6px 12px;
 	}
 }
 

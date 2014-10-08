@@ -790,3 +790,68 @@ function autoPlay(){
 $(function(){
    $().timelinr();
 });
+
+// Search Bar
+var SearchBar = {
+  __t: 0,
+
+  init: function() {
+    SearchBar.$form = $('.searchformContent');
+    SearchBar.$parent = SearchBar.$form.parent();
+    SearchBar.$text = SearchBar.$form.children('#q');
+    
+    SearchBar.$text.on({
+      focus: function() {
+        SearchBar.active();
+      },
+      blur: function() {
+        SearchBar.inactive();
+        SearchBar.clearTimer();
+      },
+
+      keyup: function() {
+        SearchBar.clearTimer();
+        SearchBar.timer();
+      },
+
+      mouseover: function() {
+        SearchBar.clearTimer();
+      },
+      mouseout: function() {
+        SearchBar.timer();
+      }
+    });
+  },
+
+  // Search stays
+  active: function() { SearchBar.$parent.addClass('active'); },
+  
+  // Search goes byebye
+  inactive: function() { 
+    SearchBar.$parent.removeClass('active');
+    SearchBar.clearTimer();
+  },
+
+  clearTimer: function() {
+    if (typeof SearchBar.__t == 'undefined') {
+      SearchBar.__t = 0;
+      // console.log('__t was undefined');
+    } else {
+      clearTimeout(SearchBar.__t);
+      // console.log('Clearing timeout ' + SearchBar.__t.toString());
+    }
+  },
+
+  timer: function() {
+    SearchBar.clearTimer();
+    if( SearchBar.$parent.hasClass('active') ) {
+      SearchBar.__t = setTimeout( function() {
+        if ( SearchBar.$text.is(':focus') ) {
+          SearchBar.$text.trigger('blur');
+        }
+        SearchBar.inactive();
+        // console.log('Time is up!');
+      }, 10000);
+    }
+  }
+};
