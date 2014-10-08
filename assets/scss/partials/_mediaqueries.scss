@@ -230,6 +230,9 @@
 		height: 260px;
 		padding: 0 .25em;
 	}
+	.callout-4-col-stat .col:nth-child(even) {
+		border: none;
+	}
 	.trending-col .trending-copy {
 		height: 1050px;
 	}
@@ -364,6 +367,11 @@
 	}
 	.callout-3-col-stat .col {
 		height: 155px;
+		border: none;
+		margin: 0;
+	}
+	.callout-4-col-stat .col {
+		height: 200px;
 		border: none;
 		margin: 0;
 	}

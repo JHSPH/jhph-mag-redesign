@@ -3,8 +3,20 @@
 ============================================================================== */
 /* BACKGROUNDS
 ------------------------------------------------------------------------------ */
+.bg-black {
+  background-color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 .bg-light-grey {
   background-color: #dfdfdf;
+}
+
+.bg-dark-grey {
+  background-color: #333333;
 }
 
 .bg-medium-blue {
@@ -19,6 +31,10 @@
 
 .white {
   color: #fff;
+}
+
+.medium-blue {
+  color: #3776a7;
 }
 
 /* ===========================================================================
@@ -134,6 +150,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -142,6 +159,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -880,6 +898,10 @@ input[type="submit"] {
     padding: 0 .25em;
   }
 
+  .callout-4-col-stat .col:nth-child(even) {
+    border: none;
+  }
+
   .trending-col .trending-copy {
     height: 1050px;
   }
@@ -1024,6 +1046,12 @@ input[type="submit"] {
     margin: 0;
   }
 
+  .callout-4-col-stat .col {
+    height: 200px;
+    border: none;
+    margin: 0;
+  }
+
   .trending-col .trending-copy {
     height: inherit;
     border-right: none;
@@ -1146,5 +1174,3 @@ input[type="submit"] {
     font-size: 17px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

@@ -70,18 +70,56 @@ table.callout-2-col {
 		color: #fff;
 		line-height: 1;
 		text-transform: uppercase;
-		background-color: #000;
+		background-color: $dark-grey;
 		padding: .5em 0;
 	}
 	.text-wrap {
-		margin: 1em;
+		margin: 2em 1em;
 		overflow: auto;
 	}
 	.col {
 		height: 235px;
-		padding: 0 1em;
+		padding: .5em 1em;
 		border-right: 1px dotted #000;
-		margin-bottom: 1em;
+		margin-bottom: 2em;
+
+		&:last-child {
+			border: none;
+		}
+
+		.stat {
+			font: 70px/1 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+		}
+
+		p {
+			font-size: 16px;
+
+		}
+	}
+}
+
+.callout-4-col-stat {
+	text-align: center;
+	margin-bottom: 2em;
+
+	h1 {
+		font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		color: #fff;
+		line-height: 1;
+		text-transform: uppercase;
+		background-color: $medium-blue;
+		padding: .5em 0;
+	}
+	.text-wrap {
+		margin: 2em 1em;
+		overflow: auto;
+	}
+	.col {
+		height: 235px;
+		padding: 0 .5em;
+		border-right: 1px dotted #000;
+		margin-bottom: 2em;
 
 		&:last-child {
 			border: none;

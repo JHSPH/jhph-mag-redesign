@@ -4,8 +4,17 @@
 
 /* BACKGROUNDS
 ------------------------------------------------------------------------------ */
+.bg-black {
+	background-color: #000;
+}
+.bg-white {
+	background-color: #fff;
+}
 .bg-light-grey {
 	background-color: $light-grey;
+}
+.bg-dark-grey {
+	background-color: $dark-grey;
 }
 .bg-medium-blue {
 	background-color: $medium-blue;
@@ -18,4 +27,7 @@
 }
 .white {
 	color: #fff;
+}
+.medium-blue {
+	color: $medium-blue;
 }
