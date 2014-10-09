@@ -1,3 +1,5 @@
+
+
 /*! responsive-nav.js 1.0.32
  * https://github.com/viljamis/responsive-nav.js
  * http://responsive-nav.com
@@ -791,6 +793,13 @@ $(function(){
    $().timelinr();
 });
 
+var magSite = { 
+  init: function() { 
+    console.log('test');
+    SearchBar.init(); 
+  }
+};
+
 // Search Bar
 var SearchBar = {
   __t: 0,
@@ -855,3 +864,8 @@ var SearchBar = {
     }
   }
 };
+
+// Page Ready
+jQuery(document).ready(function() {
+  magSite.init();
+});

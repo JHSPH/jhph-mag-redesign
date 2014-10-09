@@ -19,24 +19,24 @@
 }
 #timeline {
 	width: 800px;
-	height: 335px;
+	height: 355px;
 	overflow: hidden;
 	position: relative;
 }
+	.dates-wrapper {
+		background: url('http://www.jhsph.edu/sebin/g/y/dot.gif') left 4px repeat-x;
+	}
 	#dates {
 		width: 800px;
 		height: 60px;
+		padding-left: 0;
 		overflow: hidden;
-		padding: 0;
-		margin: 0;
-		margin-left: 52px !important;
-		background: url('http://www.jhsph.edu/sebin/g/y/dot.gif') left 4px repeat-x;
 	}
 		#dates li {
 			list-style: none;
 			float: left;
 			width: 100px;
-			height: 50px;
+			height: 60px;
 			font-size: 24px;
 			text-align: center;
 			padding-top: 20px;
@@ -74,6 +74,7 @@
 	#issues {
 		width: 800px;
 		height: 250px;
+		margin-bottom: 2.5em;
 		overflow: hidden;
 	}	
 		#issues li {
@@ -181,10 +182,6 @@
 	#timeline, #issues li {
 		width: 975px;
 	}
-	#dates {
-		width: 975px !important;
-		padding-left: 110px;
-	}
 }
 
 /* MEDIUM SCREENS (TABLETS)
@@ -204,9 +201,6 @@
 	#issues li p {
 		font-size: 16px;
 	}
-	#dates {
-		margin-left: 41px !important;
-	}
 	#dates li {
 		width: 82px;
 	}
@@ -224,7 +218,6 @@
 		margin-left: 0;
 	}
 	#issues {
-		width: 644px !important;
 		padding: 0;
 	}
 	#timeline, #issues li {
@@ -232,9 +225,6 @@
 	}
 	#issues li p {
 		font-size: 15px;
-	}
-	#dates {
-		margin-left: 0 !important;
 	}
 	#dates li {
 		width: 92px;
