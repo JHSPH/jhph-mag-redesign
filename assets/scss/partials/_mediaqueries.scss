@@ -42,10 +42,10 @@
 	.search-wrapper {
 		top: 1em;
 	}
-	form:hover {
+	.miniFormContainer form:hover {
 		width: 270px;
 	}
-	form label, form input {
+	.miniFormContainer form label, .miniFormContainer form input {
 		width: 235px;
 	}
 	.landing-box .details h1 {
@@ -88,6 +88,9 @@
 	.callout-3-col-stat h1 {
 		padding: .25em 0;
 	}
+	.additional-content {
+		display: none;
+	}
 	.trending-col .trending-copy {
 		height: 700px;
 	}
@@ -113,6 +116,9 @@
 @media screen and (max-width: 1219px) {
 	.landing-box .details-footer {
 		font-size: 14px;
+	}
+	.additional-content {
+		display: none;
 	}
 }
 /* MEDIUM SCREENS (TABLETS)
@@ -175,10 +181,10 @@
 	.search-wrapper {
 		top: .65em;
 	}
-	form:hover {
+	.miniFormContainer form:hover {
 		width: 270px;
 	}
-	form label, form input {
+	.miniFormContainer form label, .miniFormContainer form input {
 		width: 235px;
 	}
 	.landing-box .details {
@@ -232,6 +238,9 @@
 	}
 	.callout-4-col-stat .col:nth-child(even) {
 		border: none;
+	}
+	.additional-content {
+		display: none;
 	}
 	.trending-col .trending-copy {
 		height: 1050px;
@@ -306,10 +315,10 @@
 	.search-wrapper {
 		top: .65em;
 	}
-	form:hover {
+	.miniFormContainer form:hover {
 		width: 225px;
 	}
-	form label, form input {
+	.miniFormContainer form label, .miniFormContainer form input {
 		width: 190px;
 	}
 	.main {
@@ -375,6 +384,12 @@
 		border: none;
 		margin: 0;
 	}
+	.timeline-wrapper {
+		display: none;
+	}
+	.additional-content {
+		display: block;
+	}
 	.trending-col .trending-copy {
 		height: inherit;
 		border-right: none;
@@ -414,7 +429,7 @@
 		width: 100%;
 
 		.nav {
-			margin-left: 5.5em;
+			margin-left: 2.5em;
 		}
 
 		.landing-box {

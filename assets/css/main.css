@@ -374,7 +374,7 @@ img {
   z-index: 20;
 }
 
-form {
+.miniFormContainer form {
   background: #e45536;
   border-radius: 25px;
   width: 30px;
@@ -388,14 +388,13 @@ form {
   -o-transition: width .33s ease;
   transition: width .33s ease;
 }
-form:hover {
+.miniFormContainer form:hover {
   width: 252px;
 }
-form:hover label {
+.miniFormContainer form:hover label {
   background: #e45536;
 }
-
-label {
+.miniFormContainer form label {
   width: 213px;
   background: 0 0;
   position: absolute;
@@ -403,11 +402,10 @@ label {
   top: 0;
   text-align: right;
 }
-label:focus {
+.miniFormContainer form label:focus {
   outline: none;
 }
-
-input {
+.miniFormContainer form input {
   float: left;
   width: 213px;
   height: auto;
@@ -420,11 +418,10 @@ input {
   position: relative;
   z-index: 30;
 }
-input:focus {
+.miniFormContainer form input:focus {
   outline: none;
 }
-
-input[type="submit"] {
+.miniFormContainer form input[type="submit"] {
   background: url(http://www.jhsph.edu/sebin/h/w/search-icon-white.png) 7px 7px no-repeat;
   width: 30px;
   height: 30px;
@@ -434,22 +431,18 @@ input[type="submit"] {
   right: 0;
   text-indent: -99999px;
 }
-
-::-webkit-input-placeholder {
+.miniFormContainer form ::-webkit-input-placeholder {
   color: #fff;
 }
-
-:-moz-placeholder {
+.miniFormContainer form :-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-
-::-moz-placeholder {
+.miniFormContainer form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-
-:-ms-input-placeholder {
+.miniFormContainer form :-ms-input-placeholder {
   color: #fff;
 }
 
@@ -704,11 +697,11 @@ input[type="submit"] {
     top: 1em;
   }
 
-  form:hover {
+  .miniFormContainer form:hover {
     width: 270px;
   }
 
-  form label, form input {
+  .miniFormContainer form label, .miniFormContainer form input {
     width: 235px;
   }
 
@@ -755,6 +748,10 @@ input[type="submit"] {
     padding: .25em 0;
   }
 
+  .additional-content {
+    display: none;
+  }
+
   .trending-col .trending-copy {
     height: 700px;
   }
@@ -781,6 +778,10 @@ input[type="submit"] {
 @media screen and (max-width: 1219px) {
   .landing-box .details-footer {
     font-size: 14px;
+  }
+
+  .additional-content {
+    display: none;
   }
 }
 /* MEDIUM SCREENS (TABLETS)
@@ -835,11 +836,11 @@ input[type="submit"] {
     top: .65em;
   }
 
-  form:hover {
+  .miniFormContainer form:hover {
     width: 270px;
   }
 
-  form label, form input {
+  .miniFormContainer form label, .miniFormContainer form input {
     width: 235px;
   }
 
@@ -898,6 +899,10 @@ input[type="submit"] {
 
   .callout-4-col-stat .col:nth-child(even) {
     border: none;
+  }
+
+  .additional-content {
+    display: none;
   }
 
   .trending-col .trending-copy {
@@ -975,11 +980,11 @@ input[type="submit"] {
     top: .65em;
   }
 
-  form:hover {
+  .miniFormContainer form:hover {
     width: 225px;
   }
 
-  form label, form input {
+  .miniFormContainer form label, .miniFormContainer form input {
     width: 190px;
   }
 
@@ -1050,6 +1055,14 @@ input[type="submit"] {
     margin: 0;
   }
 
+  .timeline-wrapper {
+    display: none;
+  }
+
+  .additional-content {
+    display: block;
+  }
+
   .trending-col .trending-copy {
     height: inherit;
     border-right: none;
@@ -1092,7 +1105,7 @@ input[type="submit"] {
     width: 100%;
   }
   .gridlock .row .nav {
-    margin-left: 5.5em;
+    margin-left: 2.5em;
   }
   .gridlock .row .landing-box {
     text-align: center;

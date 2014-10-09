@@ -260,6 +260,17 @@
   padding: .125em .25em;
 }
 
+.additional-content {
+  font: 24px "HeroicCondensedRegular", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 2em 0;
+  border: 1px dotted #000;
+  margin-bottom: 1.5em;
+}
+.additional-content p {
+  margin: 0 !important;
+}
+
 .back-to-top {
   display: none;
   position: fixed;

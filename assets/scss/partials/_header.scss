@@ -265,7 +265,7 @@
 	top: 1.125em;
 	z-index: 20;
 }
-form {
+.miniFormContainer form {
 	background: #e45536;
 	border-radius: 25px;
 	width: 30px;
@@ -286,8 +286,8 @@ form {
 	&:hover label {
 		background: $issue-theme;
 	}
-}
-label {
+
+	label {
 	width: 213px;
 	background: 0 0;
 	position: absolute;
@@ -337,4 +337,5 @@ input[type="submit"] {
 }
 :-ms-input-placeholder {  
    color: #fff;  
+}
 }

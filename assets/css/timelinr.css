@@ -86,13 +86,6 @@
 			#issues li:before {
 				content: none;
 			}
-			#issues li.selected img {
-				-webkit-transform: scale(1.1,1.1);
-				-moz-transform: scale(1.1,1.1);
-			    -o-transform: scale(1.1,1.1);
-			    -ms-transform: scale(1.1,1.1);
-			    transform: scale(1.1,1.1);
-			}
 			#issues li img {
 				float: left;
 				margin: 0 30px 0 50px;
@@ -106,7 +99,7 @@
 				margin-bottom: .5em;
 			}
 			#issues li p {
-				font: 20px 'Chronicle SSm A', 'Chronicle SSm B', serif;
+				font: 20px/1.62 'Chronicle SSm A', 'Chronicle SSm B', serif;
 				color: #fff;
 				margin-right: 70px;
 			}
@@ -221,10 +214,15 @@
 		padding: 0;
 	}
 	#timeline, #issues li {
-		width: 644px;
+		width: 555px;
+	}
+	#issues li img {
+		margin: 0 20px;
+		max-width: 220px;
 	}
 	#issues li p {
 		font-size: 15px;
+		margin-right: 20px;
 	}
 	#dates li {
 		width: 92px;

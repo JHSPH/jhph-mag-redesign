@@ -286,6 +286,17 @@
 		padding: .125em .25em;
 	}
 }
+.additional-content {
+	font: $addition-content;
+	text-align: center;
+	padding: 2em 0;
+	border: 1px dotted #000;
+	margin-bottom: 1.5em;
+
+	p {
+		margin: 0 !important;
+	}
+}
 .back-to-top {
 	display: none;
 	position: fixed;
