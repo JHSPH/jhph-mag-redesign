@@ -1,34 +1,6 @@
 /* ===========================================================================
 ==== CALLOUTS
 ============================================================================== */
-table.callout-2-col {
-	border: 1px solid #333;
-
-	tr {
-		border-bottom: 1px dotted #aaa;
-
-		&:first-child {
-			border-bottom: none;
-		}
-	}
-
-	th {
-		font: $sub-heading;
-		text-transform: uppercase;
-		color: #fff;
-		background: #333;
-		padding: 25px 0;
-	}
-
-	td {
-		padding: 50px;
-	}
-
-	td:nth-child(even) {
-		padding-left: 0;
-	}
-}
-
 .gridlock .row .row.callout-2-col-img {
 	width: 100%;
 	margin: 0;
@@ -40,6 +12,37 @@ table.callout-2-col {
 	p {
 		padding: 1em;
 		margin: 0 !important;
+	}
+}
+
+.callout-2-col-img-hdr {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 2em;
+
+	h1 {
+		font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		color: #fff;
+		line-height: 1;
+		text-transform: uppercase;
+		background-color: $dark-grey;
+		padding: .5em 0;
+	}
+
+	.text-wrap {
+		margin: 2em;
+		overflow: auto;
+
+		img {
+			max-width: 110px;
+			margin-right: 2em !important;
+		}
+
+		p {
+			padding: 1em;
+			margin: 0 !important;
+		}
 	}
 }
 
@@ -60,7 +63,7 @@ table.callout-2-col {
 	}
 }
 
-.callout-3-col-stat {
+.callout-box-cols {
 	text-align: center;
 	margin-bottom: 2em;
 
@@ -72,6 +75,9 @@ table.callout-2-col {
 		text-transform: uppercase;
 		background-color: $dark-grey;
 		padding: .5em 0;
+	}
+	p {
+		margin-top: 0 !important;
 	}
 	.text-wrap {
 		margin: 2em 1em;
@@ -98,7 +104,6 @@ table.callout-2-col {
 
 		p {
 			font-size: 16px;
-
 		}
 	}
 }
