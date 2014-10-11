@@ -279,7 +279,7 @@
 		 -o-transition: width .33s ease;
 			transition: width .33s ease;
 
-	&:hover {
+	&:hover, &.active {
 		width: 252px;
 	}
 

@@ -19,6 +19,10 @@
   background-color: #333;
 }
 
+.bg-light-blue {
+  background-color: #eaf0f7;
+}
+
 .bg-medium-blue {
   background-color: #3776a7;
 }
@@ -31,6 +35,10 @@
 
 .white {
   color: #fff;
+}
+
+.light-blue {
+  color: #eaf0f7;
 }
 
 .medium-blue {
@@ -388,7 +396,7 @@ img {
   -o-transition: width .33s ease;
   transition: width .33s ease;
 }
-.miniFormContainer form:hover {
+.miniFormContainer form:hover, .miniFormContainer form.active {
   width: 252px;
 }
 .miniFormContainer form:hover label {
@@ -744,10 +752,6 @@ img {
     margin-top: -2.5em;
   }
 
-  .callout-2-col-img-hdr img {
-    margin-bottom: 4em;
-  }
-
   .callout-box-cols h1 {
     padding: .25em 0;
   }
@@ -782,10 +786,6 @@ img {
 @media screen and (max-width: 1219px) {
   .landing-box .details-footer {
     font-size: 14px;
-  }
-
-  .callout-2-col-img-hdr img {
-    margin-bottom: 7em;
   }
 
   .additional-content {
@@ -1054,12 +1054,15 @@ img {
   .callout-2-col-img-hdr {
     text-align: center;
   }
-  .callout-2-col-img-hdr img {
+  .callout-2-col-img-hdr .text-wrap img {
     display: inline-block;
     float: none !important;
     margin: 0 auto;
     margin-bottom: 1em;
     margin-right: 0 !important;
+  }
+  .callout-2-col-img-hdr .text-wrap p {
+    padding: 0;
   }
 
   .callout-box-cols .col {

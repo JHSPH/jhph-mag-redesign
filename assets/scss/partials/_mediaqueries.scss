@@ -85,9 +85,6 @@
 			margin-top: -2.5em;
 		}
 	}
-	.callout-2-col-img-hdr img {
-		margin-bottom: 4em;
-	}
 	.callout-box-cols h1 {
 		padding: .25em 0;
 	}
@@ -119,9 +116,6 @@
 @media screen and (max-width: 1219px) {
 	.landing-box .details-footer {
 		font-size: 14px;
-	}
-	.callout-2-col-img-hdr img {
-		margin-bottom: 7em;
 	}
 	.additional-content {
 		display: none;
@@ -383,12 +377,19 @@
 	.callout-2-col-img-hdr {
 		text-align: center;
 
-		img {
-			display: inline-block;
-			float: none !important;
-			margin: 0 auto;
-			margin-bottom: 1em;
-			margin-right: 0 !important;
+		.text-wrap {
+
+			img {
+				display: inline-block;
+				float: none !important;
+				margin: 0 auto;
+				margin-bottom: 1em;
+				margin-right: 0 !important;
+			}
+
+			p {
+				padding: 0;
+			}
 		}
 	}
 	.callout-box-cols .col {

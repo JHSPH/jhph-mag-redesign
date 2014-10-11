@@ -384,7 +384,7 @@
 .callout-2-col-img-hdr {
   width: 100%;
   margin: 0;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .callout-2-col-img-hdr h1 {
   font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
@@ -396,16 +396,15 @@
   padding: .5em 0;
 }
 .callout-2-col-img-hdr .text-wrap {
-  margin: 2em;
+  margin: 2em 2em 0;
   overflow: auto;
 }
 .callout-2-col-img-hdr .text-wrap img {
   max-width: 110px;
-  margin-right: 2em !important;
+  margin-top: 1em;
 }
 .callout-2-col-img-hdr .text-wrap p {
-  padding: 1em;
-  margin: 0 !important;
+  padding-left: 135px;
 }
 
 .callout-2-col-icon-no-hdr {
@@ -413,7 +412,7 @@
   line-height: 1.25;
   padding: 20px;
   border: 1px solid #000;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .callout-2-col-icon-no-hdr img {
   max-width: 80px !important;
@@ -425,7 +424,7 @@
 
 .callout-box-cols {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .callout-box-cols h1 {
   font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
@@ -465,7 +464,7 @@
 
 .callout-4-col-stat {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .callout-4-col-stat h1 {
   font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
@@ -476,12 +475,22 @@
   background-color: #3776a7;
   padding: .5em 0;
 }
+.callout-4-col-stat h2 {
+  font-family: 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.callout-4-col-stat p {
+  margin-top: 0 !important;
+}
 .callout-4-col-stat .text-wrap {
   margin: 2em 1em;
   overflow: auto;
 }
 .callout-4-col-stat .col {
-  height: 235px;
+  height: 295px;
   padding: 0 .5em;
   border-right: 1px dotted #000;
   margin-bottom: 2em;
@@ -492,6 +501,7 @@
 .callout-4-col-stat .col img {
   display: inline-block;
   margin-bottom: .5em;
+  max-width: 100%;
 }
 .callout-4-col-stat .col .stat {
   font: 70px/1 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
