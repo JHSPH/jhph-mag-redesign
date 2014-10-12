@@ -1,6 +1,52 @@
 /* ===========================================================================
 ==== CALLOUTS
 ============================================================================== */
+.callout-box {
+	margin-bottom: 1.5em;
+	
+	h1 {
+		font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		color: #fff;
+		line-height: 1;
+		text-transform: uppercase;
+		background-color: $dark-grey;
+		padding: .5em 0;
+	}
+	h2 {
+		font-family: 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+		padding: .5em 0;
+		border-top: 1px dotted #000;
+		border-bottom: 1px dotted #000;
+		margin-bottom: 1em;
+	}
+	p {
+		text-align: center;
+		margin: 2em;
+	}
+	img {
+		max-width: 100%;
+	}
+	.col {
+		text-align: center;
+		padding: 0.5em 1em .5em 0;
+		border-right: 1px dotted #000;
+		margin-bottom: 2em;
+
+		&:last-child {
+			border: none;
+		}
+		p {
+			font-size: 16px;
+			margin: 0 0 1.5em;
+		}
+	}
+}
+
 .gridlock .row .row.callout-2-col-img {
 	width: 100%;
 	margin: 0;
@@ -83,7 +129,6 @@
 		overflow: auto;
 	}
 	.col {
-		height: 260px;
 		padding: 0.5em 1em .5em 0;
 		border-right: 1px dotted #000;
 		margin-bottom: 2em;
@@ -135,7 +180,6 @@
 		overflow: auto;
 	}
 	.col {
-		height: 295px;
 		padding: 0 .5em;
 		border-right: 1px dotted #000;
 		margin-bottom: 2em;
@@ -156,7 +200,6 @@
 
 		p {
 			font-size: 16px;
-
 		}
 	}
 }

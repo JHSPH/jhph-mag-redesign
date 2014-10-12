@@ -101,7 +101,7 @@
 	}
 
 	.intro {
-		font-size: 20px;
+		font-size: 18px;
 		font-style: italic;
 		color: #888;
 		margin: 0 0 1em;
@@ -156,6 +156,21 @@
 		border-bottom: 1px dotted #da572d;
 		margin: 1.5em 0;
 	}
+	
+	.quote-credit {
+		font: $quote-credit;
+		color: #777;
+		padding-top: .5em;
+		margin-bottom: 2em;
+		background: url(http://www.jhsph.edu/sebin/b/d/quote-credit-rule.png) top left no-repeat;
+	}
+	hr.square-dots {
+		height: 6px;
+		border: none;
+		margin: 0 0 1.5em;
+		background: url(http://www.jhsph.edu/sebin/l/y/square-dots.png) top center no-repeat;
+	}
+
 }
 .agenda-block {
 	margin-top: 0;

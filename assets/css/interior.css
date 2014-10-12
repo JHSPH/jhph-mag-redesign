@@ -91,7 +91,7 @@
   margin-bottom: 1.5em;
 }
 .article .intro, .agenda-block .intro {
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   color: #888;
   margin: 0 0 1em;
@@ -139,6 +139,19 @@
   border-top: 1px dotted #da572d;
   border-bottom: 1px dotted #da572d;
   margin: 1.5em 0;
+}
+.article .quote-credit, .agenda-block .quote-credit {
+  font: italic 16px/1.62 "Chronicle SSm A", "Chronicle SSm B", serif;
+  color: #777;
+  padding-top: .5em;
+  margin-bottom: 2em;
+  background: url(http://www.jhsph.edu/sebin/b/d/quote-credit-rule.png) top left no-repeat;
+}
+.article hr.square-dots, .agenda-block hr.square-dots {
+  height: 6px;
+  border: none;
+  margin: 0 0 1.5em;
+  background: url(http://www.jhsph.edu/sebin/l/y/square-dots.png) top center no-repeat;
 }
 
 .agenda-block {
@@ -369,6 +382,50 @@
 /* ===========================================================================
 ==== CALLOUTS
 ============================================================================== */
+.callout-box {
+  margin-bottom: 1.5em;
+}
+.callout-box h1 {
+  font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: #333;
+  padding: .5em 0;
+}
+.callout-box h2 {
+  font-family: 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: .5em 0;
+  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+  margin-bottom: 1em;
+}
+.callout-box p {
+  text-align: center;
+  margin: 2em;
+}
+.callout-box img {
+  max-width: 100%;
+}
+.callout-box .col {
+  text-align: center;
+  padding: 0.5em 1em .5em 0;
+  border-right: 1px dotted #000;
+  margin-bottom: 2em;
+}
+.callout-box .col:last-child {
+  border: none;
+}
+.callout-box .col p {
+  font-size: 16px;
+  margin: 0 0 1.5em;
+}
+
 .gridlock .row .row.callout-2-col-img {
   width: 100%;
   margin: 0;
@@ -443,7 +500,6 @@
   overflow: auto;
 }
 .callout-box-cols .col {
-  height: 260px;
   padding: 0.5em 1em .5em 0;
   border-right: 1px dotted #000;
   margin-bottom: 2em;
@@ -490,7 +546,6 @@
   overflow: auto;
 }
 .callout-4-col-stat .col {
-  height: 295px;
   padding: 0 .5em;
   border-right: 1px dotted #000;
   margin-bottom: 2em;
