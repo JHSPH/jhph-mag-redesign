@@ -553,7 +553,7 @@ img {
 }
 
 .right-col .author {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .right-col .teaser {
@@ -796,7 +796,7 @@ img {
     margin: 0 auto;
   }
 
-  .callout-box-cols h1 {
+  .callout-box-cols h1, .callout-2-col-img-hdr h1 {
     padding: .25em 0;
   }
 
@@ -839,10 +839,6 @@ img {
 /* MEDIUM SCREENS (TABLETS)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
-  .xxtall {
-    height: 410px;
-  }
-
   .xxxtall {
     height: 460px;
   }
@@ -997,10 +993,6 @@ img {
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
-  .xxtall {
-    height: 410px;
-  }
-
   .xxxtall {
     height: 460px;
   }
@@ -1113,6 +1105,10 @@ img {
 
   .agenda-block .photo-inline {
     margin-top: 0;
+  }
+
+  .agenda-block.trending .photo-inline {
+    margin: 1em 0 2em;
   }
 
   .callout-2-col-img img {

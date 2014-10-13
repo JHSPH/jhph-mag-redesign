@@ -88,7 +88,7 @@
 	.callout-box img {
 		margin: 0 auto;
 	}
-	.callout-box-cols h1 {
+	.callout-box-cols h1, .callout-2-col-img-hdr h1 {
 		padding: .25em 0;
 	}
 	.additional-content {
@@ -385,6 +385,9 @@
 	}
 	.agenda-block .photo-inline {
 		margin-top: 0;
+	}
+	.agenda-block.trending .photo-inline {
+		margin: 1em 0 2em;
 	}
 	.callout-2-col-img img {
 		margin-bottom: 1em;
