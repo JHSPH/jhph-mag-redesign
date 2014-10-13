@@ -3,7 +3,7 @@
 ============================================================================== */
 .callout-box {
 	margin-bottom: 1.5em;
-	
+
 	h1 {
 		font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
 		font-size: 40px;
@@ -88,6 +88,37 @@
 		p {
 			padding-left: 135px;
 		}
+	}
+}
+
+.callout-2-col-icon-hdr {
+	margin-bottom: 1.5em;
+	overflow: auto;
+
+	h1 {
+		font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		color: #fff;
+		line-height: 1;
+		text-transform: uppercase;
+		background-color: $dark-grey;
+		padding: .5em 0;
+	}
+
+	.callout-row {
+		float: left;
+		width: 100%;
+		padding: 20px;
+		border-bottom: 1px dotted #000;
+	}
+
+	img {
+		max-width: 110px !important;
+		padding-right: 1em;
+	}
+
+	p {
+		margin: 0 !important;
 	}
 }
 
@@ -196,6 +227,7 @@
 
 		.stat {
 			font: 70px/1 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+			display: block;
 		}
 
 		p {

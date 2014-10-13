@@ -85,6 +85,9 @@
 			margin-top: -2.5em;
 		}
 	}
+	.callout-box img {
+		margin: 0 auto;
+	}
 	.callout-box-cols h1 {
 		padding: .25em 0;
 	}
@@ -124,6 +127,12 @@
 /* MEDIUM SCREENS (TABLETS)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
+	.xxtall {
+		height: 410px;
+	}
+	.xxxtall {
+		height: 460px;
+	}
 	.gridlock .row .nav {
 		padding-left: 1.25em;
 	}
@@ -229,13 +238,19 @@
 			margin-top: -2.75em;
 		}
 	}
+	.callout-box .col {
+		padding: .5em 1em;
+	}
 	.callout-2-col-img img {
 		margin-bottom: 1em;
+	}
+	.callout-2-col-icon-hdr img {
+		padding-right: none;
 	}
 	.callout-box-cols .col {
 		padding: 0 .75em 0 0;
 	}
-	.callout-4-col-stat .col:nth-child(even) {
+	.callout-4-col-stat .col:nth-child(odd) {
 		border: none;
 	}
 	.additional-content {
@@ -263,6 +278,12 @@
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
+	.xxtall {
+		height: 410px;
+	}
+	.xxxtall {
+		height: 460px;
+	}
 	.gridlock .row {
 		width: 100%;
 
@@ -338,6 +359,7 @@
 
 		.teaser {
 			font-size: 16px;
+			margin: 0 0 3em;
 		}
 	}
 	.landing-box img {
@@ -488,6 +510,15 @@
 		}
 		blockquote {
 			font-size: 30px;
+		}
+	}
+	.callout-2-col-icon-hdr .callout-row {
+		text-align: center;
+
+		img {
+			float: none !important;
+			display: inline-block;
+			margin: 0 auto;
 		}
 	}
 	.callout-2-col-icon-no-hdr {

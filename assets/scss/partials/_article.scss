@@ -112,6 +112,10 @@
 		font-size: 24px;
 		letter-spacing: .025em;
 		margin: 0 0 2em;
+
+		img {
+			display: inline-block;
+		}
 	}
 
 	.photo-inline {
@@ -223,7 +227,7 @@
 		background-position: 0px -90px; 
 	}
 	.trending-copy {
-		height: 666px;
+		height: 875px;
 		border-right: 1px solid #dfdfdf;
 		padding-right: 1em;
 		margin-bottom: 5em;

@@ -49,39 +49,39 @@
 ==== HEIGHTS
 ============================================================================== */
 .xxxshort {
-  height: 20px;
-}
-
-.xxshort {
   height: 40px;
 }
 
-.xshort {
+.xxshort {
   height: 80px;
 }
 
-.short {
+.xshort {
   height: 120px;
 }
 
-.medium {
+.short {
   height: 160px;
 }
 
-.tall {
+.medium {
   height: 200px;
 }
 
+.tall {
+  height: 240px;
+}
+
 .xtall {
-  height: 250px;
+  height: 280px;
 }
 
 .xxtall {
-  height: 300px;
+  height: 320px;
 }
 
 .xxxtall {
-  height: 330px;
+  height: 360px;
 }
 
 /* ===========================================================================
@@ -597,6 +597,7 @@ img {
 }
 .landing-box .details-footer span {
   display: inline-block;
+  border: none;
   padding-left: 8px;
   margin-top: 4px;
 }
@@ -791,6 +792,10 @@ img {
     margin-top: -2.5em;
   }
 
+  .callout-box img {
+    margin: 0 auto;
+  }
+
   .callout-box-cols h1 {
     padding: .25em 0;
   }
@@ -834,6 +839,14 @@ img {
 /* MEDIUM SCREENS (TABLETS)
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 740px) and (max-width: 979px) {
+  .xxtall {
+    height: 410px;
+  }
+
+  .xxxtall {
+    height: 460px;
+  }
+
   .gridlock .row .nav {
     padding-left: 1.25em;
   }
@@ -935,15 +948,23 @@ img {
     margin-top: -2.75em;
   }
 
+  .callout-box .col {
+    padding: .5em 1em;
+  }
+
   .callout-2-col-img img {
     margin-bottom: 1em;
+  }
+
+  .callout-2-col-icon-hdr img {
+    padding-right: none;
   }
 
   .callout-box-cols .col {
     padding: 0 .75em 0 0;
   }
 
-  .callout-4-col-stat .col:nth-child(even) {
+  .callout-4-col-stat .col:nth-child(odd) {
     border: none;
   }
 
@@ -976,6 +997,14 @@ img {
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
+  .xxtall {
+    height: 410px;
+  }
+
+  .xxxtall {
+    height: 460px;
+  }
+
   .gridlock .row {
     width: 100%;
   }
@@ -1054,6 +1083,7 @@ img {
   }
   .landing-box .details .teaser {
     font-size: 16px;
+    margin: 0 0 3em;
   }
 
   .landing-box img {
@@ -1205,6 +1235,15 @@ img {
   }
   .article blockquote {
     font-size: 30px;
+  }
+
+  .callout-2-col-icon-hdr .callout-row {
+    text-align: center;
+  }
+  .callout-2-col-icon-hdr .callout-row img {
+    float: none !important;
+    display: inline-block;
+    margin: 0 auto;
   }
 
   .callout-2-col-icon-no-hdr {
