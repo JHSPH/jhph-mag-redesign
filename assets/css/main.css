@@ -560,6 +560,12 @@ img {
   font-size: 18px;
 }
 
+/* ADVERTISEMENT
+------------------------------------------------------------------------------ */
+.homebox.ad {
+  background: url(http://www.jhsph.edu/sebin/n/d/yearlook-ad-bg.jpg) center no-repeat;
+}
+
 /* ===========================================================================
 ==== LANDING PAGE
 ============================================================================== */
@@ -797,7 +803,7 @@ img {
     margin: 0 auto;
   }
 
-  .callout-box-cols h1, .callout-2-col-img-hdr h1, .callout-4-col-stat h1, .callout-box h1 {
+  .callout-box-cols h1, .callout-2-col-img-hdr h1, .callout-2-col-icon-hdr h1, .callout-4-col-stat h1, .callout-box h1 {
     padding: .25em 0;
   }
 
@@ -961,7 +967,7 @@ img {
     padding: 0 .75em 0 0;
   }
 
-  .callout-4-col-stat .col:nth-child(odd) {
+  .callout-4-col-stat .col {
     border: none;
   }
 
