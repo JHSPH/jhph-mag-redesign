@@ -10,3 +10,6 @@ body {
 .timeline-wrapper, .additional-content {
 	display: none;
 }
+.modFlashContainer .mag-2014 span {
+  width:100%;
+}
