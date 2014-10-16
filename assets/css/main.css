@@ -1,3 +1,56 @@
+@charset "UTF-8";
+/**
+ * @license
+ * MyFonts Webfont Build ID 2792584, 2014-04-10T13:17:10-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2792584
+ * Licensed pageviews: 1,000,000
+ *
+ * © 2014 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+/* @import url("//hello.myfonts.net/count/2a9c88"); */
+/*////////////////////////////////////////////////////////////////////////////*/
+/*/// GENTONA ////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////*/
+/*======================*/
+/*=== Semi-Bold (600) ===*/
+/*======================*/
+@font-face {
+  font-family: 'gentona';
+  src: url("http://www.jhsph.edu/sebin/m/g/Gentona-SemiBold.eot");
+  src: url("http://www.jhsph.edu/sebin/m/g/Gentona-SemiBold.eot?#iefix") format("embedded-opentype"), url("http://www.jhsph.edu/sebin/c/m/Gentona-SemiBold.woff") format("woff"), url("http://www.jhsph.edu/sebin/u/m/Gentona-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentona';
+  src: url("http://www.jhsph.edu/sebin/a/i/Gentona-SemiBoldItalic.eot");
+  src: url("http://www.jhsph.edu/sebin/a/i/Gentona-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("http://www.jhsph.edu/sebin/a/f/Gentona-SemiBoldItalic.woff") format("woff"), url("http://www.jhsph.edu/sebin/e/z/Gentona-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+/*==================*/
+/*=== Book (400) ===*/
+/*==================*/
+@font-face {
+  font-family: 'gentona';
+  src: url("http://www.jhsph.edu/sebin/e/w/Gentona-Book.eot");
+  src: url("http://www.jhsph.edu/sebin/e/w/Gentona-Book.eot?#iefix") format("embedded-opentype"), url("http://www.jhsph.edu/sebin/o/c/Gentona-Book.woff") format("woff"), url("http://www.jhsph.edu/sebin/k/i/Gentona-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentona';
+  src: url("http://www.jhsph.edu/sebin/m/c/Gentona-BookItalic.eot");
+  src: url("http://www.jhsph.edu/sebin/m/c/Gentona-BookItalic.eot?#iefix") format("embedded-opentype"), url("http://www.jhsph.edu/sebin/q/x/Gentona-BookItalic.woff") format("woff"), url("http://www.jhsph.edu/sebin/u/j/Gentona-BookItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
 /* ===========================================================================
 ==== COLOR CLASSES
 ============================================================================== */
@@ -562,8 +615,57 @@ img {
 
 /* ADVERTISEMENT
 ------------------------------------------------------------------------------ */
-.homebox.ad {
+.ad {
+  font-family: 'gentona', helvetica, arial, sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 5em;
   background: url(http://www.jhsph.edu/sebin/n/d/yearlook-ad-bg.jpg) center no-repeat;
+}
+
+.yearlook {
+  position: relative;
+  top: 3em;
+}
+.yearlook .three65 {
+  font-size: 100px;
+  line-height: .85;
+  font-weight: 600;
+  padding: 0 .125em .125em;
+  margin-right: 0.0625em;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.75);
+}
+.yearlook .tag {
+  font-size: 37px;
+  line-height: 1;
+  font-weight: 500;
+  padding: 0 1em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  text-shadow: 0 0 40px #000;
+}
+.yearlook .action {
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: 100;
+  padding: 1.5em 1em;
+  background: #000;
+}
+.yearlook .action p {
+  margin-bottom: 1.5em;
+}
+.yearlook .action a {
+  font: 16px 'HeroicCondensedLight', Helvetica, Arial, sans-serif;
+  letter-spacing: .0625em;
+  text-transform: uppercase;
+  padding: .5em 1.25em;
+  background: #0e6daf;
+}
+.yearlook .action a:hover {
+  color: #fff;
+  opacity: .75;
+  filter: Alpha(opacity=75);
 }
 
 /* ===========================================================================

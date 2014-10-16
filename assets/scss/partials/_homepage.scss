@@ -72,6 +72,67 @@
 
 /* ADVERTISEMENT
 ------------------------------------------------------------------------------ */
-.homebox.ad {
+.ad {
+	font-family: 'gentona', helvetica, arial, sans-serif;
+	text-align: center;
+	color: white;
+	margin-bottom: 5em;
 	background: url(http://www.jhsph.edu/sebin/n/d/yearlook-ad-bg.jpg) center no-repeat;
 }
+.yearlook {
+	position: relative;
+	top: 3em;
+
+	.three65 {
+		font-size: 100px;
+		line-height: .85;
+		font-weight: 600;
+		padding: 0 .125em .125em;
+		margin-right: 0.0625em;
+		display: inline-block;
+		background: rgba(0,0,0,.75);
+	}
+
+	.tag {
+		font-size: 37px;
+		line-height: 1;
+		font-weight: 500;
+		padding: 0 1em;
+		margin-top: 1em;
+		margin-bottom: .5em;
+		text-shadow: 0 0 40px #000;
+	}
+
+	.action {
+		font-size: 20px;
+		line-height: 1.125;
+		font-weight: 100;
+		padding: 1.5em 1em;
+		background: #000;
+
+		p {
+			margin-bottom: 1.5em;
+		}
+
+		a {
+			font: 16px 'HeroicCondensedLight', Helvetica, Arial, sans-serif;
+			letter-spacing: .0625em;
+			text-transform: uppercase;
+			padding: .5em 1.25em;
+			background: #0e6daf;
+
+			&:hover {
+				color: #fff;
+				opacity: .75;
+				filter: Alpha(opacity=75); 
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
