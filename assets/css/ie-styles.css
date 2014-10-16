@@ -1,0 +1,12 @@
+/* ===========================================================================
+==== INTERNET EXPLORER LT IE8 OVERRIDES
+============================================================================== */
+body {
+	font-size: 100%;
+}
+.logo-home {
+	font-size: 29px;
+}
+.timeline-wrapper, .additional-content {
+	display: none;
+}
