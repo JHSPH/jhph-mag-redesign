@@ -491,37 +491,39 @@ img {
 .miniFormContainer form:hover, .miniFormContainer form.active {
   width: 252px;
 }
-.miniFormContainer form:hover label {
+.miniFormContainer form:hover .searchformContent {
   background: #e45536;
 }
-.miniFormContainer form label {
-  width: 213px;
+.miniFormContainer form .searchformContent {
+  width: 250px;
   background: 0 0;
   position: absolute;
-  right: 36px;
+  right: 0;
   top: 0;
   text-align: right;
 }
-.miniFormContainer form label:focus {
+.miniFormContainer form .searchformContent:focus {
   outline: none;
 }
-.miniFormContainer form input {
+
+input {
   float: left;
-  width: 213px;
+  width: 250px;
   height: auto;
   background: #e45536;
   font-size: 20px;
   color: #fff;
   border: 0;
   border-radius: 25px;
-  padding: 3px 15px;
+  padding: 3px 30px 3px 10px;
   position: relative;
   z-index: 30;
 }
-.miniFormContainer form input:focus {
+input:focus {
   outline: none;
 }
-.miniFormContainer form input[type="submit"] {
+
+input[type="submit"] {
   background: url(http://www.jhsph.edu/sebin/h/w/search-icon-white.png) 7px 7px no-repeat;
   width: 30px;
   height: 30px;
@@ -531,19 +533,27 @@ img {
   right: 0;
   text-indent: -99999px;
 }
-.miniFormContainer form ::-webkit-input-placeholder {
+
+::-webkit-input-placeholder {
   color: #fff;
 }
-.miniFormContainer form :-moz-placeholder {
+
+:-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-.miniFormContainer form ::-moz-placeholder {
+
+::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-.miniFormContainer form :-ms-input-placeholder {
+
+:-ms-input-placeholder {
   color: #fff;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: inherit;
 }
 
 /* ===========================================================================
@@ -853,12 +863,11 @@ img {
     top: 1em;
   }
 
-  .miniFormContainer form:hover {
+  .miniFormContainer form:hover,
+  .miniFormContainer form.active,
+  .miniFormContainer form .searchformContent,
+  .miniFormContainer form input[type="text"] {
     width: 270px;
-  }
-
-  .miniFormContainer form label, .miniFormContainer form input {
-    width: 235px;
   }
 
   .landing-box .details h1 {
@@ -905,7 +914,11 @@ img {
     margin: 0 auto;
   }
 
-  .callout-box-cols h1, .callout-2-col-img-hdr h1, .callout-2-col-icon-hdr h1, .callout-4-col-stat h1, .callout-box h1 {
+  .callout-box-cols h1,
+  .callout-2-col-img-hdr h1,
+  .callout-2-col-icon-hdr h1,
+  .callout-4-col-stat h1,
+  .callout-box h1 {
     padding: .25em 0;
   }
 
@@ -1001,12 +1014,11 @@ img {
     top: .65em;
   }
 
-  .miniFormContainer form:hover {
+  .miniFormContainer form:hover,
+  .miniFormContainer form.active,
+  .miniFormContainer form .searchformContent,
+  .miniFormContainer form input[type="text"] {
     width: 270px;
-  }
-
-  .miniFormContainer form label, .miniFormContainer form input {
-    width: 235px;
   }
 
   .landing-box .details {
@@ -1035,7 +1047,8 @@ img {
     font-size: 48px;
   }
 
-  .right-col .author, .right-col .teaser {
+  .right-col .author,
+  .right-col .teaser {
     font-size: 21px;
   }
 
@@ -1147,7 +1160,7 @@ img {
   .nav-collapse li {
     float: left;
     width: 96%;
-    background: #e45536;
+    background: #333;
     border-bottom: 1px solid black;
     padding-left: .5em;
   }
@@ -1156,12 +1169,11 @@ img {
     top: .65em;
   }
 
-  .miniFormContainer form:hover {
+  .miniFormContainer form:hover,
+  .miniFormContainer form.active,
+  .miniFormContainer form .searchformContent,
+  .miniFormContainer form input[type="text"] {
     width: 225px;
-  }
-
-  .miniFormContainer form label, .miniFormContainer form input {
-    width: 190px;
   }
 
   .main {
@@ -1255,7 +1267,8 @@ img {
     margin: 0;
   }
 
-  .timeline-wrapper, .modFlashContainer_module {
+  .timeline-wrapper,
+  .modFlashContainer_module {
     display: none;
   }
 

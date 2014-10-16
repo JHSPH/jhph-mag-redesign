@@ -283,32 +283,33 @@
 		width: 252px;
 	}
 
-	&:hover label {
+	&:hover .searchformContent {
 		background: $issue-theme;
 	}
 
-	label {
-	width: 213px;
-	background: 0 0;
-	position: absolute;
-	right: 36px;
-	top: 0;
-	text-align: right;
+	.searchformContent {
+		width: 250px;
+		background: 0 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-align: right;
 
-	&:focus {
-		outline: none;
+		&:focus {
+			outline: none;
+		}
 	}
 }
 input {
 	float: left;
-	width: 213px;
+	width: 250px;
 	height: auto;
 	background: $issue-theme;
 	font-size: 20px;
 	color: #fff;
 	border: 0;
 	border-radius: 25px;
-	padding: 3px 15px;
+	padding: 3px 30px 3px 10px;
 	position: relative;
 	z-index: 30;
 
@@ -338,4 +339,6 @@ input[type="submit"] {
 :-ms-input-placeholder {  
    color: #fff;  
 }
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: inherit;
 }

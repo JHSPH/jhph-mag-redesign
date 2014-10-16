@@ -10,7 +10,10 @@
 			font-size: 34px;
 			padding: 1em 1.125em 1.34em;
 
-			&:hover, &:focus, &.active:hover, &.active:focus {
+			&:hover,
+			&:focus,
+			&.active:hover,
+			&.active:focus {
 				padding-bottom: 2.25em;
 			}
 
@@ -42,11 +45,11 @@
 	.search-wrapper {
 		top: 1em;
 	}
-	.miniFormContainer form:hover {
+	.miniFormContainer form:hover,
+	.miniFormContainer form.active,
+	.miniFormContainer form .searchformContent,
+	.miniFormContainer form input[type="text"] {
 		width: 270px;
-	}
-	.miniFormContainer form label, .miniFormContainer form input {
-		width: 235px;
 	}
 	.landing-box .details h1 {
 		font-size: 40px;
@@ -89,7 +92,11 @@
 	.callout-box img {
 		margin: 0 auto;
 	}
-	.callout-box-cols h1, .callout-2-col-img-hdr h1, .callout-2-col-icon-hdr h1, .callout-4-col-stat h1, .callout-box h1 {
+	.callout-box-cols h1,
+	.callout-2-col-img-hdr h1,
+	.callout-2-col-icon-hdr h1,
+	.callout-4-col-stat h1,
+	.callout-box h1 {
 		padding: .25em 0;
 	}
 	.additional-content {
@@ -147,7 +154,10 @@
 			font-size: 22px;
 			padding: 1.25em 1em 2.125em;
 
-			&:hover, &:focus, &.active:hover, &.active:focus {
+			&:hover,
+			&:focus,
+			&.active:hover,
+			&.active:focus {
 				top: -14px;
 				padding-bottom: 3em;
 
@@ -188,11 +198,11 @@
 	.search-wrapper {
 		top: .65em;
 	}
-	.miniFormContainer form:hover {
+	.miniFormContainer form:hover,
+	.miniFormContainer form.active,
+	.miniFormContainer form .searchformContent,
+	.miniFormContainer form input[type="text"] {
 		width: 270px;
-	}
-	.miniFormContainer form label, .miniFormContainer form input {
-		width: 235px;
 	}
 	.landing-box .details {
 		padding: .5em;
@@ -217,7 +227,8 @@
 	.right-col .details h1 {
 		font-size: 48px;
 	}
-	.right-col .author, .right-col .teaser {
+	.right-col .author,
+	.right-col .teaser {
 		font-size: 21px;
 	}
 	.article {
@@ -301,7 +312,10 @@
 			font-size: 22px;
 			padding: .25em 0;
 
-			&:hover, &:focus, &.active:hover, &.active:focus {
+			&:hover,
+			&:focus,
+			&.active:hover,
+			&.active:focus {
 				background: inherit;
 				color: #ccc;
 				border: none;
@@ -323,18 +337,18 @@
 	.nav-collapse li {
 		float: left;
 		width: 96%;
-		background: $issue-theme;
+		background: $dark-grey;
 		border-bottom: 1px solid black;
 		padding-left: .5em;
 	}
 	.search-wrapper {
 		top: .65em;
 	}
-	.miniFormContainer form:hover {
+	.miniFormContainer form:hover,
+	.miniFormContainer form.active,
+	.miniFormContainer form .searchformContent,
+	.miniFormContainer form input[type="text"] {
 		width: 225px;
-	}
-	.miniFormContainer form label, .miniFormContainer form input {
-		width: 190px;
 	}
 	.main {
 		padding-top: 8em;
@@ -425,7 +439,8 @@
 		border: none;
 		margin: 0;
 	}
-	.timeline-wrapper, .modFlashContainer_module {
+	.timeline-wrapper,
+	.modFlashContainer_module {
 		display: none;
 	}
 	.additional-content {
@@ -549,7 +564,12 @@
 		li {
 			background-position-x: 12px;
 
-			&.fb:hover, &.twitter:hover, &.gplus:hover, &.linkedin:hover, &.email:hover, &.comment:hover {
+			&.fb:hover,
+			&.twitter:hover,
+			&.gplus:hover,
+			&.linkedin:hover,
+			&.email:hover,
+			&.comment:hover {
 				background-position-x: -32px;
 			}
 		}
