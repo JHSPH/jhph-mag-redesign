@@ -73,7 +73,13 @@
 /* ADVERTISEMENT
 ------------------------------------------------------------------------------ */
 .ad {
-	padding-top: 2em;
+	text-align: center;
+
+	.ad-label {
+		font: $ad-box;
+		text-transform: uppercase;
+		color: #666;
+	}
 }
 .yearlook {
 	font-family: 'gentona', helvetica, arial, sans-serif;
