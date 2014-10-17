@@ -73,21 +73,20 @@
 /* ADVERTISEMENT
 ------------------------------------------------------------------------------ */
 .ad {
+	padding-top: 2em;
+}
+.yearlook {
 	font-family: 'gentona', helvetica, arial, sans-serif;
 	text-align: center;
 	color: white;
-	margin-bottom: 5em;
 	background: url(http://www.jhsph.edu/sebin/n/d/yearlook-ad-bg.jpg) center no-repeat;
-}
-.yearlook {
-	position: relative;
-	top: 3em;
 
 	.three65 {
 		font-size: 100px;
 		line-height: .85;
 		font-weight: 600;
 		padding: 0 .125em .125em;
+		margin-top: .5em;
 		margin-right: 0.0625em;
 		display: inline-block;
 		background: rgba(0,0,0,.75);
@@ -122,9 +121,7 @@
 			background: #0e6daf;
 
 			&:hover {
-				color: #fff;
-				opacity: .75;
-				filter: Alpha(opacity=75); 
+				color: lighten(#0e6daf, 25%);
 			}
 		}
 	}
