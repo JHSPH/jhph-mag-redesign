@@ -670,9 +670,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   text-transform: uppercase;
   padding: .5em 1.25em;
   background: #0e6daf;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -ms-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
 }
 .yearlook .action a:hover {
-  color: #4cadf1;
+  color: #fff;
+  background: #4cadf1;
 }
 
 /* ===========================================================================
