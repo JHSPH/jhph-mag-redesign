@@ -12,6 +12,10 @@
   z-index: -10;
 }
 
+.agenda-page {
+  margin-bottom: 4em;
+}
+
 .article, .agenda-block {
   background-color: #fff;
   padding: 40px 70px;
@@ -90,6 +94,10 @@
   padding-left: 3.25em;
   margin-bottom: 1.5em;
 }
+.article hr, .agenda-block hr {
+  border: none;
+  border-bottom: 1px dotted #e45536;
+}
 .article .intro, .agenda-block .intro {
   font-size: 18px;
   font-style: italic;
@@ -153,7 +161,7 @@
 .article hr.square-dots, .agenda-block hr.square-dots {
   height: 6px;
   border: none;
-  margin: 0 0 1.5em;
+  margin: 3em 0;
   background: url(http://www.jhsph.edu/sebin/l/y/square-dots.png) top center no-repeat;
 }
 
@@ -297,6 +305,19 @@
 }
 .additional-content p {
   margin: 0 !important;
+}
+
+.photo-essay-container {
+  background: #efefef;
+}
+.photo-essay-container .photo-inline {
+  margin-bottom: 1em;
+}
+.photo-essay-container .text-wrapper {
+  padding: 0 .5em .5em;
+}
+.photo-essay-container .text-wrapper p {
+  margin-bottom: 0;
 }
 
 .video-container {

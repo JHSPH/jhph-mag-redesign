@@ -505,8 +505,7 @@ img {
 .miniFormContainer form .searchformContent:focus {
   outline: none;
 }
-
-input {
+.miniFormContainer form input[type="text"] {
   float: left;
   width: 250px;
   height: auto;
@@ -515,15 +514,15 @@ input {
   color: #fff;
   border: 0;
   border-radius: 25px;
-  padding: 3px 30px 3px 10px;
+  padding: 3px 0 3px 40px;
   position: relative;
+  right: 30px;
   z-index: 30;
 }
-input:focus {
+.miniFormContainer form input[type="text"]:focus {
   outline: none;
 }
-
-input[type="submit"] {
+.miniFormContainer form input[type="submit"] {
   background: url(http://www.jhsph.edu/sebin/h/w/search-icon-white.png) 7px 7px no-repeat;
   width: 30px;
   height: 30px;
@@ -1242,6 +1241,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
   .callout-box .col {
     height: inherit;
+    padding: 0 1em;
+    border: none;
     margin-bottom: 0;
   }
 
