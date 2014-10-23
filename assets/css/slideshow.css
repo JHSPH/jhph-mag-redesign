@@ -1,0 +1,73 @@
+div.modFlashContainer {
+	margin: 0 auto !important;
+	z-index: 0;
+}
+.modFlashContainer .mag-2014 {
+	font-size: 16px;
+	line-height: 1.33;
+}
+.modFlashContainer .mag-2014 span {
+	display: inline-block;
+}
+.mag-2014-text_controllers {
+	width: 820px;
+	margin: 0 auto;
+	overflow: auto;
+	position: relative;
+	top: -210px;
+	z-index: 10;
+}
+.mag-2014-text_numberbuttons {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 50;
+}
+.mag-2014-text_options {
+	display: inline-block;
+	padding-left: 1em !important;
+}
+.mag-2014-text_option {
+	float: left;
+	margin-right: 1em;
+}
+.mag-2014-text_option a {
+	border: none;
+}
+.mag-2014-text_option a:hover {
+	background: none;
+}
+.article ul li.mag-2014-text_option:before {
+	content: none;
+}
+.mag-2014-text_controls {
+	display: inline-block;
+	width: 100%;
+	padding: 0 2em;
+	position: relative;
+	top: -3.5em;
+}
+.mag-2014-text_controls .next {
+	float: right;
+	margin-right: 0;
+}
+.optionSelected {
+	text-decoration: underline;
+}
+
+/* MEDIUM SCREENS (TABLETS)
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	div.modFlashContainer {
+		width: 100% !important;
+	}
+	div.modFlashContainer img {
+		width: 100%;
+	}
+	.mag-2014-text_controllers {
+		width: 100%;
+		top: -340px;
+	}
+
+}
