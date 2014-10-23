@@ -185,6 +185,9 @@
 	padding-left: 3em;
 }
 .header {
+	.nav li {
+		float: left;
+	}
 	.nav a {
 		float: left;
 		color: #fff;
