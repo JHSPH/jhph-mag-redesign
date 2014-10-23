@@ -2,7 +2,7 @@
 ==== ARTICLE / AGENDA
 ============================================================================== */
 .feature-img {
-  background: url(http://www.jhsph.edu/sebin/d/m/hdr-img-default.jpg) center center/cover no-repeat white;
+  background: url(http://www.jhsph.edu/sebin/d/m/hdr-img-default.jpg) center center/cover no-repeat #fff;
   display: block;
   position: absolute;
   left: 0;
@@ -152,7 +152,7 @@
   margin: 1.5em 0;
 }
 .article .quote-credit, .agenda-block .quote-credit {
-  font: italic 16px/1.62 "Chronicle SSm A", "Chronicle SSm B", serif;
+  font: italic 16px/1.62 "Chronicle SSm 4i", "Chronicle SSm A", "Chronicle SSm B", serif;
   color: #777;
   padding-top: .5em;
   margin-bottom: 2em;
@@ -446,7 +446,7 @@
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
-  background-color: #333333;
+  background-color: #333;
   padding: .5em 0;
 }
 .callout-box h2 {
@@ -504,7 +504,7 @@
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
-  background-color: #333333;
+  background-color: #333;
   padding: .5em 0;
 }
 .callout-2-col-img-hdr .text-wrap {
@@ -529,7 +529,7 @@
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
-  background-color: #333333;
+  background-color: #333;
   padding: .5em 0;
 }
 .callout-2-col-icon-hdr .callout-row {
@@ -571,7 +571,7 @@
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
-  background-color: #333333;
+  background-color: #333;
   padding: .5em 0;
 }
 .callout-box-cols p {
@@ -647,3 +647,5 @@
 .callout-4-col-stat .col p {
   font-size: 16px;
 }
+
+/*# sourceMappingURL=interior.css.map */

@@ -69,7 +69,7 @@
 }
 
 .bg-dark-grey {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .bg-light-blue {
@@ -149,7 +149,7 @@
 
 body {
   background: #dfdfdf;
-  font: normal 400 125%/1.62 "Chronicle SSm A", "Chronicle SSm B", serif;
+  font: normal 400 125%/1.62 "Chronicle SSm 4r", "Chronicle SSm A", "Chronicle SSm B", serif;
   color: #222;
   margin: 0;
 }
@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
+  font: normal 400 48px "Chronicle SSm 4r", "Chronicle SSm A", "Chronicle SSm B", serif;
 }
 
 h2 {
@@ -250,7 +250,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -259,7 +258,6 @@ img {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -583,7 +581,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   transition-duration: .125s;
 }
 .details h1 {
-  font: normal 400 48px "Chronicle SSm A", "Chronicle SSm B", serif;
+  font: normal 400 48px "Chronicle SSm 4r", "Chronicle SSm A", "Chronicle SSm B", serif;
   margin-bottom: 0;
 }
 .details .teaser {
@@ -709,7 +707,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   text-align: left;
 }
 .landing-box .details h1 {
-  font: normal 400 32px "Chronicle SSm A", "Chronicle SSm B", serif;
+  font: normal 400 32px "Chronicle SSm 4r", "Chronicle SSm A", "Chronicle SSm B", serif;
 }
 .landing-box .details .teaser {
   line-height: 1.33;
@@ -1172,7 +1170,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .nav-collapse li {
     float: left;
     width: 96%;
-    background: #333333;
+    background: #333;
     border-bottom: 1px solid black;
     padding-left: .5em;
   }
@@ -1421,3 +1419,5 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 17px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

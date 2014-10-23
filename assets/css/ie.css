@@ -1,0 +1,10 @@
+/* ===========================================================================
+==== STYLES FOR LT IE9
+============================================================================== */
+body { font-size: 100%; font-style: normal; }
+.header { font-size: 27px; }
+.logo-home { font-size: 29px; }
+.feature-img { background-position: 50% 50%; background-repeat: no-repeat; }
+.timeline-wrapper, .additional-content { display: none; }
+.gridlock .footer li a { font-size: 15px; }
+.gridlock .footer p { font-size: 14px; }
