@@ -6,20 +6,25 @@ div.modFlashContainer {
 	font-size: 16px;
 	line-height: 1.33;
 }
+.modFlashContainer .mag-2014-text {
+	margin-top: .5em;
+}
 .modFlashContainer .mag-2014 span {
 	display: inline-block;
 }
 .mag-2014-text_controllers {
 	width: 820px;
+	height: 33px;
 	margin: 0 auto;
 	overflow: auto;
 	position: relative;
 	top: -210px;
 	z-index: 10;
+	background: rgba(0, 0, 0, .66);
 }
 .mag-2014-text_numberbuttons {
 	text-align: center;
-	width: 50%;
+	width: 66%;
 	margin: 0 auto;
 	position: relative;
 	z-index: 50;
