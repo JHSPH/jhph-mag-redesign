@@ -13,10 +13,97 @@
 		<link rel="stylesheet" type="text/css" href="http://webfonts.typetrust.com/140911175547_JOHNSHOPKINS" />
 		<link rel="stylesheet" href="assets/css/interior.min.css" />
 		<link rel="stylesheet" href="assets/css/main.min.css" />
+		
+		
+		<!-- Begins slideshow required elements.
+			 Adds a slideshow that doesn;t quite work all the way, butcan be used for CSS dev. - Jonathan -->
+		
+		<link rel="stylesheet" href="assets/css/slideshow.css" />
+		
+		<style>
+		.mag-2014-text_controllers { top: -218px; }
+		
+		@media screen and (min-width: 1220px) { h2 { margin-left: 2.175em !important; } }
+		
+		@media screen and (max-width: 979px) and (min-width: 740px) {
+		.mag-2014-text_controllers { height: 26px; top: -318px; }
+		.mag-2014-text_numberbuttons, .mag-2014-text_advance { font-size: 16px; }
+		}
+		</style>
+		
+		<script type="text/javascript" src="/custom/mod_slideshow/_includes/js/jquery.dumbcrossfade-2.0.min.js"></script>
+					<style type="text/css">
+						img {
+							border:0px;
+						}
+						div.modFlashContainer {
+							margin:0 0 0 0;
+							padding:0 0 0 0;
+							display:block;
+							border:none;
+							position:relative;
+							background:#ffffff;
+							width:820px;
+							height:635px;
+							overflow:hidden;
+						}
+						div.mag-2014-image {
+							margin:0 0 0 0;
+							padding:0 0 0 0;
+						}
+						div.mag-2014 {
+							background:#ffffff;
+							position:absolute;
+							top:0;
+							left:0;
+						}
+					</style>
+					<script type="text/javascript">
+					/*<![CDATA[*/
+						j(document).ready(function() {
+							j('div[class=mag-2014]').css('display','none');
+							j('.mag-2014-text_options a:first').addClass('optionSelected');
+							var options = {
+								slideChange : function(currentSlideIndex) {
+									j('.mag-2014-text_options a').removeClass('optionSelected');
+									j('.mag-2014-text_options a:eq('+ currentSlideIndex +')').addClass('optionSelected');
+									j('.modFlashContainer_module .mag-2014').dumbCrossFade('stop');
+									
+								},
+								slideType : 'fade',
+								
+									doHoverPause:false,
+								
+								showTime:8000
+							};
+							var slidemodFlashContainershow = j('.modFlashContainer_module .mag-2014').dumbCrossFade(options);
+							var i = 0;
+							j('.modFlashContainer_module .mag-2014').dumbCrossFade('stop');
+							j('#previousmodFlashContainerbutton').click(function(){
+									j('.modFlashContainer_module .mag-2014').dumbCrossFade('previous');
+									return false;
+								});
+								j('#nextmodFlashContainerbutton').click(function(){
+									j('.modFlashContainer_module .mag-2014').dumbCrossFade('next');
+									return false;
+								});
+							
+							j('.mag-2014-text_options a').each(function() {
+									j(this).attr('href',i+'');
+									i++;
+								});
+								j('.mag-2014-text_options a').click(function(){
+									j('.modFlashContainer .mag-2014').dumbCrossFade('jump',parseInt(j(this).attr('href')));
+									return false;
+								});
+							
+						});
+						/*]]>*/
+					</script>
+					
+			<!-- /.slideshow required elements -->
+		
 
-		<!--[if lt IE 9]>
-		<link rel="stylesheet" href="/sebin/j/b/fs.gridlock-ie.css">
-		<![endif]-->
 	</head>
 
 	<body class="gridlock" id="top">
@@ -184,6 +271,153 @@
 
 				<h3>Nullam vestibulum justo</h3>
 				<p>Duis velit tellus, commodo eu enim ut, cursus iaculis sem. Suspendisse iaculis in arcu quis consequat. Vivamus interdum tellus et vehicula semper. Nullam vestibulum justo a nibh tristique convallis. Nunc ut turpis justo. Fusce dignissim, est in faucibus ultrices, sapien dui pulvinar risus, eget bibendum nisi est a diam. Phasellus ut magna posuere, auctor neque sit amet, porttitor metus. Ut fermentum ligula augue, nec interdum diam iaculis in. Pellentesque volutpat tempor massa eu dapibus. Pellentesque pretium quam vitae leo pretium, sit amet pellentesque nisi feugiat. Phasellus sit amet lacinia odio. In sapien risus, pretium eget pulvinar non, gravida quis ligula.</p>
+				
+				<div class="modFlashContainer_module regularSS">
+					<div class="modFlashContainer">
+					
+							<div id="mag-20141" class="mag-2014" style="background-color:">
+								
+									<div class="mag-2014-image">
+									
+										<img src="http://magazine.jhsph.edu/sebin/n/t/departments-collections-tonys-fave-5-01.jpg" alt="Bartlett, Josiah" width="820">
+									
+									</div>
+								
+									<div class="mag-2014-text">
+										
+											<div class="mag-2014-text_text">
+												<span class="mag-2014-text textContent Normal"><b>Year:</b> 1976<br>
+				<b>Country of Origin:</b> U.S.A.<br>
+				<b>Stamp:</b> “Bartlett, Josiah.” Josiah Bartlett signed the declaration of independence and was a physician in Philly. He introduced the use of “Peruvian bark,” or cinchona, for the treatment of “malignant angina”—now known as malaria—in the U.S. in the mid 1700’s.<br>
+				<b>TG:</b> “It’s an interesting conjunction of events. It shows that even as early as the 1700’s, you have a physician who signed the declaration of independence, yet he used a substance that came from Peru by way of Europe to treat people.”</span>
+											
+											</div>
+										
+									</div>
+								
+							</div>
+							
+							<div id="mag-20142" class="mag-2014" style="background-color:">
+								
+									<div class="mag-2014-image">
+									
+										<img src="http://magazine.jhsph.edu/sebin/p/m/departments-collections-tonys-fave-5-02.jpg" alt="Adult spraying, microscope, protozoa, stain" width="820">
+									
+									</div>
+								
+									<div class="mag-2014-text">
+										
+											<div class="mag-2014-text_text">
+												<span class="mag-2014-text textContent Normal"><b>Year:</b> 1973<br>
+				<b>Country of Origin:</b> Nicaragua<br>
+				<b>Stamp:</b> “Adult spraying, microscope, protozoa, stain.” Field workers spray insecticide, or another substance, on standing water. A light coat of oil is known to suffocate a juvenile mosquito in larval form.<br>
+				<b>TG:</b> “It shows all the aspects of combatting malaria: research, treatment and control.”</span>
+											
+											</div>
+										
+									</div>
+								
+							</div>
+							
+							<div id="mag-20143" class="mag-2014" style="background-color:">
+								
+									<div class="mag-2014-image">
+									
+										<img src="http://magazine.jhsph.edu/sebin/f/l/departments-collections-tonys-fave-5-03.jpg" alt="Malaria Eradication" width="820">
+									
+									</div>
+								
+									<div class="mag-2014-text">
+										
+											<div class="mag-2014-text_text">
+												<span class="mag-2014-text textContent Normal"><b>Year:</b> 1977<br>
+				<b>Country of Origin:</b> Solomon Islands<br>
+				<b>Stamp:</b> “Malaria Eradication.” A microscope with the Solomon Island archipelago in the background.<br>
+				<b>TG:</b> “I like the scientific aspect of things and this stamp shows the use of microscopy in identifying the pathogen in the blood that causes the disease in question.”</span>
+											
+											</div>
+										
+									</div>
+								
+							</div>
+							
+							<div id="mag-20144" class="mag-2014" style="background-color:">
+								
+									<div class="mag-2014-image">
+									
+										<img src="http://magazine.jhsph.edu/sebin/j/p/departments-collections-tonys-fave-5-04.jpg" alt="Anti-Malaria Campaign" width="820">
+									
+									</div>
+								
+									<div class="mag-2014-text">
+										
+											<div class="mag-2014-text_text">
+												<span class="mag-2014-text textContent Normal"><b>Year:</b> 1939<br>
+				<b>Country of Origin:</b> Mexico<br>
+				<b>Stamp:</b> "Anti-Malaria Campaign."<br>
+				<b>TG:</b> “This was the first stamp ever specifically issued for an anti-malaria campaign.” It was also the very first public health stamp Tony Golda collected</span>
+											
+											</div>
+										
+									</div>
+								
+							</div>
+							
+							<div id="mag-20145" class="mag-2014" style="background-color:">
+								
+									<div class="mag-2014-image">
+									
+										<img src="http://magazine.jhsph.edu/sebin/z/n/departments-collections-tonys-fave-5-05.jpg" alt="Non-Standard: Variant of Official Emblem" width="820">
+									
+									</div>
+								
+									<div class="mag-2014-text">
+										
+											<div class="mag-2014-text_text">
+												<span class="mag-2014-text textContent Normal"><b>Year:</b> 1963<br>
+				<b>Country of Origin:</b> Jugoslavia<br>
+				<b>Stamp:</b>  “Non-Standard: Variant of Official Emblem.” This is a detailed rendering of what a mosquito looks like when taking a blood meal.<br> 
+				<b>TG:</b> “So many of the pictures of vectors are cartoonish, and don’t show enough anatomical detail. But this is about as detailed as these get and you learn an awful lot by just looking at this drawing. You wouldn’t want to meet this guy in an alley!”</span>
+											
+											</div>
+										
+									</div>
+								
+							</div>
+							
+					</div>
+					
+						<div class="mag-2014-text_controllers">
+							
+								<div class="mag-2014-text_numberbuttons">
+									<ul class="mag-2014-text_options">
+										
+											<li class="mag-2014-text_option"><a href="#" id="btn1" class="button">1</a></li>
+										
+											<li class="mag-2014-text_option"><a href="#" id="btn2" class="button">2</a></li>
+										
+											<li class="mag-2014-text_option"><a href="#" id="btn3" class="button">3</a></li>
+										
+											<li class="mag-2014-text_option"><a href="#" id="btn4" class="button">4</a></li>
+										
+											<li class="mag-2014-text_option"><a href="#" id="btn5" class="button">5</a></li>
+										
+									</ul>
+								</div>
+							
+								<div class="mag-2014-text_advance">
+									<ul class="mag-2014-text_controls">
+										<li class="mag-2014-text_option previous"><a href="#" class="previous" id="previousmodFlashContainerbutton">Previous</a></li>
+										<li class="mag-2014-text_option next"><a href="#" class="next" id="nextmodFlashContainerbutton">Next</a></li>
+									</ul>
+								</div>
+							
+						</div>
+					
+				</div>
+				
+				
+				
 			</div> <!-- END ARTICLE -->
 		</div> <!-- END ROW -->
 		<!-- END MAIN CONTENT AREA -->
