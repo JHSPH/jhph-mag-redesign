@@ -52,92 +52,6 @@
   font-style: italic;
 }
 /* ===========================================================================
-==== COLOR CLASSES
-============================================================================== */
-/* BACKGROUNDS
------------------------------------------------------------------------------- */
-.bg-black {
-  background-color: #000;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-.bg-light-grey {
-  background-color: #dfdfdf;
-}
-
-.bg-dark-grey {
-  background-color: #333;
-}
-
-.bg-light-blue {
-  background-color: #eaf0f7;
-}
-
-.bg-medium-blue {
-  background-color: #3776a7;
-}
-
-/* COLORS
------------------------------------------------------------------------------- */
-.black {
-  color: #000;
-}
-
-.white {
-  color: #fff;
-}
-
-.light-blue {
-  color: #eaf0f7;
-}
-
-.medium-blue {
-  color: #3776a7;
-}
-
-/* ===========================================================================
-==== HEIGHTS
-============================================================================== */
-.xxxshort {
-  height: 40px;
-}
-
-.xxshort {
-  height: 80px;
-}
-
-.xshort {
-  height: 120px;
-}
-
-.short {
-  height: 160px;
-}
-
-.medium {
-  height: 200px;
-}
-
-.tall {
-  height: 240px;
-}
-
-.xtall {
-  height: 280px;
-}
-
-.xxtall {
-  height: 320px;
-}
-
-.xxxtall {
-  height: 360px;
-}
-
-/* ===========================================================================
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 * {
@@ -534,24 +448,6 @@ img {
   position: absolute;
   right: 0;
   text-indent: -99999px;
-}
-
-::-webkit-input-placeholder {
-  color: #fff;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #fff;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
 }
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
