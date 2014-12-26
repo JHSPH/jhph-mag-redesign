@@ -1,33 +1,40 @@
+/* @override
+	http://magazine.jhsph.edu/sebin/p/g/slideshow.css */
+
+
+/* Main Wrapper
+------------------------------------------------------------------------------ */
+
 div.modFlashContainer {
 	margin: 0 auto !important;
 	z-index: 0;
 }
-.modFlashContainer .mag-2014 {
+
+
+/* Captions
+------------------------------------------------------------------------------ */
+
+.modFlashContainer .mag-2014-text {
+	display: inline-block;
 	font-size: 16px;
 	line-height: 1.33;
-}
-.modFlashContainer .mag-2014-text {
 	margin-top: .5em;
 }
-.modFlashContainer .mag-2014 span {
-	display: inline-block;
-}
+
+
+/* Slideshow / Image Gallery Controls
+------------------------------------------------------------------------------ */
+
+/* Control location & background */
 .mag-2014-text_controllers {
+	background: rgba(0, 0, 0, .66);
 	width: 820px;
 	height: 33px;
 	margin: 0 auto;
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
 	top: -210px;
 	z-index: 10;
-	background: rgba(0, 0, 0, .66);
-}
-.mag-2014-text_numberbuttons {
-	text-align: center;
-	width: 66%;
-	margin: 0 auto;
-	position: relative;
-	z-index: 50;
 }
 .mag-2014-text_options {
 	display: inline-block;
@@ -37,11 +44,33 @@ div.modFlashContainer {
 	float: left;
 	margin-right: 1em;
 }
-.mag-2014-text_option a {
-	border: none;
+.mag-2014-text_numberbuttons {
+	text-align: center;
+	width: 66%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 50;
 }
-.mag-2014-text_option a:hover {
-	background: none;
+/*Sets baseline styles for next and previous buttons.*/
+.mag-2014-text_numberbuttons a {
+	display: block;
+	width: 12px;
+	height: 0px;
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 0;
+	background: rgb(175,175,175); /* The Fallback */
+	background: rgba(255, 255, 255, .50);
+	filter: alpha(opacity=40);
+	border-radius: 100%;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, .75);
+}
+.mag-2014-text_numberbuttons a:hover {
+	background: rgb(255, 255, 255); /* The Fallback */
+	background: rgba(255, 255, 255, .75);
+}
+.mag-2014-text_numberbuttons a.optionSelected {
+	background: rgba(255, 255, 255, .75);
 }
 .article ul li.mag-2014-text_option:before {
 	content: none;
@@ -57,9 +86,38 @@ div.modFlashContainer {
 	float: right;
 	margin-right: 0;
 }
-.optionSelected {
-	text-decoration: underline;
-}
+
+
+/* Next and Previous buttons
+------------------------------------------------------------------------------ */
+
+/*Sets baseline styles for next and previous buttons.*/
+.mag-2014-text_controls .previous a, .mag-2014-text_controls .next a {
+	display: block;
+	width: 15px;
+	border: none;
+	height: 0;
+	margin: 18px 0 0;
+	padding: 13px 0 0 0;
+	overflow: hidden;
+	background: url('http://magazine.jhsph.edu/sebin/d/o/icon_feature_nav.png')  no-repeat left top;
+	-webkit-transition: none;
+ 	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+	}
+
+/*Next Previous specific adjustments */
+.mag-2014-text_controls .previous a:hover {
+	background-position: left bottom  }
+
+.mag-2014-text_controls .next a {
+	background-position: right top  }
+
+.mag-2014-text_controls .next a:hover {
+	background-position: right bottom  }
+
 
 /* MEDIUM SCREENS (TABLETS)
 ------------------------------------------------------------------------------ */
@@ -73,6 +131,13 @@ div.modFlashContainer {
 	.mag-2014-text_controllers {
 		width: 100%;
 		top: -340px;
+	}
+	.mag-2014-text_controls .previous a, .mag-2014-text_controls .next a {
+		margin-top: 13px;
+	}
+	
+	.mag-2014-text_numberbuttons a{
+		margin-top: 7px;
 	}
 
 }
