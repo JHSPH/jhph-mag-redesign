@@ -820,18 +820,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     padding: .25em 0;
   }
 
-  .callout-box img {
-    margin: 0 auto;
-  }
-
-  .callout-box-cols h1,
-  .callout-2-col-img-hdr h1,
-  .callout-2-col-icon-hdr h1,
-  .callout-4-col-stat h1,
-  .callout-box h1 {
-    padding: .25em 0;
-  }
-
   .additional-content {
     display: none;
   }
@@ -985,26 +973,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
   .callout.no-hdr.img-full p {
     padding: 1em;
-  }
-
-  .callout-box .col {
-    padding: .5em 1em;
-  }
-
-  .callout-2-col-img img {
-    margin-bottom: 1em;
-  }
-
-  .callout-2-col-icon-hdr img {
-    padding-right: none;
-  }
-
-  .callout-box-cols .col {
-    padding: 0 .75em 0 0;
-  }
-
-  .callout-4-col-stat .col {
-    border: none;
   }
 
   .additional-content {
@@ -1167,43 +1135,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     border-right: none;
   }
 
-  .callout-box .col {
-    height: inherit;
-    padding: 0 1em;
-    border: none;
-    margin-bottom: 0;
-  }
-
-  .callout-2-col-img img {
-    margin-bottom: 1em;
-  }
-
-  .callout-2-col-img-hdr {
-    text-align: center;
-  }
-  .callout-2-col-img-hdr .text-wrap img {
-    display: inline-block;
-    float: none !important;
-    margin: 0 auto;
-    margin-bottom: 1em;
-    margin-right: 0 !important;
-  }
-  .callout-2-col-img-hdr .text-wrap p {
-    padding: 0;
-  }
-
-  .callout-box-cols .col {
-    height: inherit;
-    border: none;
-    margin: 0;
-  }
-
-  .callout-4-col-stat .col {
-    height: inherit;
-    border: none;
-    margin: 0;
-  }
-
   .timeline-wrapper,
   .modFlashContainer_module {
     display: none;
@@ -1341,31 +1272,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     display: inline;
     float: none;
     margin: 0 auto !important;
-  }
-
-  .callout-2-col-icon-hdr .callout-row {
-    text-align: center;
-  }
-  .callout-2-col-icon-hdr .callout-row img {
-    float: none !important;
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  .callout-2-col-icon-no-hdr {
-    text-align: center;
-  }
-  .callout-2-col-icon-no-hdr img {
-    display: inline-block;
-    float: none !important;
-    margin: 0 auto;
-    margin-bottom: 1em;
-  }
-
-  .callout-box-cols .col {
-    height: inherit;
-    padding: 0 .25em;
-    margin: 0;
   }
 
   .social-bar {
