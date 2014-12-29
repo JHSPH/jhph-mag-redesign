@@ -1149,9 +1149,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin: 1em 0 2em;
   }
 
-  .callout.left-padding .callout-row p {
-    padding: 0;
-  }
   .callout.no-hdr.img-full img {
     margin: 0 1em 1em 0 !important;
   }
@@ -1264,6 +1261,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
   .callout.left-padding .callout-row p {
     text-align: center;
+    padding: 0;
   }
   .callout .callout-row .mobile-2 {
     text-align: center;

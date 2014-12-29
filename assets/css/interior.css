@@ -574,6 +574,9 @@
   padding: 1em 1em 0;
   margin-bottom: 0;
 }
+.callout.left-padding .callout-row p {
+  padding-left: 7.5em;
+}
 .callout .callout-cols {
   text-align: center;
   margin: 2em 1em;
@@ -614,9 +617,6 @@
 .callout .callout-row img {
   max-width: 6.5em;
   margin: 0 1.5em 1.5em !important;
-}
-.callout .callout-row p {
-  padding-left: 7.5em;
 }
 .callout .feature h2 {
   padding: .5em 0;

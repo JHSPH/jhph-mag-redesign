@@ -68,6 +68,14 @@
 		}
 	}
 
+	&.left-padding {
+		.callout-row {
+			p {
+				padding-left: 7.5em;
+			}
+		}
+	}
+
 	.callout-cols {
 		text-align: center;
 		margin: 2em 1em;
@@ -117,10 +125,6 @@
 		  max-width: 6.5em;
 		  margin: 0 1.5em 1.5em !important;
 		}
-
-		p {
-		  padding-left: 7.5em;
-		}
 	}
 
 	.feature {
@@ -130,7 +134,7 @@
 		    border-top: 1px dotted #000;
 		    border-bottom: 1px dotted #000;
 		}
-		
+
 		img {
 		  max-width: 98%;
 		  display: block;

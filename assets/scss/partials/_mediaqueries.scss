@@ -425,14 +425,6 @@
 		margin: 1em 0 2em;
 	}
 	.callout {
-		&.left-padding {
-			.callout-row {
-				p {
-					padding: 0;
-				}
-			}
-		}
-
 		&.no-hdr {
 			&.img-full {
 				img {
@@ -566,6 +558,7 @@
 			.callout-row {
 				p {
 					text-align: center;
+					padding: 0;
 				}
 			}
 		}
