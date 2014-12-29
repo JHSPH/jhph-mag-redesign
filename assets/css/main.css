@@ -972,6 +972,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin-top: -2.75em;
   }
 
+  .callout .callout-cols .col {
+    padding: 0;
+    border-right: none;
+  }
+  .callout.no-hdr.img-full img {
+    margin: 0 1em 1em 0 !important;
+  }
+  .callout.no-hdr.img-full p {
+    padding: 1em;
+  }
+
   .callout-box .col {
     padding: .5em 1em;
   }
@@ -1021,8 +1032,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
-  .xxxtall {
-    height: 460px;
+  .xxxtall, .xxtall, .xtall, .tall, .medium, .short, .xshort, .xxshort, .xxxshort {
+    height: auto;
   }
 
   .gridlock .row {
@@ -1138,6 +1149,23 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin: 1em 0 2em;
   }
 
+  .callout.left-padding .callout-row p {
+    padding: 0;
+  }
+  .callout.no-hdr.img-full img {
+    margin: 0 1em 1em 0 !important;
+  }
+  .callout.no-hdr.img-full p {
+    padding: 1em;
+  }
+  .callout.img-small .callout-row img {
+    max-width: 15%;
+  }
+  .callout .callout-cols .col {
+    padding: 0;
+    border-right: none;
+  }
+
   .callout-box .col {
     height: inherit;
     padding: 0 1em;
@@ -1219,6 +1247,30 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 13px;
   }
 }
+/* BETWEEN SMALL AND VERY SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 705px) {
+  .callout .callout-row img {
+    margin: 0 .5em 1.5em !important;
+  }
+}
+/* BETWEEN SMALL AND VERY SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 585px) {
+  .callout .callout-row img.mobile-1 {
+    display: block;
+    float: none;
+    margin: 0 auto !important;
+  }
+  .callout.left-padding .callout-row p {
+    text-align: center;
+  }
+  .callout .callout-row .mobile-2 {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+}
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
@@ -1266,6 +1318,27 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
   .article blockquote {
     font-size: 30px;
+  }
+
+  .callout {
+    text-align: center;
+  }
+  .callout p {
+    padding: 0 1em;
+  }
+  .callout > h1 + div > p {
+    margin: 0 0 2em;
+  }
+  .callout .callout-row img.min-1 {
+    display: block;
+    float: none;
+    margin: 0 auto !important;
+  }
+  .callout.img-small .callout-row img {
+    max-width: 33%;
+    display: inline;
+    float: none;
+    margin: 0 auto !important;
   }
 
   .callout-2-col-icon-hdr .callout-row {

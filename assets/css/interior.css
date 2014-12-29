@@ -523,6 +523,117 @@
 /* ===========================================================================
 ==== CALLOUTS
 ============================================================================== */
+.callout {
+  width: 100%;
+  float: left;
+  margin-bottom: 1.5em;
+}
+.callout h1 {
+  font-family: 'HeroicCondensedRegular', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .5em 0;
+}
+.callout h2 {
+  font-family: 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.callout p {
+  margin-top: 0 !important;
+}
+.callout > h1 + div > p {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.callout.img-small .callout-row {
+  border: none;
+}
+.callout.img-small .callout-row img {
+  max-width: 33%;
+  margin: 0 1.5em 0 !important;
+}
+.callout.no-hdr.img-small {
+  font-size: 75%;
+  line-height: 1.5;
+  border: 1px solid #000;
+}
+.callout.no-hdr.img-small p {
+  margin: 0 auto !important;
+}
+.callout.no-hdr.img-full img {
+  margin-right: 1em !important;
+}
+.callout.no-hdr.img-full p {
+  padding: 1em 1em 0;
+  margin-bottom: 0;
+}
+.callout .callout-cols {
+  text-align: center;
+  margin: 2em 1em;
+  overflow: auto;
+}
+.callout .callout-cols + p {
+  text-align: center;
+  margin: 0 2em 2em;
+}
+.callout .callout-cols .col {
+  padding: .5em 1em .5em 0;
+  border-right: 1px dotted #000;
+}
+.callout .callout-cols .col:last-child {
+  border: none;
+}
+.callout .callout-cols .col img {
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+.callout .callout-cols .col p {
+  font-size: 75%;
+}
+.callout .callout-cols .stat {
+  font: 70px/1 'HeroicCondensedBlack', Helvetica, Arial, sans-serif;
+  display: block;
+}
+.callout .callout-row {
+  float: left;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px dotted #000;
+}
+.callout .callout-row:last-child {
+  border-bottom: none;
+}
+.callout .callout-row img {
+  max-width: 6.5em;
+  margin: 0 1.5em 1.5em !important;
+}
+.callout .callout-row p {
+  padding-left: 7.5em;
+}
+.callout .feature h2 {
+  padding: .5em 0;
+  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+}
+.callout .feature img {
+  max-width: 98%;
+  display: block;
+  margin: 0 auto;
+}
+.callout .feature p {
+  text-align: center;
+}
+
+/* OLD (DELETE ONCE NEW STYLES ARE LIVE)
+------------------------------------------------------------------------------ */
 .callout-box {
   margin-bottom: 1.5em;
 }
