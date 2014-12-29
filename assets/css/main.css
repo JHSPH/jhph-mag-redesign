@@ -1083,10 +1083,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .main {
-    padding-top: 8em;
+    padding-top: 1em;
   }
 
   .feature-img {
+    background-position: center top;
+    height: 230px;
     top: 70px;
   }
 
@@ -1128,6 +1130,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
   .article blockquote, .agenda-block blockquote {
     font-size: 27px;
+  }
+
+  .article {
+    margin-top: 260px;
+    padding: 25px;
+  }
+  .article h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
 
   .agenda-block .photo-inline {
@@ -1248,13 +1261,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 81%;
   }
 
-  .feature-img {
-    height: 400px;
-  }
-
-  .article {
-    margin-top: 15.5em;
-  }
   .article p, .article ul, .article ol {
     font-size: 18px;
   }
