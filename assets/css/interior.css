@@ -107,6 +107,7 @@
   padding: 40px 70px;
   margin-top: 20em;
   margin-bottom: 4em;
+  overflow: auto;
 }
 .article h1, .article .intro, .article .credits, .agenda-block h1, .agenda-block .intro, .agenda-block .credits {
   text-align: center;
