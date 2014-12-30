@@ -919,6 +919,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 270px;
   }
 
+  .home-box .details .teaser {
+    font-size: 16px;
+  }
+
   .landing-box .details {
     padding: .5em;
   }
@@ -1077,6 +1081,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
   .details h1 {
     font-size: 28px;
+  }
+
+  .home-box .details .teaser {
+    font-size: 16px;
   }
 
   .landing-box .details {
