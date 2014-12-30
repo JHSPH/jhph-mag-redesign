@@ -349,9 +349,11 @@
 		width: 225px;
 	}
 	.main {
-		padding-top: 8em;
+		padding-top: 1em;
 	}
 	.feature-img {
+		background-position: center top;
+		height: 230px;
 		top: 70px;
 	}
 	.details h1 {
@@ -395,7 +397,20 @@
 			font-size: 27px;
 		}
 
-	}
+	} // end .article, .agenda-block
+	
+	.article {
+		margin-top: 260px;
+		padding: 25px;
+		
+		h1 {
+    	font-size: 36px;
+			line-height: 36px;
+			margin-top: 15px;
+			margin-bottom: 25px;
+			}
+	} // article
+	
 	.agenda-block .photo-inline {
 		margin-top: 0;
 	}
@@ -547,11 +562,10 @@
 	.nav-collapse li {
 		width: 81%;
 	}
-	.feature-img {
-		height: 400px;
-	}
+ // .feature-img { height: 400px;	}
+
 	.article {
-		margin-top: 15.5em;
+		//margin-top: 15.5em; Set in breakpoint above
 		
 		p, ul, ol {
 			font-size: 18px;
