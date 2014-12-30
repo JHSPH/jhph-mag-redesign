@@ -1,0 +1,12 @@
+/*OVERRIDE STYLESHEET FOR THE IMAGE MAGNIFICATION MODULE (MAGAZINE 2014 TEMPLATE)*/
+
+.simpleLens-gallery-container a { border: none !important; }
+.simpleLens-lens-image { width: 390px !important; }
+.simpleLens-lens-element { left: 105% !important; width: 390px !important; height: 390px !important; box-shadow: none !important; border: 1px solid #000 !important; }
+.simpleLens-thumbnails-container a img { opacity: .5 !important; filter: Alpha(opacity=50) !important; }
+.simpleLens-thumbnails-container a img:hover { opacity: 1 !important; filter: Alpha(opacity=100) !important; }
+
+@media screen and (min-width: 740px) and (max-width: 979px) {
+.simpleLens-lens-image { width: 290px !important; }
+.simpleLens-lens-element { width: 290px !important; height: 290px !important; }
+}

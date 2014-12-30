@@ -816,15 +816,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin-bottom: 2.5em;
   }
 
-  .callout-box img {
-    margin: 0 auto;
-  }
-
-  .callout-box-cols h1,
-  .callout-2-col-img-hdr h1,
-  .callout-2-col-icon-hdr h1,
-  .callout-4-col-stat h1,
-  .callout-box h1 {
+  .callout h1 {
     padding: .25em 0;
   }
 
@@ -927,6 +919,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 270px;
   }
 
+  .home-box .details .teaser {
+    font-size: 16px;
+  }
+
   .landing-box .details {
     padding: .5em;
   }
@@ -972,24 +968,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin-top: -2.75em;
   }
 
-  .callout-box .col {
-    padding: .5em 1em;
+  .callout .callout-cols .col {
+    padding: 0;
+    border-right: none;
   }
-
-  .callout-2-col-img img {
-    margin-bottom: 1em;
+  .callout.no-hdr.img-full img {
+    margin: 0 1em 1em 0 !important;
   }
-
-  .callout-2-col-icon-hdr img {
-    padding-right: none;
-  }
-
-  .callout-box-cols .col {
-    padding: 0 .75em 0 0;
-  }
-
-  .callout-4-col-stat .col {
-    border: none;
+  .callout.no-hdr.img-full p {
+    padding: 1em;
   }
 
   .additional-content {
@@ -1021,8 +1008,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 739px) {
-  .xxxtall {
-    height: 460px;
+  .xxxtall, .xxtall, .xtall, .tall, .medium, .short, .xshort, .xxshort, .xxxshort {
+    height: auto;
   }
 
   .gridlock .row {
@@ -1083,15 +1070,25 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .main {
-    padding-top: 8em;
+    padding-top: 1em;
   }
 
   .feature-img {
+    background-position: center top;
+    height: 230px;
     top: 70px;
   }
 
   .details h1 {
     font-size: 28px;
+  }
+
+  .home-box .details {
+    padding: 1em .5em 0;
+  }
+  .home-box .details .teaser {
+    font-size: 16px;
+    padding: 0;
   }
 
   .landing-box .details {
@@ -1130,6 +1127,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 27px;
   }
 
+  .article {
+    margin-top: 260px;
+    padding: 25px;
+  }
+  .article h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
   .agenda-block .photo-inline {
     margin-top: 0;
   }
@@ -1138,45 +1146,23 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin: 1em 0 2em;
   }
 
-  .callout-box .col {
-    height: inherit;
-    padding: 0 1em;
-    border: none;
-    margin-bottom: 0;
+  .callout.no-hdr.img-full img {
+    margin: 0 1em 1em 0 !important;
   }
-
-  .callout-2-col-img img {
-    margin-bottom: 1em;
+  .callout.no-hdr.img-full p {
+    padding: 1em;
   }
-
-  .callout-2-col-img-hdr {
-    text-align: center;
+  .callout.img-small .callout-row img {
+    max-width: 15%;
   }
-  .callout-2-col-img-hdr .text-wrap img {
-    display: inline-block;
-    float: none !important;
-    margin: 0 auto;
-    margin-bottom: 1em;
-    margin-right: 0 !important;
-  }
-  .callout-2-col-img-hdr .text-wrap p {
+  .callout .callout-cols .col {
     padding: 0;
-  }
-
-  .callout-box-cols .col {
-    height: inherit;
-    border: none;
-    margin: 0;
-  }
-
-  .callout-4-col-stat .col {
-    height: inherit;
-    border: none;
-    margin: 0;
+    border-right: none;
   }
 
   .timeline-wrapper,
-  .modFlashContainer_module {
+  .modFlashContainer_module,
+  .simpleLens-gallery-container {
     display: none;
   }
 
@@ -1219,6 +1205,31 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 13px;
   }
 }
+/* BETWEEN SMALL AND VERY SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 705px) {
+  .callout .callout-row img {
+    margin: 0 .5em 1.5em !important;
+  }
+}
+/* BETWEEN SMALL AND VERY SMALL SCREENS (PHONES)
+------------------------------------------------------------------------------ */
+@media screen and (max-width: 585px) {
+  .callout .callout-row img.mobile-1 {
+    display: block;
+    float: none;
+    margin: 0 auto !important;
+  }
+  .callout.left-padding .callout-row p {
+    text-align: center;
+    padding: 0;
+  }
+  .callout .callout-row .mobile-2 {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+}
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
@@ -1248,13 +1259,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 81%;
   }
 
-  .feature-img {
-    height: 400px;
-  }
-
-  .article {
-    margin-top: 15.5em;
-  }
   .article p, .article ul, .article ol {
     font-size: 18px;
   }
@@ -1268,29 +1272,25 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 30px;
   }
 
-  .callout-2-col-icon-hdr .callout-row {
+  .callout {
     text-align: center;
   }
-  .callout-2-col-icon-hdr .callout-row img {
-    float: none !important;
-    display: inline-block;
-    margin: 0 auto;
+  .callout p {
+    padding: 0 1em;
   }
-
-  .callout-2-col-icon-no-hdr {
-    text-align: center;
+  .callout > h1 + div > p {
+    margin: 0 0 2em;
   }
-  .callout-2-col-icon-no-hdr img {
-    display: inline-block;
-    float: none !important;
-    margin: 0 auto;
-    margin-bottom: 1em;
+  .callout .callout-row img.min-1 {
+    display: block;
+    float: none;
+    margin: 0 auto !important;
   }
-
-  .callout-box-cols .col {
-    height: inherit;
-    padding: 0 .25em;
-    margin: 0;
+  .callout.img-small .callout-row img {
+    max-width: 33%;
+    display: inline;
+    float: none;
+    margin: 0 auto !important;
   }
 
   .social-bar {
