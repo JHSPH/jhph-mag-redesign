@@ -362,8 +362,15 @@
 	.details h1 {
 		font-size: 28px;
 	}
-	.home-box .details .teaser {
-		font-size: 16px;
+	.home-box {
+		.details {
+			padding: 1em .5em 0;
+
+			.teaser {
+				font-size: 16px;
+				padding: 0;
+			}
+		}
 	}
 	.landing-box .details {
 		padding: .25em;

@@ -1083,8 +1083,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 28px;
   }
 
+  .home-box .details {
+    padding: 1em .5em 0;
+  }
   .home-box .details .teaser {
     font-size: 16px;
+    padding: 0;
   }
 
   .landing-box .details {
