@@ -164,6 +164,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -172,6 +173,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -1012,6 +1014,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     height: auto;
   }
 
+  .interior .main {
+    padding-top: 1em;
+  }
+
   .gridlock .row {
     width: 100%;
   }
@@ -1053,7 +1059,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .nav-collapse li {
     float: left;
     width: 96%;
-    background: #333;
+    background: #333333;
     border-bottom: 1px solid black;
     padding-left: .5em;
   }
@@ -1070,7 +1076,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .main {
-    padding-top: 1em;
+    padding-top: 6em;
   }
 
   .feature-img {
@@ -1233,6 +1239,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
+  .miniFormContainer form:hover, .miniFormContainer form.active {
+    width: 30px;
+  }
+
   .gridlock .row {
     width: 100%;
   }
@@ -1307,13 +1317,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-position-x: -32px;
   }
 
+  .gridlock .footer li {
+    margin-right: 1em;
+  }
   .gridlock .footer li a {
     font-size: 12px;
   }
-
-  .gridlock .footer p {
+  .gridlock .footer li p {
     font-size: 17px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

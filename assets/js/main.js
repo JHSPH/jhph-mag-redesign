@@ -795,7 +795,6 @@ $(function(){
 
 var magSite = { 
   init: function() { 
-    console.log('test');
     SearchBar.init(); 
   }
 };

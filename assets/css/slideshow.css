@@ -26,6 +26,7 @@ div.modFlashContainer {
 
 /* Control location & background */
 .mag-2014-text_controllers {
+	background: #000;
 	background: rgba(0, 0, 0, .66);
 	width: 820px;
 	height: 33px;

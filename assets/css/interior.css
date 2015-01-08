@@ -16,7 +16,7 @@
 }
 
 .bg-dark-grey {
-  background-color: #333;
+  background-color: #333333;
 }
 
 .bg-light-blue {
@@ -88,7 +88,7 @@
 ==== ARTICLE / AGENDA
 ============================================================================== */
 .feature-img {
-  background: url(http://www.jhsph.edu/sebin/d/m/hdr-img-default.jpg) center center/cover no-repeat #fff;
+  background: url(http://www.jhsph.edu/sebin/d/m/hdr-img-default.jpg) center center/cover no-repeat white;
   display: block;
   position: absolute;
   left: 0;
@@ -632,5 +632,3 @@
 .callout .feature p {
   text-align: center;
 }
-
-/*# sourceMappingURL=interior.css.map */

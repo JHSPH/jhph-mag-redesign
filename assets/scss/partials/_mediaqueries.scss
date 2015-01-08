@@ -291,6 +291,9 @@
 	.xxxtall, .xxtall, .xtall, .tall, .medium, .short, .xshort, .xxshort, .xxxshort {
 		height: auto;
 	}
+	.interior .main {
+		padding-top: 1em;
+	}
 	.gridlock .row {
 		width: 100%;
 
@@ -352,7 +355,7 @@
 		width: 225px;
 	}
 	.main {
-		padding-top: 1em;
+		padding-top: 6em;
 	}
 	.feature-img {
 		background-position: center top;
@@ -546,6 +549,11 @@
 /* VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
 @media screen and (max-width: 499px) {
+	.miniFormContainer form {
+		&:hover, &.active {
+			width: 30px;
+		}
+	}
 	.gridlock .row {
 		width: 100%;
 
@@ -646,10 +654,15 @@
 			}
 		}
 	}
-	.gridlock .footer li a {
-		font-size: 12px;
-	}
-	.gridlock .footer p {
-		font-size: 17px;
+	.gridlock .footer li {
+	    margin-right: 1em;
+
+	    a {
+			font-size: 12px;
+		}
+
+		p {
+			font-size: 17px;
+		}
 	}
 }
