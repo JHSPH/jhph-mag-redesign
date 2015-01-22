@@ -400,6 +400,7 @@
     	}
 	}
 }
+
 .social-bar {
 	display: none;
 	position: fixed;
@@ -407,6 +408,26 @@
 	bottom: 40%;
 	width: 60px;
 	background-color: rgba(244, 244, 244, .5);
+	
+	a {
+		background: none;
+		border-bottom: none;
+		padding:0px;
+		margin:0px;
+		-webkit-transition: background 0s, 0s;
+		-moz-transition: background 0s, 0s;
+		-ms-transition: background 0s, 0s;
+		-o-transition: background 0s, 0s;
+		transition: background 0s, 0s;
+		   &:hover {
+				 background:none;
+				}
+		}
+	
+	ul {
+		padding:0px;
+    margin-bottom:0px;
+	}
 
 	li {
 		background: url("http://www.jhsph.edu/sebin/p/i/social-sprite.png") center top no-repeat;
@@ -464,13 +485,9 @@
 				background-position: -28px -205px;
 			}
 		}
-	}
+	} // end Social-bar li
+} // end Social-Bar
 
-	a {
-		width: 60px;
-		height: 60px;
-	}
-}
 #comments {
 	border-top: 1px dotted #000;
 	padding-top: 1em;

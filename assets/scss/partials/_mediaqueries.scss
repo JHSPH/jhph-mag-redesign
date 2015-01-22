@@ -417,8 +417,9 @@
 	
 	.article {
 		margin-top: 260px;
+		margin-bottom: 10px;
 		padding: 25px;
-		
+				
 		h1 {
     	font-size: 36px;
 			line-height: 36px;
@@ -499,7 +500,77 @@
 		text-align: center;
 		font-size: 13px;
 	}
+
+// Social-bar :: Moves bar to bottome of the article.
+
+	.social-bar {
+		background-color: rgba(244, 244, 244, .75);
+		bottom: inherit;
+		display: inline-block;
+		margin: 10px 0px 10px;
+		position: relative;
+		right: auto;
+		width: 100%;
+		
+		 ul {
+				background-color: rgba(244, 244, 244, 0.5);
+				display: block;
+				height:55px;
+				margin: 0px auto 0px;
+				text-align:center;
+
+			 }
+		 li {
+				background-position: 12px 12px;
+				border-bottom: none;
+				display: inline-block;
+				margin: 0px -1px;
+				height: 55px; 
+				width: 50px;
+				
+				&.fb:hover {
+					background-position: -33px 12px;
+				}
+		
+				&.twitter {
+					background-position: 12px -31px;
+					&:hover {
+						background-position: -33px -31px;
+					}
+				}
+				
+				&.gplus {
+					background-position: 12px -73px;
+					&:hover {
+						background-position: -33px -73px;
+					}
+				}
+				
+				&.linkedin {
+					background-position: 12px -117px;
+					&:hover {
+						background-position: -33px -117px;
+					}
+				}
+				
+				&.email {
+					background-position: 12px -158px;
+					&:hover {
+						background-position: -33px -158px;
+					}
+				}
+				
+				&.comment {
+					display: none;
+				}
+		 } // end li
+		
+	} // end social bar
 }
+ 
+
+
+
 
 /* BETWEEN SMALL AND VERY SMALL SCREENS (PHONES)
 ------------------------------------------------------------------------------ */
@@ -583,10 +654,10 @@
 	.nav-collapse li {
 		width: 81%;
 	}
- // .feature-img { height: 400px;	}
+ // .feature-img { height: 400px;	} :: Delete later.
 
 	.article {
-		//margin-top: 15.5em; Set in breakpoint above
+		//margin-top: 15.5em; :: Set in breakpoint above, Delete later.
 		
 		p, ul, ol {
 			font-size: 18px;
@@ -633,7 +704,8 @@
 			}
 		}
 	}
-	.social-bar {
+//  Superceded in article.scss. - Jonathan
+/*	.social-bar {
 		width: 50px;
 
 		a {
@@ -654,6 +726,7 @@
 			}
 		}
 	}
+*/
 	.gridlock .footer li {
 	    margin-right: 1em;
 
