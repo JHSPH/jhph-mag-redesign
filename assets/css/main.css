@@ -141,6 +141,9 @@ img {
   top: 0;
   left: 0;
 }
+.logo-home a:hover {
+  color: inherit;
+}
 .logo-home span {
   margin: -5px;
 }

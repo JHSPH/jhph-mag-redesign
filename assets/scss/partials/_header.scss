@@ -28,6 +28,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	a:hover {
+		color: inherit;
+	}
 	
 	span {
 		margin: -5px;
