@@ -503,7 +503,7 @@
 
 // Social-bar :: Moves bar to bottome of the article.
 
-	.social-bar {
+	.agenda-page .social-bar, .article .social-bar {
 		background-color: rgba(244, 244, 244, .75);
 		bottom: inherit;
 		display: inline-block;
@@ -662,8 +662,8 @@
 		p, ul, ol {
 			font-size: 18px;
 		}
-		ul {
-			padding-left: .75em;
+		ul li {
+			padding: 0 1em;
 		}
 		ol {
 			padding-left: 1.75em;

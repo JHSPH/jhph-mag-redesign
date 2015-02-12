@@ -176,8 +176,11 @@
   font-weight: bold;
 }
 .article ul, .agenda-block ul {
-  padding-left: 2em;
   margin-bottom: 1.5em;
+}
+.article ul li, .agenda-block ul li {
+  padding: 0 3em;
+  text-indent: -1em;
 }
 .article ul li:before, .agenda-block ul li:before {
   content: '\00BB';
@@ -247,6 +250,14 @@
   border-top: 1px dotted #da572d;
   border-bottom: 1px dotted #da572d;
   margin: 1.5em 0;
+}
+.article blockquote.aside, .agenda-block blockquote.aside {
+  font: 400 16px/1.62 "Chronicle SSm 4r","Chronicle SSm A","Chronicle SSm B",serif;
+  color: #666;
+  background: #eaf0f7;
+  padding: 1.5em;
+  border: none;
+  margin: 1.5em 4.5em;
 }
 .article .quote-credit, .agenda-block .quote-credit {
   font: italic 16px/1.62 "Chronicle SSm 4i", "Chronicle SSm A", "Chronicle SSm B", serif;
@@ -463,7 +474,7 @@
   filter: Alpha(opacity=100);
 }
 
-.social-bar {
+.agenda-page .social-bar, .article .social-bar {
   display: none;
   position: fixed;
   right: .5em;
@@ -471,7 +482,7 @@
   width: 60px;
   background-color: rgba(244, 244, 244, 0.5);
 }
-.social-bar a {
+.agenda-page .social-bar a, .article .social-bar a {
   background: none;
   border-bottom: none;
   padding: 0px;
@@ -482,60 +493,61 @@
   -o-transition: background 0s, 0s;
   transition: background 0s, 0s;
 }
-.social-bar a:hover {
+.agenda-page .social-bar a:hover, .article .social-bar a:hover {
   background: none;
 }
-.social-bar ul {
+.agenda-page .social-bar ul, .article .social-bar ul {
   padding: 0px;
   margin-bottom: 0px;
 }
-.social-bar li {
+.agenda-page .social-bar li, .article .social-bar li {
   background: url("http://www.jhsph.edu/sebin/p/i/social-sprite.png") center top no-repeat;
   background-position: 17px 17px;
   display: block;
   height: 60px;
   border-bottom: 1px solid #dfdfdf;
-  text-indent: 100%;
+  text-indent: 2em;
+  padding: 0 1em;
   overflow: hidden;
   white-space: nowrap;
 }
-.social-bar li.fb:hover {
+.agenda-page .social-bar li.fb:hover, .article .social-bar li.fb:hover {
   background-color: #3A5998;
   background-position: -28px 17px;
 }
-.social-bar li.twitter {
+.agenda-page .social-bar li.twitter, .article .social-bar li.twitter {
   background-position: 17px -26px;
 }
-.social-bar li.twitter:hover {
+.agenda-page .social-bar li.twitter:hover, .article .social-bar li.twitter:hover {
   background-color: #55ACEE;
   background-position: -28px -26px;
 }
-.social-bar li.gplus {
+.agenda-page .social-bar li.gplus, .article .social-bar li.gplus {
   background-position: 17px -67px;
 }
-.social-bar li.gplus:hover {
+.agenda-page .social-bar li.gplus:hover, .article .social-bar li.gplus:hover {
   background-color: #D50A15;
   background-position: -28px -67px;
 }
-.social-bar li.linkedin {
+.agenda-page .social-bar li.linkedin, .article .social-bar li.linkedin {
   background-position: 17px -112px;
 }
-.social-bar li.linkedin:hover {
+.agenda-page .social-bar li.linkedin:hover, .article .social-bar li.linkedin:hover {
   background-color: #2175A2;
   background-position: -28px -112px;
 }
-.social-bar li.email {
+.agenda-page .social-bar li.email, .article .social-bar li.email {
   background-position: 17px -153px;
 }
-.social-bar li.email:hover {
+.agenda-page .social-bar li.email:hover, .article .social-bar li.email:hover {
   background-color: #2CB21E;
   background-position: -28px -153px;
 }
-.social-bar li.comment {
+.agenda-page .social-bar li.comment, .article .social-bar li.comment {
   background-position: 17px -205px;
   border-bottom: none;
 }
-.social-bar li.comment:hover {
+.agenda-page .social-bar li.comment:hover, .article .social-bar li.comment:hover {
   background-color: #E45536;
   background-position: -28px -205px;
 }

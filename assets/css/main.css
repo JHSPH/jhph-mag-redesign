@@ -1213,7 +1213,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 13px;
   }
 
-  .social-bar {
+  .agenda-page .social-bar, .article .social-bar {
     background-color: rgba(244, 244, 244, 0.75);
     bottom: inherit;
     display: inline-block;
@@ -1222,14 +1222,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     right: auto;
     width: 100%;
   }
-  .social-bar ul {
+  .agenda-page .social-bar ul, .article .social-bar ul {
     background-color: rgba(244, 244, 244, 0.5);
     display: block;
     height: 55px;
     margin: 0px auto 0px;
     text-align: center;
   }
-  .social-bar li {
+  .agenda-page .social-bar li, .article .social-bar li {
     background-position: 12px 12px;
     border-bottom: none;
     display: inline-block;
@@ -1237,34 +1237,34 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     height: 55px;
     width: 50px;
   }
-  .social-bar li.fb:hover {
+  .agenda-page .social-bar li.fb:hover, .article .social-bar li.fb:hover {
     background-position: -33px 12px;
   }
-  .social-bar li.twitter {
+  .agenda-page .social-bar li.twitter, .article .social-bar li.twitter {
     background-position: 12px -31px;
   }
-  .social-bar li.twitter:hover {
+  .agenda-page .social-bar li.twitter:hover, .article .social-bar li.twitter:hover {
     background-position: -33px -31px;
   }
-  .social-bar li.gplus {
+  .agenda-page .social-bar li.gplus, .article .social-bar li.gplus {
     background-position: 12px -73px;
   }
-  .social-bar li.gplus:hover {
+  .agenda-page .social-bar li.gplus:hover, .article .social-bar li.gplus:hover {
     background-position: -33px -73px;
   }
-  .social-bar li.linkedin {
+  .agenda-page .social-bar li.linkedin, .article .social-bar li.linkedin {
     background-position: 12px -117px;
   }
-  .social-bar li.linkedin:hover {
+  .agenda-page .social-bar li.linkedin:hover, .article .social-bar li.linkedin:hover {
     background-position: -33px -117px;
   }
-  .social-bar li.email {
+  .agenda-page .social-bar li.email, .article .social-bar li.email {
     background-position: 12px -158px;
   }
-  .social-bar li.email:hover {
+  .agenda-page .social-bar li.email:hover, .article .social-bar li.email:hover {
     background-position: -33px -158px;
   }
-  .social-bar li.comment {
+  .agenda-page .social-bar li.comment, .article .social-bar li.comment {
     display: none;
   }
 }
@@ -1329,8 +1329,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .article p, .article ul, .article ol {
     font-size: 18px;
   }
-  .article ul {
-    padding-left: .75em;
+  .article ul li {
+    padding: 0 1em;
   }
   .article ol {
     padding-left: 1.75em;

@@ -94,17 +94,21 @@
 	}
 	
 	ul {
-		padding-left: 2em;
 		margin-bottom: 1.5em;
 	}
 	
-	ul li:before {
-		content: '\00BB';
-		color: #e45536;
-		font-size: 16px;
-		position: relative;
-		top: -3px;
-		margin-right: .25em;
+	ul li {
+		padding: 0 3em;
+		text-indent: -1em;
+
+		&:before {
+			content: '\00BB';
+			color: #e45536;
+			font-size: 16px;
+			position: relative;
+			top: -3px;
+			margin-right: .25em;
+		}
 	}
 
 	ol {
@@ -176,6 +180,15 @@
 		border-top: 1px dotted #da572d;
 		border-bottom: 1px dotted #da572d;
 		margin: 1.5em 0;
+
+		&.aside {
+			font: 400 16px/1.62 "Chronicle SSm 4r","Chronicle SSm A","Chronicle SSm B",serif;
+			color: #666;
+			background: #eaf0f7;
+			padding: 1.5em;
+			border: none;
+			margin: 1.5em 4.5em;
+		}
 	}
 	
 	.quote-credit {
@@ -409,7 +422,7 @@
 	}
 }
 
-.social-bar {
+.agenda-page .social-bar, .article .social-bar {
 	display: none;
 	position: fixed;
 	right: .5em;
@@ -443,7 +456,8 @@
 		display: block;
 		height: 60px;
 		border-bottom: 1px solid #dfdfdf;
-		text-indent: 100%;
+		text-indent: 2em;
+		padding: 0 1em;
 		overflow: hidden;
 		white-space: nowrap;
 

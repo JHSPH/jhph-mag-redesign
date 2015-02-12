@@ -40,8 +40,9 @@ div.modFlashContainer {
 	display: inline-block;
 	padding-left: 1em !important;
 }
-.mag-2014-text_option {
+.agenda-block ul li.mag-2014-text_option, .article ul li.mag-2014-text_option {
 	float: left;
+	padding: 0;
 	margin-right: 1em;
 }
 .mag-2014-text_numberbuttons {
@@ -82,7 +83,7 @@ div.modFlashContainer {
 	position: relative;
 	top: -3.5em;
 }
-.mag-2014-text_controls .next {
+.agenda-block ul.mag-2014-text_controls .next, .article ul.mag-2014-text_controls .next {
 	float: right;
 	margin-right: 0;
 }
