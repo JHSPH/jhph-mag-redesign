@@ -597,6 +597,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 .landing-box img {
   display: inline-block;
+  float: left;
+  width: 33%;
 }
 .landing-box img:hover {
   opacity: .75;
@@ -941,11 +943,16 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .main {
+    padding-top: 0;
+  }
+
+  .main.home {
     padding-top: 8em;
   }
 
   .feature-img {
     top: 78px;
+    height: 400px;
   }
 
   .right-col .details h1 {
@@ -1081,7 +1088,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .feature-img {
-    background-position: center top;
+    background-position: center center;
     height: 230px;
     top: 70px;
   }
@@ -1137,13 +1144,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .article {
     margin-top: 260px;
     margin-bottom: 10px;
-    padding: 25px;
+    padding: 25px 10px;
   }
   .article h1 {
     font-size: 36px;
     line-height: 36px;
     margin-top: 15px;
     margin-bottom: 25px;
+  }
+  .article .drop-cap {
+    font-size: 50px;
+    padding-right: 0;
   }
 
   .agenda-block .photo-inline {
@@ -1311,7 +1322,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
   .gridlock .row .landing-box img {
     float: none;
-    margin-top: 1em;
+    width: 95%;
+    padding: 0;
+    margin-top: .5em;
   }
   .gridlock .row .landing-box .details {
     float: none;

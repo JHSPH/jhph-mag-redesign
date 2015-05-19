@@ -424,7 +424,7 @@
 .photo-essay-container .text-wrapper {
   padding: 0 .5em .5em;
 }
-.photo-essay-container .text-wrapper p {
+.photo-essay-container .text-wrapper p:last-child {
   margin-bottom: 0;
 }
 

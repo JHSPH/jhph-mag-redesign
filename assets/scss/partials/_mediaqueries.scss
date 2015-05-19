@@ -215,10 +215,14 @@
 		padding: .33em 0 .33em .33em;
 	}
 	.main {
+		padding-top: 0;
+	}
+	.main.home {
 		padding-top: 8em;
 	}
 	.feature-img {
 		top: 78px;
+		height: 400px;
 	}
 	.right-col .details h1 {
 		font-size: 48px;
@@ -358,7 +362,7 @@
 		padding-top: 6em;
 	}
 	.feature-img {
-		background-position: center top;
+		background-position: center center;
 		height: 230px;
 		top: 70px;
 	}
@@ -418,7 +422,7 @@
 	.article {
 		margin-top: 260px;
 		margin-bottom: 10px;
-		padding: 25px;
+		padding: 25px 10px;
 				
 		h1 {
     	font-size: 36px;
@@ -426,6 +430,11 @@
 			margin-top: 15px;
 			margin-bottom: 25px;
 			}
+
+		.drop-cap {
+		font-size: 50px;
+		padding-right: 0;
+	}
 	} // article
 	
 	.agenda-block .photo-inline {
@@ -501,7 +510,7 @@
 		font-size: 13px;
 	}
 
-// Social-bar :: Moves bar to bottome of the article.
+// Social-bar :: Moves bar to bottom of the article.
 
 	.agenda-page .social-bar, .article .social-bar {
 		background-color: rgba(244, 244, 244, .75);
@@ -636,8 +645,10 @@
 		text-align: center;
 
 			img {
-				float: none;
-				margin-top: 1em;
+				  float: none;
+				  width: 95%;
+				  padding: 0;
+				  margin-top: .5em;
 			}
 
 			.details {

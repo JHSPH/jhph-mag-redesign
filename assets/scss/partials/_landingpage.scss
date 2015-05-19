@@ -8,6 +8,8 @@
 
  	img {
  		display: inline-block;
+ 		float: left;
+ 		width: 33%;
 
  		&:hover {
 			opacity: .75;
