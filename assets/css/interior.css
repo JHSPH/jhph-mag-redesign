@@ -259,6 +259,9 @@
   border: none;
   margin: 1.5em 4.5em;
 }
+.article blockquote.aside h2, .agenda-block blockquote.aside h2 {
+  margin-bottom: .25em;
+}
 .article .quote-credit, .agenda-block .quote-credit {
   font: italic 16px/1.62 "Chronicle SSm 4i", "Chronicle SSm A", "Chronicle SSm B", serif;
   color: #777;
