@@ -401,10 +401,15 @@
 		width: 88%;
 	}
 	.article, .agenda-block {
-		padding: 40px;
+		margin-top: 260px;
+		margin-bottom: 10px;
+		padding: 25px 10px;
 
 		h1 {
-			font-size: 40px;
+	    	font-size: 36px;
+			line-height: 36px;
+			margin-top: 15px;
+			margin-bottom: 25px;
 		}
 
 		.intro {
@@ -420,31 +425,21 @@
 			font-size: 27px;
 		}
 
+		.drop-cap {
+			font-size: 50px;
+			padding-right: 0;
+		}
+
 	} // end .article, .agenda-block
 	
-	.article {
-		margin-top: 260px;
-		margin-bottom: 10px;
-		padding: 25px 10px;
-				
-		h1 {
-    	font-size: 36px;
-			line-height: 36px;
-			margin-top: 15px;
-			margin-bottom: 25px;
-			}
-
-		.drop-cap {
-		font-size: 50px;
-		padding-right: 0;
-	}
-	} // article
-	
-	.agenda-block .photo-inline {
+	.agenda-block, .agenda-block .photo-inline {
 		margin-top: 0;
 	}
 	.agenda-block.trending .photo-inline {
 		margin: 1em 0 2em;
+	}
+	.agenda-block.trending .research-col p {
+		font-size: 24px
 	}
 	.callout {
 		&.no-hdr {
@@ -670,7 +665,7 @@
 	}
  // .feature-img { height: 400px;	} :: Delete later.
 
-	.article {
+	.article, .agenda-block {
 		//margin-top: 15.5em; :: Set in breakpoint above, Delete later.
 		
 		p, ul, ol {
@@ -684,6 +679,10 @@
 		}
 		blockquote {
 			font-size: 30px;
+
+			&.aside {
+				margin: 1.5em;
+			}
 		}
 	}
 	.callout {

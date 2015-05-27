@@ -1129,10 +1129,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .article, .agenda-block {
-    padding: 40px;
+    margin-top: 260px;
+    margin-bottom: 10px;
+    padding: 25px 10px;
   }
   .article h1, .agenda-block h1 {
-    font-size: 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
   .article .intro, .agenda-block .intro {
     font-size: 18px;
@@ -1144,29 +1149,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .article blockquote, .agenda-block blockquote {
     font-size: 27px;
   }
-
-  .article {
-    margin-top: 260px;
-    margin-bottom: 10px;
-    padding: 25px 10px;
-  }
-  .article h1 {
-    font-size: 36px;
-    line-height: 36px;
-    margin-top: 15px;
-    margin-bottom: 25px;
-  }
-  .article .drop-cap {
+  .article .drop-cap, .agenda-block .drop-cap {
     font-size: 50px;
     padding-right: 0;
   }
 
-  .agenda-block .photo-inline {
+  .agenda-block, .agenda-block .photo-inline {
     margin-top: 0;
   }
 
   .agenda-block.trending .photo-inline {
     margin: 1em 0 2em;
+  }
+
+  .agenda-block.trending .research-col p {
+    font-size: 24px;
   }
 
   .callout.no-hdr.img-full img {
@@ -1343,17 +1340,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 81%;
   }
 
-  .article p, .article ul, .article ol {
+  .article p, .article ul, .article ol, .agenda-block p, .agenda-block ul, .agenda-block ol {
     font-size: 18px;
   }
-  .article ul li {
+  .article ul li, .agenda-block ul li {
     padding: 0 1em;
   }
-  .article ol {
+  .article ol, .agenda-block ol {
     padding-left: 1.75em;
   }
-  .article blockquote {
+  .article blockquote, .agenda-block blockquote {
     font-size: 30px;
+  }
+  .article blockquote.aside, .agenda-block blockquote.aside {
+    margin: 1.5em;
   }
 
   .callout {
