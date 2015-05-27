@@ -943,11 +943,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .main {
-    padding-top: 0;
+    padding-top: 7.5em;
   }
 
   .main.home {
     padding-top: 8em;
+  }
+
+  .interior .main {
+    padding-top: 0;
   }
 
   .feature-img {
