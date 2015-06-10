@@ -47,3 +47,22 @@ img {
 .main {
 	padding-top: 10em;
 }
+
+
+
+// Clearfix based on: http://nicolasgallagher.com/micro-clearfix-hack/
+
+// ===========================================================================
+
+
+.cf {
+    font-size: 1px; // counters the &nbsp; SiteExecutive insterts in all empty divs.
+    *zoom: 1; // For IE 6/7 only - Include this rule to trigger hasLayout and contain floats.
+}
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table;
+    clear: both; 
+}
