@@ -1,6 +1,5 @@
 assets/images/*
 assets/scss/partials/.DS_Store
-bower_components/*
 node_modules/*
 responsive-nav.js-master/*
 <<<<<<< HEAD
